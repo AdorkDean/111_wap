@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<!--允许全屏-->
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+<!--缩放比例-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>
+	方案名称1
+</title>
+<script type="text/javascript" src="http://m.111yao.com//web/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://m.111yao.com//web/js/iscroll.js"></script>
+<script type="text/javascript" src="http://m.111yao.com//web/js/wap-cart.js"></script>
+<script type="text/javascript" src="http://m.111yao.com/web/js/alert.main.js"></script>
+<script type="text/javascript">
+var myScroll;
+function loaded () {
+	var sum = $("#csum").val();
+	for(var i=0;i<sum;i++){
+		myScroll = new IScroll('.wrapper'+i, { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+	}
+}
+</script>
+<link href="http://m.111yao.com//web/css/common.css" rel="stylesheet" type="text/css" />
+<link href="http://m.111yao.com//web/css/iconfont.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="loaded()">
+<div class="care-main">
+    <input type="hidden" id="csum" value="4"/>
+    <input type="hidden" id="hid" value="1"/>
+	<div class="care-part clearfix">
+    	<div class="care-adv-tit"><img src="http://ui1.111yao.com//static/image/healthyplan//201511/a94a5aadf286b4c727f56d5066f533f7.jpg"></div>
+        <div class="symptom clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(1,0);">
+            <input type="hidden" id="exp0" value="aaa啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点"/>
+                <span class="symptom-tag">症状介绍</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+		           		<p>aaa啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点啊手动阀撒发射点...</p>
+                </div>
+            </a>
+        </div>
+        <div class="recomm-product">
+        		<div class="recomm-one clearfix">
+	                <div class="recomm-one-img"><a href="javascript:;" onclick="product(1,&quot;石药牌果维康维生素C含片 (橙味)60片&quot;);"><img src="http://ui1.111yao.com//static/image/upload/image/201410/395aff35-5c9b-4648-bee7-0bf3cbc34b59-medium350x350.jpg"></a></div>
+	                <div class="recomm-one-info">
+	                    <p class="recomm-one-title" onclick="product(1,&quot;石药牌果维康维生素C含片 (橙味)60片&quot;);">石药牌果维康维生素C含片 (橙味)60片<span>水果味，吸收好，</span></p>
+	                    <p class="recomm-one-price bszjg2_1">￥39.9</p>
+	                    <p class="recomm-into-cart gwc2_1"><a href="javascript:;" onclick="addTao(1,1)">加入购物车</a></p>
+	                </div>
+	            </div>
+	        	<div class="c-line"></div>
+	            <div class="recomm-two clearfix">
+	            	<ul class="clearfix">
+	                	<li>
+	                    	<a href="#"><img src="http://ui1.111yao.com//static/image/upload/image/201410/65bf8d17-19fa-4867-b67e-1539b33918e6-medium350x350.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-one-title" onclick="product(17,&quot;杜蕾斯人体润滑液 樱桃装50ml&quot;);">杜蕾斯人体润滑液 樱桃装50ml<span>润滑油剂 房事情趣成人用品</span></p>
+	                    		<p class="recomm-one-price bszjg2_17">￥46.8</p>
+	                            <p class="recomm-into-cart gwc2_17"><a href="javascript:;" onclick="addTao(1,17)">加入购物车</a></p>
+	                        </div>
+	                    </li>
+	                    <li>
+	                    	<a href="#"><img src="http://ui1.111yao.com//static/image/upload/image/201411/f85c2472-194e-4397-bcf7-1dc8d491033a-medium350x350.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-one-title" onclick="product(2,&quot;创盈金斯利安多维片1.17g*30片&quot;);">创盈金斯利安多维片1.17g*30片<span>补充叶酸 孕妇多种维生素片 孕期营养</span></p>
+	                    		<p class="recomm-one-price bszjg2_2">￥108</p>
+	                            <p class="recomm-into-cart gwc2_2"><a href="javascript:;" onclick="addTao(1,2)">加入购物车</a></p>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+        </div>
+    </div>
+    
+    <div class="care-part clearfix" style="margin-top:10px">
+    	<div class="care-adv-tit"><img src="http://ui1.111yao.com//static/image/temp/20150814/b6169b3fbd21ee08d513e0716b158a0c.jpg"></div>
+        <div class="symptom clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(1,1);">
+            <input type="hidden" id="exp1" value="描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描描述描述描述描述描述描述描述1述1"/>
+                <span class="symptom-tag">伴随症状症状</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+		           		<p>描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述描述描述描述描述1描述描述描述...</p>
+                </div>
+            </a>
+        </div>
+                <div class="recomm-product">
+        		<div class="recomm-one clearfix">
+	                <div class="recomm-one-img"><a href="javascript:;" onclick="product(23,&quot;莎普爱思 苄达赖氨酸滴眼液 5ml&quot;);"><img src="http://ui1.111yao.com//static/image/upload/image/201410/04e8c085-e7bc-4164-b17b-5e4ade408a92-medium350x350.jpg"></a></div>
+	                <div class="recomm-one-info">
+	                    <p class="recomm-one-title" onclick="product(23,&quot;莎普爱思 苄达赖氨酸滴眼液 5ml&quot;);">莎普爱思 苄达赖氨酸滴眼液 5ml<span>早期老年性白内障 眼药水</span></p>
+	                    <p class="recomm-one-price bszjg1_23">￥42</p>
+	                    <p class="recomm-into-cart gwc1_23"><a href="javascript:;" onclick="addTao(1,23)">加入购物车</a></p>
+	                </div>
+	            </div>
+	        	<div class="c-line"></div>
+	            <div class="recomm-two clearfix">
+	            	<ul class="clearfix">
+	                	<li>
+	                    	<a href="javascript:;" onclick="product(63,&quot;摩罗丹 9g*10丸&quot;);"><img src="http://ui1.111yao.com//static/image/upload/image/201410/584f28ce-0982-4498-ae55-a22d0675dfe0-medium350x350.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-one-title" onclick="product(63,&quot;摩罗丹 9g*10丸&quot;);">摩罗丹 9g*10丸<span>和胃降逆通络定痛 胃痛胃胀 嗳气 烧心 胃炎</span></p>
+	                    		<p class="recomm-one-price bszjg1_63">￥22.8</p>
+	                            <p class="recomm-into-cart gwc1_63"><a href="javascript:;" onclick="addTao(1,63)">加入购物车</a></p>
+	                        </div>
+	                    </li>
+	                    <li>
+	                    	<a href="javascript:;" onclick="product(32,&quot;太极 复方板蓝根颗粒 20袋&quot;);"><img src="http://ui1.111yao.com//static/image/upload/image/201410/14e5d468-703a-4492-b677-7a7e129454c0-medium350x350.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-one-title" onclick="product(32,&quot;太极 复方板蓝根颗粒 20袋&quot;);">太极 复方板蓝根颗粒 20袋<span>清热解毒凉血 风热 感冒冲剂 预防禽流</span></p>
+	                    		<p class="recomm-one-price bszjg1_32">￥15</p>
+	                            <p class="recomm-into-cart gwc1_32"><a href="javascript:;" onclick="addTao(1,32)">加入购物车</a></p>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+        </div>
+    </div>
+    
+    <div class="care-part clearfix" style="margin-top:10px">
+    	<div class="care-adv-tit"><img src="http://ui1.111yao.com//static/image/temp/20150814/b6169b3fbd21ee08d513e0716b158a0c.jpg"></div>
+        <div class="symptom clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(1,2);">
+            <input type="hidden" id="exp2" value="描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3"/>
+                <span class="symptom-tag">伴随症状3</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+		           		<p>描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述...</p>
+                </div>
+            </a>
+        </div>
+                <div class="recomm-product">
+	            <div class="recomm-one clearfix">
+	                <div class="recomm-one-img"><a href="javascript:;" onclick="product(67,&quot;梁介福斧标驱风油 10ml&quot;);"><img src="http://ui1.111yao.com//static/image/upload/image/201503/378671c2-434c-4df0-bc19-9c0efed2ead5-medium350x350.jpg"></a></div>
+	                <div class="recomm-one-info">
+	                    <p class="recomm-one-title" onclick="product(67,&quot;梁介福斧标驱风油 10ml&quot;);">梁介福斧标驱风油 10ml<span>晕车头痛头晕 蚊叮虫咬 皮肤瘙痒</span></p>
+	                    <p class="recomm-one-price bszjg3_67">￥12.9</p>
+	                    <p class="recomm-into-cart gwc3_67"><a href="javascript:;" onclick="addTao(1,67)">加入购物车</a></p>
+	                </div>
+	            </div>
+	        	<div class="c-line"></div>
+        </div>
+    </div>
+    
+    <div class="care-part clearfix" style="margin-top:10px">
+    	<div class="care-adv-tit"><img src="http://ui1.111yao.com//static/image/temp/20150814/b6169b3fbd21ee08d513e0716b158a0c.jpg"></div>
+        <div class="symptom clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(1,3);">
+            <input type="hidden" id="exp3" value="描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述34444444444"/>
+                <span class="symptom-tag">伴随症状4</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+		           		<p>描述描述描述描述描述描述描述描述3描述描述描述描述描述描述描述描述描述描述描述描述描述描述3描述描述描...</p>
+                </div>
+            </a>
+        </div>
+                <div class="recomm-product">
+	            <div class="recomm-two clearfix">
+	            	<ul class="clearfix">
+	                	<li>
+	                    	<a href="#" href="javascript:;" onclick="product(89,&quot;滇虹皮康王复方酮康唑软膏 7g*3盒&quot;);"><img src="http://ui1.111yao.com//static/image/upload/image/201411/d46e62bb-f648-4c17-b182-5ee1da25b933-medium350x350.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-two-title" onclick="product(89,&quot;滇虹皮康王复方酮康唑软膏 7g*3盒&quot;);">滇虹皮康王复方酮康唑软膏 7g*3盒<span>抗真菌 体癣 手足癣 股癣 外用</span></p>
+	                            <p class="recomm-two-price bszjg4_89">￥22</p>
+	                            <p class="recomm-into-cart gwc4_89"><a href="javascript:;" onclick="addTao(1,89)">加入购物车</a></p>
+	                        </div>
+	                    </li>
+	                	<li>
+	                    	<a href="#" href="javascript:;" onclick="product(97,&quot;太极 川贝枇杷颗粒 3g*6袋&quot;);"><img src="http://ui1.111yao.com//static/image/upload/image/201410/0635c722-d88f-4956-aafd-11864a66179b-medium350x350.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-two-title" onclick="product(97,&quot;太极 川贝枇杷颗粒 3g*6袋&quot;);">太极 川贝枇杷颗粒 3g*6袋<span>清热宣肺 化痰止咳 用于感冒咳嗽</span></p>
+	                            <p class="recomm-two-price bszjg4_97">￥14</p>
+	                            <p class="recomm-into-cart gwc4_97"><a href="javascript:;" onclick="addTao(1,97)">加入购物车</a></p>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+        </div>
+    </div>
+	    <div class="care-tips clearfix">
+	    	<h2>温馨提示：</h2>
+	        <p>1温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示ceshicehsi vvvvvbdsdddgfdfgffdgfdgfgfddgdgfdgdgfdgdgd</p>
+	    </div>
+    
+    <!--推荐套餐-->
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐一
+        </h2>
+        <div class="symptom sy-comment clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,0);">
+            <input type="hidden" id="ccexp0" value="点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容"/>
+                <span class="sy-comment-tag">药师点评</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+		           		<p>点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内...</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper0">
+                <div class="scroller" style="width:300px">
+                    <ul class="recomm-pro-plus clearfix">
+                    
+                        <li>
+                            <a href="javascript:;" onclick="product(24,&quot;杜蕾斯避孕套挚爱装 下架&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201411/68269885-7a4b-402b-9b27-862f765a4ef7-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">杜蕾斯避孕套挚爱装 下架</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(17,&quot;杜蕾斯人体润滑液&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201410/65bf8d17-19fa-4867-b67e-1539b33918e6-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">杜蕾斯人体润滑液</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(30,&quot;同仁堂六味地黄丸&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201410/bc90f6ec-542d-4ca4-8935-d05efd565984-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">同仁堂六味地黄丸</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="spid1">￥0</b><span>组合套餐</span><b id="ccpid1">￥0</b>
+                    <p>原价<i id="cpid1">￥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,1)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐二
+        </h2>
+        <div class="symptom sy-comment clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,1);">
+            <input type="hidden" id="ccexp1" value="点评内容"/>
+                <span class="sy-comment-tag">药师点评</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>点评内容</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper1">
+                <div class="scroller" style="width:300px">
+                    <ul class="recomm-pro-plus clearfix">
+                    
+                        <li>
+                            <a href="javascript:;" onclick="product(21,&quot;周林频谱保健治疗仪&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201411/fa193d7c-977c-4d01-bd50-ad2eea2784b1-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">周林频谱保健治疗仪</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(31,&quot;太极补中益气丸&quot;);">
+                                <img src="http://ui1.111yao.com//static/image//201512/1993c0c404c2371224d1236679f83c01.jpg"/>
+                                <p class="recomm-pro-tit">太极补中益气丸</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(10,&quot;白云山701跌打镇痛膏&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201411/68dff6a8-540d-451b-b4aa-2f6e68aee26c-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">白云山701跌打镇痛膏</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="spid2">￥0</b><span>组合套餐</span><b id="ccpid2">￥0</b>
+                    <p>原价<i id="cpid2">￥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,2)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐三
+        </h2>
+        <div class="symptom sy-comment clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,2);">
+            <input type="hidden" id="ccexp2" value="点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容"/>
+                <span class="sy-comment-tag">药师点评</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+		           		<p>点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内容点评内...</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper2">
+                <div class="scroller" style="width:600px">
+                    <ul class="recomm-pro-plus clearfix">
+                    
+                        <li>
+                            <a href="javascript:;" onclick="product(35,&quot;同仁堂五子衍宗丸&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201411/a842eae7-217b-4ae7-bb28-46429642d7ee-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">同仁堂五子衍宗丸</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(22,&quot;广誉远定坤丹&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201410/6b486cf2-b979-46b7-a578-f659f7d68832-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">广誉远定坤丹</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(101,&quot;减肥茶&quot;);">
+                                <img src="http://ui1.111yao.com//static/image//201510/bfd3d1698e4b94316fd4209d29631c84.jpg"/>
+                                <p class="recomm-pro-tit">减肥茶</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(31,&quot;太极补中益气丸&quot;);">
+                                <img src="http://ui1.111yao.com//static/image//201512/1993c0c404c2371224d1236679f83c01.jpg"/>
+                                <p class="recomm-pro-tit">太极补中益气丸</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(27,&quot;附子理中丸&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201501/fed45b03-06d5-4ac3-885c-c566c54d8f62-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">附子理中丸</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(25,&quot;删除 和胃整肠丸&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201501/31d02e34-9a8f-4939-9663-590987b7058f-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">删除 和胃整肠丸</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="spid3">￥0</b><span>组合套餐</span><b id="ccpid3">￥0</b>
+                    <p>原价<i id="cpid3">￥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,3)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐四
+        </h2>
+        <div class="symptom sy-comment clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,3);">
+            <input type="hidden" id="ccexp3" value="点评内容"/>
+                <span class="sy-comment-tag">药师点评</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>点评内容</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper3">
+                <div class="scroller" style="width:200px">
+                    <ul class="recomm-pro-plus clearfix">
+                    
+                        <li>
+                            <a href="javascript:;" onclick="product(32,&quot;复方板蓝根颗粒&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201410/14e5d468-703a-4492-b677-7a7e129454c0-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">复方板蓝根颗粒</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(25,&quot;删除 和胃整肠丸&quot;);">
+                                <img src="http://ui1.111yao.com//static/image/upload/image/201501/31d02e34-9a8f-4939-9663-590987b7058f-medium350x350.jpg"/>
+                                <p class="recomm-pro-tit">删除 和胃整肠丸</p>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="spid4">￥0</b><span>组合套餐</span><b id="ccpid4">￥0</b>
+                    <p>原价<i id="cpid4">￥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,4)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <!--推荐套餐-->
+</div>
+<!---->
+<div class="b-cover">
+	<div class="describ">
+    	<div class="describ-tit">
+        	<a href="javascript:void(0)" class="describ-x"></a>
+            详细描述
+        </div>
+        <div class="describ-details">
+        </div>
+    </div>
+</div>
+   <div id="footer"> <!--#include virtual="/static/inc/wap/footer.html" --></div>
+</body>
+</html>
+<style type="text/css">
+.care-part{ background:#fff;}
+.care-adv-tit img{width:100%; display:block;}
+.symptom{height:75px; overflow:hidden; position:relative; border-bottom:1px solid #d7d7d7;}
+.symptom a{height:75px; display:block;}
+.symptom-tag{width:48px;overflow:hidden;background:#0fa9a3; display:inline-block; font-size:12px; color:#fff; text-align:center; padding:0 6px; border-radius:5px; -webkit-border-radius:5px; position:absolute; top:50%; margin:-15px 0 0 15px;}
+.symptom-corner{width:9px; height:15px; display:inline-block; background:url(http://m.111yao.com//web/images/symptom_corner.png) no-repeat; background-size:9px 15px; float:right; margin:20px 15px 0 15px;}
+.symptom-text{ height:54px; padding:11px 0 10px 90px;}
+.symptom-text p{ font-size:12px; line-height:18px; height:54px; overflow:hidden;}
+.recomm-one{}
+.recomm-one-img{float:left; width:50%;}
+.recomm-one-img a{ display:block; margin:0 15px;}
+.recomm-one-img a img{width:100%; display:block;}
+.recomm-one-info{ float:left; width:50%; padding-top:15px;}
+.recomm-one-info p{padding:0 15px;}
+.recomm-one-title{color:#222; height:38px; overflow:hidden; line-height:1.4em;}
+.recomm-one-title span{ display:block; font-size:12px;}
+.recomm-one-price{color:#fc4044; font-size:15px;}
+.recomm-one .recomm-into-cart a,.recomm-two .recomm-into-cart a{ font-size:15px; color:#fe4310; display:block; height:30px; line-height:30px; border-radius:5px; -webkit-border-radius:5px; border:1px solid #fe4310; margin:5px 0 0 0; text-align:center;}
+.c-line{margin:0 0 0 15px; height:1px; background:#d7d7d7;}
+.recomm-two{margin-top:1px;}
+.recomm-two li{ float:left; width:50%; padding-bottom:15px;}
+.recomm-two li a{margin:0 15px; display:block;}
+.recomm-two li a img{width:100%; display:block;}
+.recomm-two-info{}
+.recomm-two-info p{ padding:0 15px;}
+.recomm-two-title{color:#222; height:38px; overflow:hidden; line-height:1.4em;}
+.recomm-two-title span{ display:block; font-size:12px;}
+.recomm-two-price{color:#fc4044; font-size:15px;}
+.care-tips{padding:15px 15px 0; color:#3e3e3e; border-top:1px solid #d7d7d7; background:#fff;}
+.care-tips h2{ font-size:15px;}
+.care-tips p{margin:5px 0 15px; font-size:12px; line-height:1.6em;}
+.package-tj{ background:#fff; margin-top:10px;}
+.package-tj-title{height:45px; line-height:45px; font-size:12px; color:#222;}
+.package-tj-title span{background:#0fa9a3; display:inline-block; font-size:12px; line-height:1.4em; color:#fff; text-align:center; padding:0 6px; border-radius:5px; -webkit-border-radius:5px; margin:15px;}
+.sy-comment{background:#efeff4; border-bottom:none;}
+.sy-comment-tag{display:inline-block; font-size:12px; text-align:center; padding:0 6px; margin:30px 15px; float:left;}
+.price-box{margin:0 15px; border-top:1px solid #d7d7d7; padding:10px 0;}
+.total-price{ text-align:right; line-height:16px;}
+.total-price span{ margin:0 5px 0 20px; color:#222; font-size:12px;}
+.total-price b{ font-size:15px; color:#fc4044;}
+.total-price p{color:#999; font-size:10px;}
+.total-price p i{ font-style:normal; text-decoration:line-through; margin-left:5px;}
+.sy-buy{ width:108px; height:32px; line-height:32px; color:#fff; display:inline-block; float:right; text-align:center; font-size:15px; border-radius:5px; -webkit-border-radius:5px; background:#fe4310; margin-top:5px;}
+/**/
+.b-cover{ position:fixed; background:rgba(0,0,0,.8); top:0; left:0; right:0; bottom:0; z-index:100; display:none;}
+.describ{ position:absolute; height:70%; top:100%; left:0; right:0; background:#efeff4;}
+.describ-tit{height:50px; line-height:50px; border-bottom:1px solid #d7d7d7; font-size:15px; padding:0 10px;}
+.describ-tit a{ display:inline-block; float:right; width:16px; height:16px; background:url(http://m.111yao.com//web/images/describ_x.png) no-repeat; background-size:16px; margin:17px 0;}
+.describ-details{padding:10px; color:#222; height:80%; line-height:1.6em; overflow-y:auto;}
+/*iscroll*/
+.wrapper{position:relative;z-index:1;height:120px;width:100%;background:#fff;overflow:hidden;-ms-touch-action:none}
+.scroller{position:absolute;z-index:1;-webkit-tap-highlight-color:transparent;width:580px;height:120px;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none}
+.scroller ul{list-style:none;width:100%;padding:0;margin:0; background:#fff;}
+.scroller li{width:95px;height:120px;background:#fff;float:left;overflow:hidden; position:relative;}
+.recomm-pro-plus li a,.recomm-pro-plus li a img{width:80px; height:80px; display:block;}
+.recomm-pro-plus li span{ width:15px; height:80px; line-height:80px; text-align:center; display:inline-block; position:absolute; right:0; top:0; font-size:18px;}
+.recomm-pro-plus li:first-child{ margin-left:10px;}
+.recomm-pro-plus li:last-child span{ display:none;}
+.recomm-pro-tit{ padding:0 5px; font-size:12px; color:#222; line-height:1.4em; height:32px; overflow:hidden;}
+</style>
+<script type="text/javascript">
+$(function(){
+	$('.describ-x').click(function(){
+		$('.b-cover').hide();	
+	})
+	var type = GetQueryString();
+	var url = "";
+	if('w'!=type){
+		$("#footer").remove();
+        url="http://testrouter.111yao.com//sltRouter?method=gethealthyplaninfo-V2";
+	}else{
+		url="http://m.111yao.com//healthyplan/healthyplan!getHealthyPlanInfo.action";
+	}
+	jQuery.ajax({
+       url: url,	  
+       type: "post",
+       data:{"id":$("#hid").val()},
+       success: function(data){
+       		data = jQuery.parseJSON(data);
+       		for(var i=0; i<data.lists.length; i++){
+           		if('w'==type){
+           			$(".bszjg"+data.lists[i].tid+"_"+data.lists[i].gid).text("￥"+data.lists[i].wap_price);
+	           		if(data.lists[i].wap_status!=1||data.lists[i].stock<=0||data.lists[i].type==3||data.lists[i].type==2){
+	           			$(".gwc"+data.lists[i].tid+"_"+data.lists[i].gid).remove();
+	           		}
+           		}else{
+           			$(".bszjg"+data.lists[i].tid+"_"+data.lists[i].gid).text("￥"+data.lists[i].app_price);
+           			if(data.lists[i].app_status!=1||data.lists[i].stock<=0||data.lists[i].type==3||data.lists[i].type==2){
+           				$(".gwc"+data.lists[i].tid+"_"+data.lists[i].gid).remove();
+	           		}
+           		}
+           }   
+           for(var i=0; i<data.listc.length; i++){
+           			$("#cpid"+data.listc[i].tid).text("￥"+parseFloat(parseInt(data.listc[i].p)/100).toFixed(2));
+	           	if('w'==type){
+	           		$("#ccpid"+data.listc[i].tid).text(parseFloat(parseInt(data.listc[i].wp)/100).toFixed(2));
+			   		$("#spid"+data.listc[i].tid).text(parseFloat((parseInt(data.listc[i].p)-parseInt(data.listc[i].wp))/100).toFixed(2));
+           		}else{
+           			$("#ccpid"+data.listc[i].tid).text(parseFloat(parseInt(data.listc[i].ap)/100).toFixed(2));
+			   		$("#spid"+data.listc[i].tid).text(parseFloat((parseInt(data.listc[i].p)-parseInt(data.listc[i].ap))/100).toFixed(2));;
+           		}
+           }
+       },error:function(){
+    	   $alert("error","网络异常",null,null);
+       }
+   }); 
+})
+function product(id,name){
+	var type = GetQueryString();
+	if('w'!=type){
+		document.location = "id*"+id+"*"+name;
+	}else{
+		window.location.href="http://m.111yao.com/m/"+id+".html"
+	}
+}
+function zhankai(t,i){
+//.out-details
+	var v = "";
+	if(1==t){
+		v=$("#exp"+i+"").val();
+	}else{
+		v=$("#ccexp"+i+"").val();
+	}
+	$('.describ-details').text(v);
+	$('.b-cover').show();
+	$('.describ').animate({top:"30%"});
+}
+</script>

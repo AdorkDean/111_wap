@@ -1,0 +1,131 @@
+@charset "utf-8";
+/*health-index*/
+.login-bg{background: url("../images/health_bg.jpg") no-repeat; background-size: cover;}
+.health-head{border:none; background: none;}
+.health-head a{color:#FFF;}
+.health-index{position: absolute; top:0; left:0; right:0; bottom:0;}
+.health-font{padding:150px 0 80px; background: url("../images/health_fontnew.png") no-repeat center 80px;background-size: 270px;}
+.health-font p{margin: 0 auto; height:20px; line-height:20px; color:#FFF; text-align: center; font-size:15px;}
+.apply-btn{padding:0 60px;}
+.apply-btn a{width:100%;height:45px; line-height:45px; display: block; background:#e94816; border-radius:6px; color:#FFF; font-size:18px; font-weight:normal;}
+.apply-btn a b{display: block; height:22px; width:22px; float:left; margin:10px 0 0 50px; background: url("../images/health_icon01.png") no-repeat ; background-size: 22px;}
+.apply-btn a span{display: inline-block; padding-left:10px;}
+.applying-btn a{ background:#3d3d3d;}
+.applying-btn span{padding:0; text-align: center; width:100%;}
+.health-tel{padding:200px 0 80px;}
+.health-tel p{text-align: center; color:#FFF; font-size:18px;}
+.health-tel-btn{ padding-left:10px;}
+.health-tel-btn li{float:left; width:50%;}
+.health-tel-btn li a{height:38px; display:block; margin-right:10px; color:#FFF; border-radius: 6px; line-height:38px; text-align: center;background: #e94816;}
+.see-rule{position: absolute; bottom:10px; right:10px; border-bottom:1px solid #FFF; padding-bottom:1px;}
+.see-rule a{ display:block; border-bottom:1px solid #FFF; color:#FFF; font-size:15px;}
+.verification-tel{align-items: center;  bottom: 0;  display: flex;  flex: 1 1 0;  height: 100%;  justify-content: center;  left: 0;  position: absolute;  right: 0; text-align: center;  top: 0;  width: 100%;  z-index: 10;}
+.verification-tel-box{margin:0 12px; background: #FFF; border-radius: 8px;}
+.verification-tel-box ul li{border-bottom:1px solid #dadada;  height:50px; overflow: hidden;  display: block; }
+.verification-tel-box ul li a{font-size:15px;}
+.box-text{ padding:0 100px 0 10px;}
+.box-text input,.box-code input{width:100%; display: inline-block; color:#000; height:50px; line-height:50px; font-size:15px; overflow: hidden;}
+.box-btn{float:right; padding-left:10px; text-align: center; height:50px; line-height:50px; border-left:1px solid #dadada; color:#ff1717; }
+.box-btn a{color:#ff4343;}
+.verification-tel-box ul li:last-child{border-bottom:none;}
+.box-code{padding:0 0 0 10px;}
+.for-btn{width:50%; float:left;}
+.for-btn a{height:50px; display:block; color:#a0a0a0; border-right:1px solid #dadada; line-height:50px; text-align: center;}
+.last-btn a{border-right:0; color:#00b4b8;}
+/*two-dimension*/
+.two-dimension{align-items: center;  bottom: 0;  display: flex;  flex: 1 1 0;  height: 100%;  justify-content: center;  left: 0;  position: absolute;  right: 0; text-align: center;  top: 0;  width: 100%;  z-index: 10;}
+.two-dimension img{height:221px; width:221px; display: inline-block;}
+/*health-sort*/
+.health-list{padding:45px 0 70px 0; overflow: hidden;position: relative;}
+.health-sort li{overflow: hidden; border-bottom:1px solid #dadada;border-top:1px solid #dadada;  height:60px;   margin-top:-1px;}
+.health-sort li a{display:block;  height:60px; background: #FFF;line-height:60px;}
+.health-sort-head{float:left; padding-left:10px;}
+.health-sort-head span{float:left; display: inline-block; width:15px; text-align: center;}
+.health-sort-head img{height:40px; width:40px; margin:10px 8px 0; float:left;}
+.health-sort-head b{float:left; display: inline-block;}
+.health-sort-name{float:right; font-size:12px; padding-right:10px; }
+.health-sort-name b{font-size:15px; margin-right:5px;}
+.health-sort li a:hover{background: #5d7abc; color:#FFF;}
+.health-info{margin:10px; border:2px solid #00b4b8; background-color:#00b4b8; height:40px; border-radius: 3px;}
+.health-info li{float:left; width:33.3%; text-align: center; height:40px; line-height:40px; }
+.health-info li a{ color:#FFF; display:block;background: #00b4b8;}
+.health-info li.current a{background: #FFF; color:#00b4b8;}
+.health-tit{border-bottom:1px solid #dadada;border-top:1px solid #dadada;  height:40px; background: #f5f5f5;   margin-top:-1px; padding:0 10px;}
+.health-tit span{float:left; display: block;height:40px;line-height:40px;font-size:15px; }
+.health-tit p{float:right; line-height:40px;height:40px; }
+.health-tit p b{font-size:20px; color:#ff4747;}
+/*health-pharmacy*/
+.health-pharmacy table tr td{border-top:1px solid #dadada;   margin-top:-1px; vertical-align:middle;  }
+.health-pharmacy table tr:last-child td{border-bottom:1px solid #dadada;}
+.health-pharmacy{background: #FFF;}
+.health-hour{padding:0 10px; height:30px; font-size:12px; line-height:30px;}
+.health-btn{height:50px; width:100%; position: fixed; bottom:0; left:0; padding:10px 0; background: #f0f0f0;}
+.health-btn a{display: block; margin:0 10px;  height:50px;line-height:50px; text-align: center; border-radius: 6px; background: #00b4b8; font-size:18px; color:#FFF;}
+.health-explain{padding:10px;}
+.health-explain p{line-height:18px; font-size:12px;}
+.health-center li{overflow: hidden; border-bottom:1px solid #dadada;border-top:1px solid #dadada;  height:60px;   margin-top:-1px; background: #FFF;line-height:60px;font-size:15px;}
+.health-center li p{font-size:15px; height:60px; line-height:60px;}
+.health-center li p a{color:#ff4444;}
+.health-center li p img{height:23px; width:23px; margin:19px 5px 0 0;}
+.health-center li p b{ font-size:20px; margin-bottom:5px; color:#c0c0c0; display: block; float:right;}
+.health-apply-into{margin:10px; border:2px solid #00b4b8; height:40px; border-radius: 3px;}
+.health-apply-into span{width:50%;float:left;color:#00b4b8; background: #FFF;text-align: center; display:block; height:40px; line-height:40px;}
+.health-apply-into span.current{ background: #00b4b8;color:#FFF;}
+.health-apply-change .list-con{display: none;}
+.health-apply-change .current{display: block;}
+.health-input{float:right; padding-right:10px;}
+.health-input input{text-align: right;width:100%; height:60px; line-height:60px;}
+.health-center-bank li{overflow: hidden; border-bottom:1px solid #dadada;border-top:1px solid #dadada;  height:60px;   margin-top:-1px; background: #FFF;line-height:60px;font-size:15px; padding:0 10px;}
+.health-center-bank li input{text-align: right;width:100%; height:60px; line-height:60px;}
+.phone-code{padding:50px 0 30px;}
+.phone-code li{border-top:1px solid #dadada;border-bottom:1px solid #dadada; background: #FFF; height:50px; line-height:50px; margin-top:-1px;padding:0 10px; }
+.box-tit{float:left; }
+.box-verify{float:left;padding-left:10px;}
+.phone-code input{width:100%; height:20px; line-height:20px;}
+.box-phone-tit{float:left;}
+.box-phone-verify{padding-left:53px; height:50px;}
+.box-phone-verify input{width:100%;}
+.phone-code-btn{padding:0 10px;}
+.phone-code-btn a{width:100%; display: inline-block; border-radius: 6px; font-size:18px; height:50px; line-height:50px; text-align: center; color:#FFF; background: #cccdd0;}
+.phone-code-btn a:hover{background: #00b4b8;}
+.case-help-current{background: #00b4b8;}
+/*health-uploading*/
+.uploading-top{padding:54px 0 70px 0;  }
+.health-uploading li{ padding:10px; border-top:1px solid #dadada; border-bottom:1px solid #dadada; margin-top:-1px; background: #FFF;}
+.health-uploading li span{float:left;height:20px; line-height:20px; width:100%; display: block;}
+.health-uploading li .up-pic{height:50px; width:50px; position:relative; float:left; user-select:none;  margin:10px 5px 0 0; border-radius: 6px; border:1px dashed #959595; background: #EEE;}
+.health-uploading li .up-pic a{display:inline-block;height:50px;height:50px; width:50px;line-height:50px; text-align: center; color:#c9c9c9; font-size:50px;}
+.up-text{padding:0 10px;}
+.up-text p{height:30px; line-height:30px; text-align: right; font-size:12px;}
+.up-explain{padding:10px;}
+.up-explain p{line-height:18px;  font-size:12px;}
+.personal-data li{height:50px; line-height:50px; padding:0 10px; border-top:1px solid #dadada; border-bottom:1px solid #dadada; margin-top:-1px; background: #FFF;}
+.personal-data li span{float:left;}
+.personal-data li .personal-data-text{ padding-left: 70px;}
+.personal-data li .personal-data-text input{width:100%;height:20px; line-height:20px; text-align: right;}
+
+.single-select{float: left; margin: 15px 5px 0 0;  max-width: 75px;}
+
+
+
+.divInput{
+height:50px;
+width: 50px;
+position:absolute;
+top:0;
+left:0;
+opacity: 0;
+}
+
+
+
+.health_actrule{ display: none; width: 100%; background: rgba(255,255,255,1); position: fixed; bottom: 0; left:0;}
+.health_actrule p{ line-height: 1.5em; font-size: 10px;}
+.health_arrow span.arrowdown{ background: url("../images/health-arrowdown.png") no-repeat;}
+.health_arrow span{ display:block; width: 30px; height: 30px; position: absolute; left: 50%; margin-left: -15px; bottom: 20px; background: url("../images/health-arrowtop.png") no-repeat;}
+
+
+
+
+
+

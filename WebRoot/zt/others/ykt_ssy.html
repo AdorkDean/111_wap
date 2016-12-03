@@ -1,0 +1,543 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <!--缩放比例-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>医卡通双十一</title>
+    <style type="text/css">
+        html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,textarea,input,span,figure,aside,time,article{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}
+        article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+        audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+        audio:not([controls]){display:none}
+        html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+        body{width:100%;font-family:"SimHei",Helvetica,Arial,sans-serif;font-size:14px;color:#000;background:#e0e1e5}
+        input,textarea{font-family:"SimHei",Helvetica,Arial,sans-serif;color:#fff}
+        input:-moz-placeholder,textarea:-moz-placeholder{color:#fff}
+        input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#fff}
+        input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#fff}
+        a{color:#fff;text-decoration:none;/*-webkit-tap-highlight-color:rgba(0,0,0,0.2);*/-webkit-tap-highlight-color:transparent}
+        a:hover{text-decoration:none}
+        a:focus{outline:thin dotted}
+        a:hover,a:active{outline:0}
+        textarea,input{resize:none;outline:0;font-size:100%;-webkit-tap-highlight-color:rgba(255,0,0,0)}
+        textarea{resize:none;-webkit-appearance:none}
+        ul,ol{list-style:none}
+        em{font-style:normal}
+        .clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0;overflow:hidden}
+        .fl{float:left}
+        .fr{float:right}
+
+
+        .national_wap{ background-color: #fa0504; position:relative; left:0; top:84px;}
+        /*content*/
+        .banner,.banner img{width:100%; display:block;}
+        .banner span{display:none;}
+        /*优惠券*/
+        .discountbox{ padding: 2px 0 0 2px;}
+        .discountbox li{ width:33.3%; float: left;}
+        .discountbox li a{ display: block; padding-right:3px;}
+        .discountbox li a img{ width: 100%; display:block;}
+        /*镇店之宝和1F*/
+        .produnct{ padding:2px 4px 3px 6px;}
+        .productbox li{ width: 50%; float: left; position:relative;}
+        .productbox li a{ display: block; padding:2px;}
+        .productbox li a img{ width: 100%; display:block;}
+        /*2F-7F*/
+        .titletwo{ padding:5px 3px 3px 3px;}
+        .titletwo h2{ padding: 0 2px; position:relative;}
+        .titletwo h2 a img{ width: 100%;}
+        .titletwo ul{ padding: 0 0 1px 2px;}
+        .produnctcont{ padding:5px 6px 3px 6px; }
+        .returntop{/* height: 44px; padding-top: 9px; text-align: center;*/ height:53px; position:relative;}
+        .returntop a img{ display:block; width: 230px; position:absolute; top:9px; left:50%; margin-left:-115px;}
+        .price{ bottom:6.5%; left:33%; padding-top:5px; position: absolute; width:23%; height:10%;  font-size:4.6vw; font-weight:bold; display:-webkit-box; -webkit-box-align: center; -webkit-box-pack:center; color:#eb0e15; z-index: 9;}
+        #product1,#p_l_0,#p_m_0,#p_r_0{ color:#f3e500;}
+        #product2,#p_l_1,#p_m_1,#p_r_1{ color:#f3e500;}
+        #product3,#p_l_2,#p_m_2,#p_r_2{ color:#f61648;}
+        .price_b_l{ font-size:14px; font-weight:bold; color:#ed080d;}
+        .price_b_m{ font-size:10px; font-weight:bold; color:#ed080d;}
+        .price_s_r{ font-size:9px; font-weight:bold; color:#ed080d;}
+    </style>
+</head>
+
+<body>
+<!--#include virtual="/static/inc/wap/header.html" -->
+<article class="national_wap">
+    <a id="top" name="top"></a>
+    <div class="banner">
+        <span>医卡通双十一</span>
+        <img src="http://ui1.111yao.com/static/image/temp/20151102/7473050b1fd2ca674e64148f0a6e37e8.jpg"/>
+    </div>
+    <div>
+        <ol class="discountbox clearfix">
+            <li onclick="getCoupon(62)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151102/770bf7c308eb5965e046ec13f6b65bf7.jpg"/></a></li>
+            <li onclick="getCoupon(63)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151102/a31274a90d8d16186f2012f5fc16acb4.jpg"/></a></li>
+            <li onclick="getCoupon(64)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151102/1913d988ed9163b9afd8f6d05ba96032.jpg"/></a></li>
+        </ol>
+    </div>
+    <div class="produnct"><!--镇店之宝-->
+        <ul class="productbox clearfix">
+            <li>
+                <a href="http://www.111yao.com/p/3935.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/e311444d27f3a60b9356c906d6ff8d1e.jpg"/></a>
+                <div id="product1" class="price">88.00</div>
+            </li>
+            <li>
+                <a href="http://www.111yao.com/p/640.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/241df633edd4f278469a017ed1fa7e3a.jpg"/></a>
+                <a href="http://www.111yao.com/p/3850.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/4969ce8a96a0e590f13bb59b23c7907d.jpg"/></a>
+                <div id="product2" style="top:27%; left:73%;" class="price">69.00</div>
+                <div id="product3" style="bottom:11%; left:71%; color:#ed1846;" class="price">9.90</div>
+            </li>
+        </ul>
+    </div>
+    <div class="produnct"><!--1Fone-->
+        <ul style="background-color: #ee1b46; padding: 2px;" class="productbox clearfix">
+            <li>
+                <a href="http://www.111yao.com/p/2048.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/493a0d1feb614878196e75d0e4352899.jpg"/></a>
+                <div id="product4" style="width:28%; height:9%; bottom:4%; left:34%; color:#eb0e15;" class="price">79.90</div>
+            </li>
+            <li>
+                <a href="http://www.111yao.com/p/2766.html" style="padding-top: 4px;"><img src="http://ui1.111yao.com/static/image/temp/20151104/7f31a68cce1d639b686d9c0e2f5fa552.jpg"/></a>
+                <a href="http://www.111yao.com/p/3433.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/3c06ed93daad5f98d4446bde87afeb42.jpg"/></a>
+                <div id="product5" style="width:20%; height:10%; font-size: 3vw; top:31%; left:79%; color:#eb0e15;" class="price">68.00</div>
+                <div id="product6" style="width:20%; height:10%; font-size: 3vw; bottom:8%; left:77%; color:#eb0e15;" class="price">49.90</div>
+            </li>
+        </ul>
+    </div>
+    <div class="produnct"><!--1Ftwo-->
+        <ul style="background-color: #ee1b46; padding: 3px;" class="productbox clearfix">
+            <li>
+                <a href="http://www.111yao.com/p/2584.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/b533913aab01fc78d198aff31be367a1.jpg"/></a>
+                <div id="product7" style="width:32%; height:10%; bottom:2%; left:31%; color:#eb0e15;" class="price">349.00</div>
+            </li>
+            <li>
+                <a href="http://www.111yao.com/p/1483.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/c7af187dc04777660d594573892cf4a9.jpg"/></a>
+                <a href="http://www.111yao.com/p/1337.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/cbcfca10a1cf58f760ace2e1fe3088a4.jpg"/></a>
+                <div id="product8" style="width:24%; height:10%; font-size: 3vw; top:31%; left:73%; color:#eb0e15;" class="price">287.00</div>
+                <div id="product9" style="width:21%; height:10%; font-size: 3vw; bottom:8%; left:77%; color:#eb0e15;" class="price">49.90</div>
+            </li>
+        </ul>
+    </div>
+    <div class="produnct"><!--1Fthree-->
+        <ul style="background-color: #ee1b46; padding: 3px;" class="productbox clearfix">
+            <li>
+                <a href="http://www.111yao.com/p/640.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/01034956323abec3be7a719c3039d2fe.jpg"/></a>
+                <div id="product10" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:79%; color:#eb0e15;" class="price">69.00</div>
+            </li>
+            <li>
+                <a href="http://www.111yao.com/p/2790.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/ca96d5b65553dc6c2c766006ca3a0d7e.jpg"/></a>
+                <div id="product11" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:79%; color:#eb0e15;" class="price">88.00</div>
+            </li>
+        </ul>
+    </div>
+    <div style="padding:15px 6px 3px 6px;" class="produnctcont"><!--2楼-->
+        <div style="background-color:#38036d;" class="titletwo clearfix">
+            <h2>
+                <a href="http://www.111yao.com/p/3200.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/f56c50941a54ca78a7cdbb736a4064e3.jpg"/></a>
+                <div id="product12" style="width:18%; height:13%; font-size:5vw; bottom:10%; left:19%; color:#eb0e15;" class="price">680.00</div>
+            </h2><!--2楼one-->
+            <ul class="productbox clearfix">
+                <li>
+                    <a href="http://www.111yao.com/p/863.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/d2daec9038f6219050a04de950e05be8.jpg"/></a>
+                    <div id="product13" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:76%; color:#eb0e15;" class="price">660.0</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2516.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/6cba29052e1932257489e24c50be2668.jpg"/></a>
+                    <div id="product14" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:77%; color:#eb0e15;" class="price">78.0</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--2楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/3887.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/4e82e383ed2457163e866ea3d5304908.jpg"/></a>
+                    <div id="product15" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:20%; color:#eb0e15;" class="price">89.0</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2604.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/49ce29b7d3b598a7d0d69ef850ec4f42.jpg"/></a>
+                    <div id="product16" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:21%; color:#eb0e15;" class="price">15.90</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--2楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/3141.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/208b84b36ca544f33aef31a6fac0a371.jpg"/></a>
+                    <div id="product17" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:20%; color:#eb0e15;" class="price">138.0</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/3326.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/f19f9dbcf5d2f5f6f23a39a2e824b0f2.jpg"/></a>
+                    <div id="product18" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:21%; color:#eb0e15;" class="price">29.0</div>
+                </li>
+            </ul>
+            <h2>
+                <a href="http://www.111yao.com/p/793.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/fb9006f39c66a45e905a34b2c4444e5c.jpg"/></a>
+                <div id="product19" style="width:11%; height:13%; font-size:4.6vw; bottom:34%; left:81%;" class="price">29.0</div>
+            </h2><!--2楼four-->
+        </div>
+    </div>
+    <div class="produnctcont"><!--3楼-->
+        <div style="background-color:#fd417b;" class="titletwo clearfix">
+            <ul class="productbox clearfix"><!--3楼one-->
+                <li>
+                    <a href="http://www.111yao.com/p/2584.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/f8bad441deb59d1bfcc051593513ded4.jpg"/></a>
+                    <div id="product20" style="width:32%; height:10%; bottom:2%; left:31%; color:#eb0e15;" class="price">349.00</div>
+                </li>
+                <li style="padding-top:22px;">
+                    <a href="http://www.111yao.com/p/1314.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/7507258b2e9d1bb05711d610beb2b498.jpg"/></a>
+                    <a href="http://www.111yao.com/p/190.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/5549b24e5077ad13256c6510005b8464.jpg"/></a>
+                    <div id="product21" style="width:22%; height:5%; font-size: 3vw; top:36%; left:73%; color:#eb0e15;" class="price">313.00</div>
+                    <div id="product22" style="width:21%; height:5%; font-size: 3vw; bottom:10%; left:73%; color:#eb0e15;" class="price">14.80</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--3楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/4022.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/ae2fa7600ab2d8089ad6e4ca6f8430ad.jpg"/></a>
+                    <div id="product23" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:79%; color:#eb0e15;" class="price">99.00</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2347.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/247fd5f8c5cb743b6567422b56021d5b.jpg"/></a>
+                    <div id="product24" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:78%; color:#eb0e15;" class="price">47.80</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--3楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/2979.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/2a78d083223a24e3c0fc69397f896290.jpg"/></a>
+                    <div id="product25" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:76%; color:#eb0e15;" class="price">257.0</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/1337.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/be36e5a88e3a522d7cf0cafa04423db3.jpg"/></a>
+                    <div id="product26" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:75%; color:#eb0e15;" class="price">49.90</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="produnctcont"><!--4楼-->
+        <div style="background-color:#000340;" class="titletwo clearfix">
+            <ul class="productbox clearfix"><!--4楼one-->
+                <li>
+                    <a href="http://www.111yao.com/p/4106.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/8a28d45424ba36f5d80ff6eaa3ff7244.jpg"/></a>
+                    <div id="product27" style="width:28%; height:9%; bottom:2.8%; left:34%; color:#eb0e15;" class="price">99.00</div>
+                </li>
+                <li>
+                    <a style="padding-top: 3px;" href="http://www.111yao.com/p/1483.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/6b1b8be21e8c98ba244caf7a7c1f9198.jpg"/></a>
+                    <div id="product28" style="width:28%; height:9%; bottom:12%; left:51%; color:#eb0e15;" class="price">287.0</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--4楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/3183.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/201af68872642009fff8feb0f5bdd013.jpg"/></a>
+                    <div id="product29" style="width:19%; height:10%; font-size: 3vw; bottom:21%; left:79%; color:#eb0e15;" class="price">69.00</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/3603.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/eacc15dced4ea75bfcc8e294798fbcc7.jpg"/></a>
+                    <div id="product30" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:76%; color:#eb0e15;" class="price">7.39</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--4楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/1021.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/9a4ed6c89b991242a31ffc86228b1656.jpg"/></a>
+                    <div id="product31" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:75%; color:#eb0e15;" class="price">45.50</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2421.html"><img src="http://ui1.111yao.com/static/image/temp/20151105/a9395ac0ab93c50ab14fad79070cbb44.jpg"/></a>
+                    <div id="product32" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:78%; color:#eb0e15;" class="price">39.00</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--4楼four-->
+                <li>
+                    <a href="http://www.111yao.com/p/53.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/c5c9c1d5d3e8ce5873b345ac347d5968.jpg"/></a>
+                    <div id="product33" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:79%; color:#eb0e15;" class="price">65.00</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2543.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/571ff77f8a236e40ee0e80359dfd8223.jpg"/></a>
+                    <div id="product34" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:76%; color:#eb0e15;" class="price">349.0</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="produnctcont"><!--5楼-->
+        <div style="background-color:#ffc525;" class="titletwo clearfix">
+            <h2>
+                <a href="http://www.111yao.com/p/2808.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/aca6dcde70d66256bf3137c1b9f36224.jpg"/></a>
+                <div id="product35" style="width:17%; height:13%; font-size:5vw; bottom:11%; left:11%; color:#eb0e15;" class="price">99.00</div>
+            </h2><!--5楼one-->
+            <ul class="productbox clearfix"><!--5楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/2812.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/f4fc5065d6ec07d8143883a21c9bb81a.jpg"/></a>
+                    <div id="product36" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:78%; color:#eb0e15;" class="price">49.90</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2335.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/ecf070f5eaf09a30046f814f455f8c8c.jpg"/></a>
+                    <div id="product37" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:78%; color:#eb0e15;" class="price">79.00</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--5楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/3125.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/3dda8a49552b20044e19323c38a1f00c.jpg"/></a>
+                    <div id="product38" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:20%; color:#eb0e15;" class="price">39.00</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/1833.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/0c3239170080e68ca3a967b2117f7164.jpg"/></a>
+                    <div id="product39" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:21%; color:#eb0e15;" class="price">79.00</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--5楼four-->
+                <li>
+                    <a href="http://www.111yao.com/p/2947.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/7314ab767bdfe8dc822b8ac6a4acffc6.jpg"/></a>
+                    <div id="product40" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:20%; color:#eb0e15;" class="price">249.00</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/4010.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/a73e843c45a646952252f1a01a32d100.jpg"/></a>
+                    <div id="product41" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:21%; color:#eb0e15;" class="price">439.00</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="produnctcont"><!--6楼-->
+        <div style="background-color:#2dc9a1;" class="titletwo clearfix">
+            <ul class="productbox clearfix"><!--6楼one-->
+                <li>
+                    <a href="http://www.111yao.com/p/3464.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/0d9b48a521a98e5a425d6de3deeb1d2e.jpg"/></a>
+                    <div id="product42" style="width:28%; height:9%; bottom:2.8%; left:34%; color:#eb0e15;" class="price">32.30</div>
+                </li>
+                <li>
+                    <a style="padding-top: 3px;" href="http://www.111yao.com/p/547.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/503c20df1f8bff2605df9dd13ec9a736.jpg"/></a>
+                    <div id="product43" style="width:28%; height:9%; bottom:12%; left:51%; color:#eb0e15;" class="price">11.50</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--6楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/3468.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/4461afd0c343b1471d2792c249418898.jpg"/></a>
+                    <div id="product44" style="width:17%; height:10%; font-size: 3vw; bottom:21%; left:79%; color:#eb0e15;" class="price">16.90</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/1279.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/1212665f6cd5bad63d5de61615d64202.jpg"/></a>
+                    <div id="product45" style="width:17%; height:10%; font-size: 3vw; bottom:21%; left:78%; color:#eb0e15;" class="price">35.50</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--6楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/666.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/42410bee444fc4787b6bd7f9887b0403.jpg"/></a>
+                    <div id="product46" style="width:17%; height:10%; font-size: 3vw; bottom:21%; left:79%; color:#eb0e15;" class="price">30.80</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2694.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/2c772949550b1c183631992e505d49d2.jpg"/></a>
+                    <div id="product47" style="width:17%; height:10%; font-size: 3vw; bottom:21%; left:78%; color:#eb0e15;" class="price">24.90</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--6楼four-->
+                <li>
+                    <a href="http://www.111yao.com/p/28.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/cb0ef7c1453085c8e866863486e0a4b2.jpg"/></a>
+                    <div id="product48" style="width:17%; height:10%; font-size: 3vw; bottom:21%; left:79%; color:#eb0e15;" class="price">9.00</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/3467.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/1d103d748b3f30b03e757deab2b61716.jpg"/></a>
+                    <div id="product49" style="width:17%; height:10%; font-size: 3vw; bottom:21%; left:78%; color:#eb0e15;" class="price">38.0</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="produnctcont"><!--7楼four-->
+        <div style="background-color:#d10909;" class="titletwo clearfix">
+            <h2>
+                <a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151027/ce7593e9529d6903cfad3d9cf5d4c61f.jpg"/></a>
+            </h2>
+            <h2>
+                <a href="http://www.111yao.com/p/3671.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/e7e420b315dfe578964c3977a154c0d1.jpg"/></a>
+                <div id="product50" style="width:17%; height:16%; font-size:5vw; bottom:13%; left:12%; color:#eb0e15;" class="price">995.00</div>
+            </h2><!--7楼one-->
+            <ul class="productbox clearfix"><!--7楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/50.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/dce685accf0d5a2e23bbc0fe7e402b26.jpg"/></a>
+                    <div id="product51" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:73%; color:#eb0e15;" class="price">59.90</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/660.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/dc614808b01d00d9316f20add418082f.jpg"/></a>
+                    <div id="product52" style="width:20%; height:10%; font-size: 3vw; bottom:21%; left:78%; color:#eb0e15;" class="price">98.00</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--7楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/1095.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/c232a7a5c18ce59598015b3ef0f035a6.jpg"/></a>
+                    <div id="product53" style="width:19%; height:10%; font-size: 3vw; bottom:21%; left:20%; color:#eb0e15;" class="price">16.50</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/647.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/960c0763f6c8cafe369275aa9987e3c4.jpg"/></a>
+                    <div id="product54" style="width:19%; height:10%; font-size: 3vw; bottom:21%; left:21%; color:#eb0e15;" class="price">88.00</div>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--7楼four-->
+                <li>
+                    <a href="http://www.111yao.com/p/960.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/6a6bf5d23f96e2d547f3e97e04eaed24.jpg"/></a>
+                    <div id="product55" style="width:19%; height:10%; font-size: 3vw; bottom:21%; left:20%; color:#eb0e15;" class="price">6.80</div>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/1273.html"><img src="http://ui1.111yao.com/static/image/temp/20151104/94520c0d2ab42288dacb1572019a8153.jpg"/></a>
+                    <div id="product56" style="width:19%; height:10%; font-size: 3vw; bottom:21%; left:21%; color:#eb0e15;" class="price">16.80</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="background-color: #fa0504;" class="returntop">
+        <a class="gotop" href="#top" target="_self"><img src="http://ui1.111yao.com/static/image/temp/20151027/816267753f9e61becde78deab7c3f12c.png"/></a>
+    </div>
+</article>
+<!--#include virtual="/static/inc/wap/footer.html" -->
+</body>
+<script>
+	//优惠券获取
+	function getCoupon(id)
+	{
+		if(!checklogin())
+		{
+			window.location.href="/login/login!index.action?redirectUrl="+window.location.href;
+		}
+		else
+		{
+			$.ajax(
+			{
+				url: "/coupon/coupon!bindingCoupon.action?couponId="+id,
+				type: "GET",
+				cache: false,
+				async: false,
+				success: function(data) 
+				{
+					if(data == 1)
+					{
+						$alert("success","恭喜您，已成功领取该优惠券！");
+					}
+					if(data == 2)
+					{
+						$alert("warn","抱歉，您已领取过此优惠券！");
+					}
+					if(data == 3)
+					{
+						$alert("warn","抱歉，此优惠券已发完！");
+					}
+					if(data == 4)
+					{
+						$alert("error","服务器错误，请确认您已经联网！");
+					}
+					if(data == 5)
+				    {
+						$alert("error","无效优惠券！");
+				    }
+				}
+			});	
+		}
+	}
+
+    var p_start = "[" ;
+    var p_end = "]" ;
+    var p1 = "{'goodsId':'3935','nowPrice':'88.00','platform':'1','htmlObjId':'product1'}," ;
+    var p2 = "{'goodsId':'640','nowPrice':'69.00','platform':'1','htmlObjId':'product2'}," ;
+    var p3 = "{'goodsId':'3850','nowPrice':'9.90','platform':'1','htmlObjId':'product3'}," ;
+    var p4 = "{'goodsId':'2048','nowPrice':'79.90','platform':'1','htmlObjId':'product4'}," ;
+    var p5 = "{'goodsId':'2766','nowPrice':'68.00','platform':'1','htmlObjId':'product5'}," ;
+    var p6 = "{'goodsId':'3433','nowPrice':'49.90','platform':'1','htmlObjId':'product6'}," ;
+    var p7 = "{'goodsId':'2584','nowPrice':'349.00','platform':'1','htmlObjId':'product7'}," ;
+    var p8 = "{'goodsId':'1483','nowPrice':'287.00','platform':'1','htmlObjId':'product8'}," ;
+    var p9 = "{'goodsId':'1337','nowPrice':'49.90','platform':'1','htmlObjId':'product9'}," ;
+    var p10 = "{'goodsId':'640','nowPrice':'10.00','platform':'1','htmlObjId':'product10'}," ;
+    var p11 = "{'goodsId':'2790','nowPrice':'88.00','platform':'1','htmlObjId':'product11'}," ;
+    var p12 = "{'goodsId':'3200','nowPrice':'680.00','platform':'1','htmlObjId':'product12'}," ;
+    var p13 = "{'goodsId':'863','nowPrice':'660.00','platform':'1','htmlObjId':'product13'}," ;
+    var p14 = "{'goodsId':'2516','nowPrice':'78.00','platform':'1','htmlObjId':'product14'}," ;
+    var p15 = "{'goodsId':'3887','nowPrice':'89.00','platform':'1','htmlObjId':'product15'}," ;
+    var p16 = "{'goodsId':'2604','nowPrice':'15.90','platform':'1','htmlObjId':'product16'}," ;
+    var p17 = "{'goodsId':'3141','nowPrice':'138.00','platform':'1','htmlObjId':'product17'}," ;
+    var p18 = "{'goodsId':'3326','nowPrice':'29.00','platform':'1','htmlObjId':'product18'}," ;
+    var p19 = "{'goodsId':'793','nowPrice':'29.00','platform':'1','htmlObjId':'product19'}," ;
+    var p20 = "{'goodsId':'2584','nowPrice':'320.00','platform':'1','htmlObjId':'product20'}," ;
+    var p21 = "{'goodsId':'1314','nowPrice':'313.00','platform':'1','htmlObjId':'product21'}," ;
+    var p22 = "{'goodsId':'190','nowPrice':'14.80','platform':'1','htmlObjId':'product22'}," ;
+    var p23 = "{'goodsId':'4022','nowPrice':'99.00','platform':'1','htmlObjId':'product23'}," ;
+    var p24 = "{'goodsId':'2347','nowPrice':'47.80','platform':'1','htmlObjId':'product24'}," ;
+    var p25 = "{'goodsId':'2979','nowPrice':'257.00','platform':'1','htmlObjId':'product25'}," ;
+    var p26 = "{'goodsId':'1337','nowPrice':'39.90','platform':'1','htmlObjId':'product26'}," ;
+    var p27 = "{'goodsId':'4106','nowPrice':'99.00','platform':'1','htmlObjId':'product27'}," ;
+    var p28 = "{'goodsId':'1483','nowPrice':'287.00','platform':'1','htmlObjId':'product28'}," ;
+    var p29 = "{'goodsId':'3183','nowPrice':'69.00','platform':'1','htmlObjId':'product29'}," ;
+    var p30 = "{'goodsId':'3603','nowPrice':'7.39','platform':'1','htmlObjId':'product30'}," ;
+    var p31 = "{'goodsId':'1021','nowPrice':'45.50','platform':'1','htmlObjId':'product31'}," ;
+    var p32 = "{'goodsId':'2421','nowPrice':'39.00','platform':'1','htmlObjId':'product32'}," ;
+    var p33 = "{'goodsId':'53','nowPrice':'65.00','platform':'1','htmlObjId':'product33'}," ;
+    var p34 = "{'goodsId':'2543','nowPrice':'349.00','platform':'1','htmlObjId':'product34'}," ;
+    var p35 = "{'goodsId':'2808','nowPrice':'99.00','platform':'1','htmlObjId':'product35'}," ;
+    var p36 = "{'goodsId':'2812','nowPrice':'49.90','platform':'1','htmlObjId':'product36'}," ;
+    var p37 = "{'goodsId':'2335','nowPrice':'79.00','platform':'1','htmlObjId':'product37'}," ;
+    var p38 = "{'goodsId':'3125','nowPrice':'39.00','platform':'1','htmlObjId':'product38'}," ;
+    var p39 = "{'goodsId':'1833','nowPrice':'79.00','platform':'1','htmlObjId':'product39'}," ;
+    var p40 = "{'goodsId':'2947','nowPrice':'249.00','platform':'1','htmlObjId':'product40'}," ;
+    var p41 = "{'goodsId':'4010','nowPrice':'439.00','platform':'1','htmlObjId':'product41'}," ;
+    var p42 = "{'goodsId':'3464','nowPrice':'32.30','platform':'1','htmlObjId':'product42'}," ;
+    var p43 = "{'goodsId':'547','nowPrice':'11.50','platform':'1','htmlObjId':'product43'}," ;
+    var p44 = "{'goodsId':'3468','nowPrice':'16.90','platform':'1','htmlObjId':'product44'}," ;
+    var p45 = "{'goodsId':'1279','nowPrice':'35.50','platform':'1','htmlObjId':'product45'}," ;
+    var p46 = "{'goodsId':'666','nowPrice':'30.80','platform':'1','htmlObjId':'product46'}," ;
+    var p47 = "{'goodsId':'2694','nowPrice':'24.90','platform':'1','htmlObjId':'product47'}," ;
+    var p48 = "{'goodsId':'28','nowPrice':'9.00','platform':'1','htmlObjId':'product48'}," ;
+    var p49 = "{'goodsId':'3467','nowPrice':'38.00','platform':'1','htmlObjId':'product49'}," ;
+    var p50 = "{'goodsId':'3671','nowPrice':'995.00','platform':'1','htmlObjId':'product50'}," ;
+    var p51 = "{'goodsId':'50','nowPrice':'59.90','platform':'1','htmlObjId':'product51'}," ;
+    var p52 = "{'goodsId':'660','nowPrice':'98.00','platform':'1','htmlObjId':'product52'}," ;
+    var p53 = "{'goodsId':'1095','nowPrice':'16.50','platform':'1','htmlObjId':'product53'}," ;
+    var p54 = "{'goodsId':'647','nowPrice':'88.00','platform':'1','htmlObjId':'product54'}," ;
+    var p55 = "{'goodsId':'960','nowPrice':'6.80','platform':'1','htmlObjId':'product55'}," ;
+    var p56 = "{'goodsId':'1273','nowPrice':'16.80','platform':'1','htmlObjId':'product56'}" ;
+    var params = p_start + p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11 + p12 + p13 + p14 + p15 + p16 + p17 + p18 + p19 + p20 + p21 + p22 + p23 + p24 + p25 + p26 + p27 + p28 + p29 + p30 + p31 + p32 + p33 + p34 + p35 + p36 + p37 + p38 + p39 + p40 + p41 + p42 + p43 + p44 + p45 + p46 + p47 + p48 + p49 + p50 +  p51 +  p52 +  p53 +  p54 +  p55 +  p56 + p_end ;
+	$.ajax
+	({
+		type: "get",
+		url: "http://www.111yao.com/index!countpricebyplatform.action",
+		async: false,
+		data: "params="+params,
+		dataType: "jsonp",
+		jsonp: "jsoncallback",
+		success: function(data) 
+		{  
+			if(data != null && data != '' && data != undefined)
+			{
+				for(var i=0; i<data.length; i++)
+			    {
+					//商品ID
+					var goodsId = data[i].goodsId;
+					//现在价格
+					var nowPrice = data[i].nowPrice;
+					//平台
+					var platform = data[i].platform;
+					//HTML对象ID
+					var htmlObjId = data[i].htmlObjId;
+					//把价格渲染到元素中
+					var objs = nowPrice.toString().split(".");
+					var obj_l = "<b class='price_b_l' id='p_l_"+i+"'>"+objs[0]+"</b>";
+					var obj_m = "<b class='price_b_m' id='p_m_"+i+"'>.</b>";
+					var obj_r = "<span class='price_s_r' id='p_r_"+i+"'>"+objs[1]+"</span>";
+					$("#"+htmlObjId).html(obj_l+obj_m+obj_r);
+			    }
+			}
+			else
+			{
+				console.log("Datas null !"); 
+			}
+        },  
+        error: function() 
+        {  
+            console.log("Server error !"); 
+        }  
+	});
+
+</script>
+</html>

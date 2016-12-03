@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+<!-- 	前台列表页 -->
+	<package name="category" extends="default" namespace="/category">
+		<action name="categoryList" class="com.rc.portal.webapp.action.CategoryListAction">
+			<result name="getHomeData" type="freemarker" >/WEB-INF/pages/category/categoryList.ftl</result>
+		</action>
+	</package>
+</xwork>

@@ -1,0 +1,5 @@
+.category_header {background:#fff;height:45px;position:fixed;top:0px;width:100%;z-index:99;}
+.shopping-cart-fixed {left:10px;}
+.back-to-top {bottom:20px;display:none;}
+.shopping-cart-fixed {bottom:20px;}
+#new_list_pro_into_cart {width:30px;height:30px;display:inline-block;background:url("/web/images/new_car_icon.png") no-repeat center center;background-size:18px;position:absolute;right:10px;bottom:0;z-index:9;}

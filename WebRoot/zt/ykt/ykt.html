@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<!--允许全屏-->
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+<!--缩放比例-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>医卡通</title>
+</head>
+
+<body class="bg-white" onload="loaded()">
+	<!--#include virtual="/static/inc/wap/header.html" -->
+	<ul class="column-all clearfix tab-hd">
+    	<li class="column-ico1"><a href="#"><b></b><p>好货推荐</p></a></li>
+        <li class="column-ico2"><a href="#"><b></b><p>滋补礼盒</p></a></li>
+        <li class="column-ico3"><a href="#"><b></b><p>家庭常备</p></a></li>
+        <li class="column-ico4"><a href="#"><b></b><p>感冒发烧</p></a></li>
+        <li class="column-ico5"><a href="#"><b></b><p>男性</p></a></li>
+        <li class="column-ico6"><a href="#"><b></b><p>女性</p></a></li>
+        <li class="column-ico7"><a href="#"><b></b><p>老人</p></a></li>
+        <li class="column-ico8"><a href="#"><b></b><p>小孩</p></a></li>
+        <li class="column-ico9"><a href="#"><b></b><p>器械</p></a></li>
+        <li class="column-ico10"><a href="#"><b></b><p>保健</p></a></li>
+        <li class="column-ico11"><a href="#"><b></b><p>饮片</p></a></li>
+        <li class="column-ico12"><a href="#"><b></b><p>五官</p></a></li>
+    </ul>
+    <div class="pro-box tab-bd">
+        <ul class="free-shipping-list">
+            <!--#include virtual="/static/imgout/wap/index_ykt_hhtj.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+            <!--#include virtual="/static/imgout/wap/index_ykt_zblh.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+            <!--#include virtual="/static/imgout/wap/index_ykt_jtcb.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+            <!--#include virtual="/static/imgout/wap/index_ykt_gmfs.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+            <!--#include virtual="/static/imgout/wap/index_ykt_nx.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+            <!--#include virtual="/static/imgout/wap/index_ykt_nvx.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+             <!--#include virtual="/static/imgout/wap/index_ykt_lr.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+            <!--#include virtual="/static/imgout/wap/index_ykt_xh.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+             <!--#include virtual="/static/imgout/wap/index_ykt_qx.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+             <!--#include virtual="/static/imgout/wap/index_ykt_bj.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+             <!--#include virtual="/static/imgout/wap/index_ykt_yp.html" -->
+        </ul>
+        <ul class="free-shipping-list">
+           <!--#include virtual="/static/imgout/wap/index_ykt_wg.html" -->
+        </ul>
+    </div>
+<!--#include virtual="/static/inc/wap/footer.html" -->
+<script type="text/javascript" src="/web/js/common.js"></script>
+</body>
+</html>
+
+<style type="text/css">
+.column-all{ padding-top:100px;}
+.column-all li{ float:left; width:25%; text-align:center; margin-bottom:15px;}
+.column-all li a{display:block;}
+.column-all li b{ width:50px; height:50px; display:block; margin:0 auto; background:url(http://ui1.111yao.com/static/image/temp/20151201/07874b950b4af49337ac671e1e4f1894.png) no-repeat; background-size:50px;}
+.column-all li.column-ico1 b{background-position:0 0;}
+.column-all li.column-ico2 b{background-position:0 -50px;}
+.column-all li.column-ico3 b{background-position:0 -100px;}
+.column-all li.column-ico4 b{background-position:0 -150px;}
+.column-all li.column-ico5 b{background-position:0 -200px;}
+.column-all li.column-ico6 b{background-position:0 -250px;}
+.column-all li.column-ico7 b{background-position:0 -300px;}
+.column-all li.column-ico8 b{background-position:0 -350px;}
+.column-all li.column-ico9 b{background-position:0 -400px;}
+.column-all li.column-ico10 b{background-position:0 -450px;}
+.column-all li.column-ico11 b{background-position:0 -500px;}
+.column-all li.column-ico12 b{background-position:0 -550px;}
+.column-all li p{color:#3e3e3e; margin-top:5px;}
+.column-all li.current p{color:#f53730;}
+</style>
+<script type="text/javascript">
+    $(function(){
+        function tabs(tabTit,on,tabCon){
+            $(tabCon).each(function(){
+                $(this).children().eq(0).show();
+                var ps="";
+                $(this).children().eq(0).find("input").each(function(){
+                	 ps+=$(this).val()+",";
+                 });
+                 
+                 ps=ps.substring(0,ps.length-1);
+                 var params="["+ps+"]";
+                 $.ajax({
+                 	type:"get",
+                 	url:"http://www.111yao.com/index!countpricebyplatform.action",
+                 	async: false,
+					data: "params="+params,
+					dataType: "jsonp",
+					jsonp: "jsoncallback",
+					success:function(data){
+					if(data!=null&&data!=''&&data!=undefined){
+						for(var i=0;i<data.length;i++){
+						var nowPrice = data[i].nowPrice;
+						var htmlObjId = data[i].htmlObjId;
+						$("#"+htmlObjId).html(nowPrice);
+						}
+					}else{
+					console.log("Datas null !")
+					}
+					},
+					error:function(){
+					 console.log("Server error !"); 
+					}
+                 });
+            });
+            $(tabTit).each(function(){
+                $(this).children().eq(0).addClass(on);
+            });
+            $(tabTit).children().click(function(){
+                $(this).addClass(on).siblings().removeClass(on);
+                var index = $(tabTit).children().index(this);
+                $(tabCon).children().eq(index).show().siblings().hide();
+                var ps="";
+                 $(tabCon).children().eq(index).find("input").each(function(){
+                	 ps+=$(this).val()+",";
+                 });
+                 
+                 ps=ps.substring(0,ps.length-1);
+                 var params="["+ps+"]";
+                 $.ajax({
+                 	type:"get",
+                 	url:"http://www.111yao.com/index!countpricebyplatform.action",
+                 	async: false,
+					data: "params="+params,
+					dataType: "jsonp",
+					jsonp: "jsoncallback",
+					success:function(data){
+					if(data!=null&&data!=''&&data!=undefined){
+						for(var i=0;i<data.length;i++){
+						var nowPrice = data[i].nowPrice;
+						var htmlObjId = data[i].htmlObjId;
+						$("#"+htmlObjId).html(nowPrice);
+						}
+					}else{
+					console.log("Datas null !")
+					}
+					},
+					error:function(){
+					 console.log("Server error !"); 
+					}
+                 });
+            });
+        }
+        tabs(".tab-hd","current",".tab-bd");
+    });
+</script>

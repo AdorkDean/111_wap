@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>首页</title>
+<style>
+	.index-column{ padding: 10px 0 0 10px;margin: 10px 0;background: #fff;}
+	.index-column li{float: left; width: 33.3%; margin-bottom: 10px}
+</style>
+
+</head>
+
+<body onload="loaded()">
+	<!--#include virtual="/static/inc/wap/header.html" -->
+	<script>
+	$(function(){
+		$("#header_1").addClass("index-header");
+	});
+	</script>
+    <article class="index-main">
+      <!--#include virtual="/static/imgout/wap/index_lbgg.html" -->
+      <script type="text/javascript" src="/web/js/index.js"></script>
+      <script>
+        $(".slider").yxMobileSlider({width:720,height:260,during:3000})
+      </script>
+      
+      <!--#include virtual="/static/imgout/wap/index_six_category.html" -->
+      <!--#include virtual="/static/imgout/wap/index_tjsp.html" -->
+     
+      <div class="one-column-enter-box">
+      首页
+        <!--#include virtual="/static/imgout/wap/index_words.html" -->
+	    <!--#include virtual="/static/imgout/wap/index_xptm.html" -->
+      </div>
+    </article>
+    <!--#include virtual="/static/inc/wap/footer.html" -->
+</body>
+</html>
+<style>
+.top-right-btn-member 
+{
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    background: url(/web/images/header_member_icon02_.png) no-repeat center center;
+    background-size: 20px;
+}
+.top-logo {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    background: url(/web/images/header_classify_icon_.png) no-repeat center center;
+    background-size: 22px;
+</style>
+<script type="text/javascript">
+$(function(){
+	$.ajax({
+		   url: "/login/login!getMemberInfo.action",	
+	       type: "post",
+	       async:false,
+	       success: function(data)
+	       {
+	       	if(data==1){
+	       		getCartSum(1);
+	       	}
+	       }
+	   }); 
+});
+</script>
+
+

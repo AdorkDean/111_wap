@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+<!-- 	前台列表页 -->
+	<package name="healthyplan" extends="default" namespace="/healthyplan">
+		<action name="healthyplan" class="com.rc.portal.webapp.action.HealthyPlanContentAction">
+			<result name="view" type="freemarker" >/WEB-INF/pages/healthyplan/healthyPlaContentAPP.ftl</result>
+			<result name="vieww" type="freemarker" >/WEB-INF/pages/healthyplan/newHealthyPlan.ftl</result>
+		</action>
+	</package>
+</xwork>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+	<package name="leader" extends="default" namespace="/leader">
+		<action name="leader" class="com.rc.portal.webapp.action.LeaderAction" >
+			<result name="list" type="freemarker">/WEB-INF/pages/member/leader/leaderGoods_list.ftl</result>
+			<result name="ranking" type="freemarker">/WEB-INF/pages/member/leader/ranking.ftl</result>
+			<result name="pill" type="freemarker">/WEB-INF/pages/member/leader/pill.ftl</result>
+			<result name="brokerage" type="freemarker">/WEB-INF/pages/member/leader/brokerage.ftl</result>
+			<result name="leader" type="freemarker">/WEB-INF/pages/member/leader/leader.ftl</result>
+		    <result name="url" type="redirect">${url}</result>
+		    <result name="lxcontent" type="freemarker">/WEB-INF/pages/member/leader/leaderResources.ftl</result>
+			<result name="pharmacy" type="freemarker">/WEB-INF/pages/member/leader/pharmacy.ftl</result>
+		    <result name="leaderImg" type="freemarker">/WEB-INF/pages/member/leader/leaderImg.ftl</result>
+		    <result name="leaderContent" type="freemarker">/WEB-INF/pages/member/leader/leaderContent.ftl</result>
+			<result name="report" type="freemarker">/WEB-INF/pages/member/leader/report.ftl</result>
+			<result name="leaderTool" type="freemarker">/WEB-INF/pages/member/leader/leaderTool.ftl</result>
+			<result name="apply_health_leader" type="redirect">/newleader/newleader!skipLeader.action</result>
+			<result name="runningWater" type="freemarker">/WEB-INF/pages/member/leader/runningWater.ftl</result>
+			<result name="runningWaterDetail" type="freemarker">/WEB-INF/pages/member/leader/runningWaterDetail.ftl</result>
+		</action>
+		
+		
+		
+		
+		
+		
+		<action name="leaderArticle" class="com.rc.portal.webapp.action.TLeaderArticleAction" >
+			<result name="leaderArticle_list" type="freemarker">/WEB-INF/pages/member/leader/t_leader_article_list.ftl</result>
+			<result name="apply_health_leader" type="redirect">/newleader/newleader!skipLeader.action</result>
+			<result name="profile_page" type="redirect">/member/profile.action</result>
+			<result name="leaderImg" type="freemarker">/WEB-INF/pages/member/leader/leaderImg.ftl</result>
+		    <result name="leaderContent" type="freemarker">/WEB-INF/pages/member/leader/leaderContent.ftl</result>
+		    <result name="runningWater" type="freemarker">/WEB-INF/pages/member/leader/runningWater.ftl</result>
+		    <result name="leader_powder_list" type="freemarker">/WEB-INF/pages/member/leader/leader_powder_list.ftl</result>
+		    <result name="recommend_article_list" type="freemarker">/WEB-INF/pages/member/leader/recommend_article_list.ftl</result>
+		    <!-- 我的药房 -->
+			<result name="leaderPharmacy_list" type="freemarker">/WEB-INF/pages/member/leader/t_leader_pharmacy_list.ftl</result>
+			<result name="leader_guide" type="freemarker">/WEB-INF/pages/member/newLeader/leader_guide.ftl</result>
+		    <interceptor-ref name="leaderLoginStack"/>
+		</action>
+		
+		<action name="view" class="com.rc.portal.webapp.action.TLeaderArticleAction" >
+			<result name="view1" type="freemarker">/WEB-INF/pages/member/leader/view1.ftl</result>
+		    <result name="view2" type="freemarker">/WEB-INF/pages/member/leader/view2.ftl</result>
+		</action>
+		
+		
+		<action name="leaderPharmacy" class="com.rc.portal.webapp.action.TLeaderArticleAction" >
+			<!-- 领秀分享药房  -->
+			<result name="leader_share_pharmacy_list" type="freemarker">/WEB-INF/pages/member/leader/leader_share_pharmacy_list.ftl</result>
+		</action>
+		<action name="leaderIndex" class="com.rc.portal.webapp.action.TLeaderAction" >
+			<result name="apply_health_leader" type="redirect">/newleader/newleader!skipLeader.action</result>
+			<result name="profile_page" type="redirect">/member/profile.action</result>
+			<result name="my_poster_page" type="redirect">/leader/leaderNoLoginIndex!toHaibaoPage.action?code=${code}&amp;type=1</result>
+			<!-- 我的药房海报 -->
+			<result name="my_pharmacy_page" type="redirect">/leader/leaderNoLoginIndex!toHaibaoPage.action?code=${code}&amp;type=2</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		  
+		<action name="leaderNoLoginIndex" class="com.rc.portal.webapp.action.TLeaderAction" >
+			<result name="go_pharmacy_page" type="freemarker">/WEB-INF/pages/member/leader/my_pharmacy_page.ftl</result>
+			<result name="go_poster_page" type="freemarker">/WEB-INF/pages/member/leader/my_poster_page.ftl</result>
+			
+			<result name="url" type="redirect">${url}</result>
+		</action>
+				
+		<action name="leaderCenter" class="com.rc.portal.webapp.action.TLeaderCenterAction" >
+			<result name="leadermanagecenter" type="freemarker">/WEB-INF/pages/member/leader/leadermanage.ftl</result>
+			<result name="leader_function_introduce" type="freemarker">/WEB-INF/pages/member/leader/leader_function_introduce.ftl</result>
+			<interceptor-ref name="loginStack"/>
+			<interceptor-ref name="leaderStack"/>
+		</action>
+		
+		<action name="leaderPharmacy" class="com.rc.portal.webapp.action.TLeaderAction" >
+			<result name="leaderPharmacyGoodsList" type="freemarker">/WEB-INF/pages/member/leader/addGoodsList.ftl</result>
+			<interceptor-ref name="loginStack"/>
+			<interceptor-ref name="leaderStack"/>
+		</action>
+		
+		<action name="bindingAmount" class="com.rc.portal.webapp.action.TLeaderAction" >
+			<result name="bindingZfbAmountIndex" type="freemarker">/WEB-INF/pages/member/leader/bindingZfbAccount.ftl</result>
+			<result name="bindingYhkAmountIndex" type="freemarker">/WEB-INF/pages/member/leader/bindingYhkAccount.ftl</result>
+			<result name="checkBindingAccount" type="freemarker">/WEB-INF/pages/member/leader/checkBindingAccount.ftl</result>
+			<result name="accountManage" type="freemarker">/WEB-INF/pages/member/leader/accountManage.ftl</result>
+			<result name="unbindingIndex" type="freemarker">/WEB-INF/pages/member/leader/unbindingIndex.ftl</result>
+			<result name="checkDrawingAccountIndex" type="freemarker">/WEB-INF/pages/member/leader/checkDrawingAccountIndex.ftl</result>
+			<result name="checkDrawingMethodIndex" type="freemarker">/WEB-INF/pages/member/leader/checkDrawingMethodIndex.ftl</result>
+			<result name="drawingProceedsIndex" type="freemarker">/WEB-INF/pages/member/leader/drawingProceedsIndex.ftl</result>
+			<result name="drawingProceedsYhkIndex" type="freemarker">/WEB-INF/pages/member/leader/drawingProceedsYhkIndex.ftl</result>
+			<interceptor-ref name="loginStack"/>
+			<interceptor-ref name="leaderStack"/>
+		</action>
+	</package>
+</xwork>

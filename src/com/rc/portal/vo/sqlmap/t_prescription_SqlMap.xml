@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="t_prescription" >
+  <resultMap id="ibatorgenerated_BaseResultMap" class="com.rc.portal.vo.TPrescription" >
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="user_id" property="userId" jdbcType="BIGINT" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="disease_descrip" property="diseaseDescrip" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="call_username" property="callUsername" jdbcType="VARCHAR" />
+    <result column="call_time" property="callTime" jdbcType="TIMESTAMP" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="order_sn" property="orderSn" jdbcType="VARCHAR" />
+    <result column="image_url" property="imageUrl" jdbcType="VARCHAR" />
+    <result column="upload_time" property="uploadTime" jdbcType="TIMESTAMP" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="modify_date" property="modifyDate" jdbcType="TIMESTAMP" />
+    <result column="ifhelp" property="ifhelp" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ibatorgenerated_ResultMapWithBLOBs" class="com.rc.portal.vo.TPrescription" extends="t_prescription.ibatorgenerated_BaseResultMap" >
+    <result column="returning" property="returning" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="ibatorgenerated_Example_Where_Clause" >
+    <iterate property="oredCriteria" conjunction="or" prepend="where" removeFirstPrepend="iterate" >
+      <isEqual property="oredCriteria[].valid" compareValue="true" >
+        (
+        <iterate prepend="and" property="oredCriteria[].criteriaWithoutValue" conjunction="and" >
+          $oredCriteria[].criteriaWithoutValue[]$
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithSingleValue" conjunction="and" >
+          $oredCriteria[].criteriaWithSingleValue[].condition$
+            #oredCriteria[].criteriaWithSingleValue[].value#
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithListValue" conjunction="and" >
+          $oredCriteria[].criteriaWithListValue[].condition$
+          <iterate property="oredCriteria[].criteriaWithListValue[].values" open="(" close=")" conjunction="," >
+            #oredCriteria[].criteriaWithListValue[].values[]#
+          </iterate>
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithBetweenValue" conjunction="and" >
+          $oredCriteria[].criteriaWithBetweenValue[].condition$
+          #oredCriteria[].criteriaWithBetweenValue[].values[0]# and
+          #oredCriteria[].criteriaWithBetweenValue[].values[1]#
+        </iterate>
+        )
+      </isEqual>
+    </iterate>
+  </sql>
+  <select id="ibatorgenerated_selectByExampleWithBLOBs" resultMap="ibatorgenerated_ResultMapWithBLOBs" parameterClass="com.rc.portal.vo.TPrescriptionExample" >
+    select id, user_id, user_name, disease_descrip, status, call_username, call_time, phone,
+      order_sn, image_url, upload_time, create_date, modify_date, ifhelp, returning
+    from t_prescription
+    <isParameterPresent >
+      <include refid="t_prescription.ibatorgenerated_Example_Where_Clause" />
+      <isNotNull property="orderByClause" >
+        order by $orderByClause$
+      </isNotNull>
+    </isParameterPresent>
+  </select>
+  <select id="ibatorgenerated_selectByExample" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.rc.portal.vo.TPrescriptionExample" >
+    select id, user_id, user_name, disease_descrip, status, call_username, call_time, phone,
+      order_sn, image_url, upload_time, create_date, modify_date, ifhelp
+    from t_prescription
+    <isParameterPresent >
+      <include refid="t_prescription.ibatorgenerated_Example_Where_Clause" />
+      <isNotNull property="orderByClause" >
+        order by $orderByClause$
+      </isNotNull>
+    </isParameterPresent>
+  </select>
+  <select id="ibatorgenerated_selectByPrimaryKey" resultMap="ibatorgenerated_ResultMapWithBLOBs" parameterClass="com.rc.portal.vo.TPrescription" >
+    select id, user_id, user_name, disease_descrip, status, call_username, call_time, phone,
+      order_sn, image_url, upload_time, create_date, modify_date, ifhelp, returning
+    from t_prescription
+    where id = #id:BIGINT#
+  </select>
+  <delete id="ibatorgenerated_deleteByPrimaryKey" parameterClass="com.rc.portal.vo.TPrescription" >
+    delete from t_prescription
+    where id = #id:BIGINT#
+  </delete>
+  <delete id="ibatorgenerated_deleteByExample" parameterClass="com.rc.portal.vo.TPrescriptionExample" >
+    delete from t_prescription
+    <include refid="t_prescription.ibatorgenerated_Example_Where_Clause" />
+  </delete>
+  <insert id="ibatorgenerated_insert" parameterClass="com.rc.portal.vo.TPrescription" >
+    insert into t_prescription (id, user_id, user_name, disease_descrip, status, call_username,
+      call_time, phone, order_sn, image_url, upload_time, create_date, modify_date, ifhelp,
+      returning)
+    values (#id:BIGINT#, #userId:BIGINT#, #userName:VARCHAR#, #diseaseDescrip:VARCHAR#,
+      #status:INTEGER#, #callUsername:VARCHAR#, #callTime:TIMESTAMP#, #phone:VARCHAR#,
+      #orderSn:VARCHAR#, #imageUrl:VARCHAR#, #uploadTime:TIMESTAMP#, #createDate:TIMESTAMP#,
+      #modifyDate:TIMESTAMP#, #ifhelp:INTEGER#, #returning:LONGVARCHAR#)
+	<selectKey resultClass="long" keyProperty="id"> 
+		select LAST_INSERT_ID()
+	</selectKey>
+  </insert>
+
+  <insert id="ibatorgenerated_insertSelective" parameterClass="com.rc.portal.vo.TPrescription" >
+    insert into t_prescription
+    <dynamic prepend="(" >
+      <isNotNull prepend="," property="id" >
+        id
+      </isNotNull>
+      <isNotNull prepend="," property="userId" >
+        user_id
+      </isNotNull>
+      <isNotNull prepend="," property="userName" >
+        user_name
+      </isNotNull>
+      <isNotNull prepend="," property="diseaseDescrip" >
+        disease_descrip
+      </isNotNull>
+      <isNotNull prepend="," property="status" >
+        status
+      </isNotNull>
+      <isNotNull prepend="," property="callUsername" >
+        call_username
+      </isNotNull>
+      <isNotNull prepend="," property="callTime" >
+        call_time
+      </isNotNull>
+      <isNotNull prepend="," property="phone" >
+        phone
+      </isNotNull>
+      <isNotNull prepend="," property="orderSn" >
+        order_sn
+      </isNotNull>
+      <isNotNull prepend="," property="imageUrl" >
+        image_url
+      </isNotNull>
+      <isNotNull prepend="," property="uploadTime" >
+        upload_time
+      </isNotNull>
+      <isNotNull prepend="," property="createDate" >
+        create_date
+      </isNotNull>
+      <isNotNull prepend="," property="modifyDate" >
+        modify_date
+      </isNotNull>
+      <isNotNull prepend="," property="ifhelp" >
+        ifhelp
+      </isNotNull>
+      <isNotNull prepend="," property="returning" >
+        returning
+      </isNotNull>
+      )
+    </dynamic>
+    values
+    <dynamic prepend="(" >
+      <isNotNull prepend="," property="id" >
+        #id:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="userId" >
+        #userId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="userName" >
+        #userName:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="diseaseDescrip" >
+        #diseaseDescrip:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="status" >
+        #status:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="callUsername" >
+        #callUsername:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="callTime" >
+        #callTime:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="phone" >
+        #phone:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="orderSn" >
+        #orderSn:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="imageUrl" >
+        #imageUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="uploadTime" >
+        #uploadTime:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="createDate" >
+        #createDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="modifyDate" >
+        #modifyDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="ifhelp" >
+        #ifhelp:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="returning" >
+        #returning:LONGVARCHAR#
+      </isNotNull>
+      )
+    </dynamic>
+	<selectKey resultClass="long" keyProperty="id"> 
+		select LAST_INSERT_ID()
+	</selectKey>
+  </insert>
+
+  <select id="ibatorgenerated_countByExample" parameterClass="com.rc.portal.vo.TPrescriptionExample" resultClass="java.lang.Integer" >
+    select count(*) from t_prescription
+    <include refid="t_prescription.ibatorgenerated_Example_Where_Clause" />
+  </select>
+  <update id="ibatorgenerated_updateByExampleSelective" >
+    update t_prescription
+    <dynamic prepend="set" >
+      <isNotNull prepend="," property="record.id" >
+        id = #record.id:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="record.userId" >
+        user_id = #record.userId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="record.userName" >
+        user_name = #record.userName:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.diseaseDescrip" >
+        disease_descrip = #record.diseaseDescrip:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.status" >
+        status = #record.status:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="record.callUsername" >
+        call_username = #record.callUsername:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.callTime" >
+        call_time = #record.callTime:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="record.phone" >
+        phone = #record.phone:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.orderSn" >
+        order_sn = #record.orderSn:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.imageUrl" >
+        image_url = #record.imageUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.uploadTime" >
+        upload_time = #record.uploadTime:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="record.createDate" >
+        create_date = #record.createDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="record.modifyDate" >
+        modify_date = #record.modifyDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="record.ifhelp" >
+        ifhelp = #record.ifhelp:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="record.returning" >
+        returning = #record.returning:LONGVARCHAR#
+      </isNotNull>
+    </dynamic>
+    <isParameterPresent >
+      <include refid="t_prescription.ibatorgenerated_Example_Where_Clause" />
+    </isParameterPresent>
+  </update>
+  <update id="ibatorgenerated_updateByExampleWithBLOBs" >
+    update t_prescription
+    set id = #record.id:BIGINT#,
+      user_id = #record.userId:BIGINT#,
+      user_name = #record.userName:VARCHAR#,
+      disease_descrip = #record.diseaseDescrip:VARCHAR#,
+      status = #record.status:INTEGER#,
+      call_username = #record.callUsername:VARCHAR#,
+      call_time = #record.callTime:TIMESTAMP#,
+      phone = #record.phone:VARCHAR#,
+      order_sn = #record.orderSn:VARCHAR#,
+      image_url = #record.imageUrl:VARCHAR#,
+      upload_time = #record.uploadTime:TIMESTAMP#,
+      create_date = #record.createDate:TIMESTAMP#,
+      modify_date = #record.modifyDate:TIMESTAMP#,
+      ifhelp = #record.ifhelp:INTEGER#,
+      returning = #record.returning:LONGVARCHAR#
+    <isParameterPresent >
+      <include refid="t_prescription.ibatorgenerated_Example_Where_Clause" />
+    </isParameterPresent>
+  </update>
+  <update id="ibatorgenerated_updateByExample" >
+    update t_prescription
+    set id = #record.id:BIGINT#,
+      user_id = #record.userId:BIGINT#,
+      user_name = #record.userName:VARCHAR#,
+      disease_descrip = #record.diseaseDescrip:VARCHAR#,
+      status = #record.status:INTEGER#,
+      call_username = #record.callUsername:VARCHAR#,
+      call_time = #record.callTime:TIMESTAMP#,
+      phone = #record.phone:VARCHAR#,
+      order_sn = #record.orderSn:VARCHAR#,
+      image_url = #record.imageUrl:VARCHAR#,
+      upload_time = #record.uploadTime:TIMESTAMP#,
+      create_date = #record.createDate:TIMESTAMP#,
+      modify_date = #record.modifyDate:TIMESTAMP#,
+      ifhelp = #record.ifhelp:INTEGER#
+    <isParameterPresent >
+      <include refid="t_prescription.ibatorgenerated_Example_Where_Clause" />
+    </isParameterPresent>
+  </update>
+  <update id="ibatorgenerated_updateByPrimaryKeySelective" parameterClass="com.rc.portal.vo.TPrescription" >
+    update t_prescription
+    <dynamic prepend="set" >
+      <isNotNull prepend="," property="userId" >
+        user_id = #userId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="userName" >
+        user_name = #userName:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="diseaseDescrip" >
+        disease_descrip = #diseaseDescrip:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="status" >
+        status = #status:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="callUsername" >
+        call_username = #callUsername:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="callTime" >
+        call_time = #callTime:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="phone" >
+        phone = #phone:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="orderSn" >
+        order_sn = #orderSn:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="imageUrl" >
+        image_url = #imageUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="uploadTime" >
+        upload_time = #uploadTime:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="createDate" >
+        create_date = #createDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="modifyDate" >
+        modify_date = #modifyDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="ifhelp" >
+        ifhelp = #ifhelp:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="returning" >
+        returning = #returning:LONGVARCHAR#
+      </isNotNull>
+    </dynamic>
+    where id = #id:BIGINT#
+  </update>
+  <update id="ibatorgenerated_updateByPrimaryKeyWithBLOBs" parameterClass="com.rc.portal.vo.TPrescription" >
+    update t_prescription
+    set user_id = #userId:BIGINT#,
+      user_name = #userName:VARCHAR#,
+      disease_descrip = #diseaseDescrip:VARCHAR#,
+      status = #status:INTEGER#,
+      call_username = #callUsername:VARCHAR#,
+      call_time = #callTime:TIMESTAMP#,
+      phone = #phone:VARCHAR#,
+      order_sn = #orderSn:VARCHAR#,
+      image_url = #imageUrl:VARCHAR#,
+      upload_time = #uploadTime:TIMESTAMP#,
+      create_date = #createDate:TIMESTAMP#,
+      modify_date = #modifyDate:TIMESTAMP#,
+      ifhelp = #ifhelp:INTEGER#,
+      returning = #returning:LONGVARCHAR#
+    where id = #id:BIGINT#
+  </update>
+  <update id="ibatorgenerated_updateByPrimaryKey" parameterClass="com.rc.portal.vo.TPrescription" >
+    update t_prescription
+    set user_id = #userId:BIGINT#,
+      user_name = #userName:VARCHAR#,
+      disease_descrip = #diseaseDescrip:VARCHAR#,
+      status = #status:INTEGER#,
+      call_username = #callUsername:VARCHAR#,
+      call_time = #callTime:TIMESTAMP#,
+      phone = #phone:VARCHAR#,
+      order_sn = #orderSn:VARCHAR#,
+      image_url = #imageUrl:VARCHAR#,
+      upload_time = #uploadTime:TIMESTAMP#,
+      create_date = #createDate:TIMESTAMP#,
+      modify_date = #modifyDate:TIMESTAMP#,
+      ifhelp = #ifhelp:INTEGER#
+    where id = #id:BIGINT#
+  </update>
+  <select id="selectByExampleByPage" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.rc.portal.vo.TPrescriptionExample" >
+                    select id, user_id, user_name, disease_descrip, status, call_username, call_time, phone,
+                      order_sn, image_url, upload_time, create_date, modify_date, ifhelp
+                    from t_prescription
+                    <isParameterPresent >
+                      <include refid="t_prescription.ibatorgenerated_Example_Where_Clause" />
+                      <isNotNull property="orderByClause" >
+                        order by $orderByClause$
+                      </isNotNull>
+                    </isParameterPresent>
+					limit $pageInfo.start$ ,$pageInfo.pageSize$
+  </select>
+  
+   <select id="selectPrescriptionList" resultClass="java.util.HashMap" parameterClass="java.util.Map" >
+	 select t.id, t.user_id, t.user_name, t.disease_descrip, t.status, t.phone,
+                      t.image_url, t.create_date
+                    from t_prescription t
+                    where 1=1
+                    <isNotNull prepend="and" property="memberid">
+                    t.user_id=#memberid#
+                    </isNotNull>
+                    order by t.create_date desc
+		  LIMIT $pageInfo.start$,$pageInfo.end$
+  </select>
+  <select id="selectPrescriptionCount" parameterClass="java.util.Map" resultClass="java.lang.Integer" >
+ select count(t.id)
+                    from t_prescription t
+                    where 1=1
+                    <isNotNull prepend="and" property="memberid">
+                    t.user_id=#memberid#
+                    </isNotNull>	
+  </select> 
+</sqlMap>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <!--缩放比例-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--上线时请删除-->
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <!--上线时请删除-->
+    <title>拆红包-输入手机号</title>
+    <link href="/web/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/web/css/new-health.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div class="red-packet">
+	<img src="http://img.zdfei.com/static/image/temp/20160727/9666f04205cf18074fe160d67615793f.jpg" class="for-bg">
+    <div class="coupon-money-number">
+        <p>恭喜你抢到</p>
+        <p id="gx">5元优惠券</p>
+    </div>
+    <ul class="phone-number">
+        <li><input type="tel" placeholder="请输入手机号码" class="num01"/></li>
+        <li class="clearfix">
+            <a href="javascript:void(0)" onclick="getcode()" id="getCode" >获取验证码</a>
+            <input type="tel" placeholder="输入验证码" class="num02"/>
+        </li>
+    </ul>
+    <div class="packet-number">
+        <div class="packet-tit clearfix"><span>抢到1个红包</span></div>
+        <div class="get-packet"><a href="javascript:void(0)" onclick="myOpen()" class="get-coupon">马上领取</a></div>
+        <div class="back-index"><a href="http://www.111yao.com">http://www.111yao.com</a></div>
+        <div class="back-index"><a style="font-size:12px;">最终解释权归111医药馆所有</a></div>
+    </div>
+</div>
+<div class="shade-bg">
+    <div class="popup-shade">
+        <div class="popup-box">
+            <h3 >领取成功</h3>
+            <p>请用手机快捷登录，</p>
+            <p>在我的优惠券中查看！</p>
+            <div class="affirm-btn"><span class="close-btn">确认</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="/web/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/web/js/alert.main.js"></script>
+<script type="text/javascript">
+
+   var price = getParameters().info;
+   $('#gx').html(price+"元优惠券");
+
+    var count = 61;
+	var timer;
+	function timeDesc(){
+	
+		if(count>0){
+			count--;
+			$("#getCode").text(count+"秒重新获取");
+			$("#getCode").css("color","#9d9d9d");
+			$("#getCode").prop("disabled", "disabled");
+		}else{
+			$("#getCode").text("获取验证码");
+			$("#getCode").css("color","#ff4a4a");
+			$("#getCode").prop("disabled", "");
+			$("#getCode").attr("onclick","getcode()");
+			count = 61;
+			clearInterval(timer);
+			timer = "";
+		}
+	}
+
+function myOpen()
+{
+ 	
+	var leaderid = getParameters().lid;
+	var lcode = getParameters().lc;
+	var redid = getParameters().rid;
+	var couponId = getParameters().cid;
+	
+	//alert("code="+lcode+" couponId="+couponId+" packetId="+redid+" leaderid="+leaderid);
+	
+	var phone = $('.num01').val();
+	if($.trim(phone)==""){
+		$alert("warn","手机号码不能为空","111医药馆提示您",null);
+		return;
+	}
+	
+
+	var code = $('.num02').val();
+	if($.trim(code)==""){
+		$alert("warn","验证码不能为空","111医药馆提示您",null);
+		return;
+	}
+	
+	var isget = isGetTaday();
+	if(isget>0){
+		$alert("warn","您今天已领过该红包","111医药馆提示您",null);
+		return;
+	}
+	
+	
+	
+	jQuery.ajax
+	({
+	    type: "post",
+	    url: "/login/login!redMobileLogin.action",	 
+	    data:{'mobile_username':phone,'smsCode':code,'leader_code':lcode,'packetId':redid,'couponId':couponId,'lid':leaderid},
+	    async:false, 
+	    success: function(data)
+	    {
+	       
+	       	if(data==2){
+	        	 $(".shade-bg").show();
+	        }else if(data==1){
+	        	$alert("warn","您输入的短信验证码不正确","111医药馆提示您",null);
+	        }else if(data==3){
+	        	$alert("warn","该账户已停用","111医药馆提示您",null);
+	        }else if(data==-100){
+	        	$alert("warn","您今天已领过该红包","111医药馆提示您",null);
+	        }else{
+	        	$alert("warn","领取失败","111医药馆提示您",null);
+	        }
+	    }
+	});    
+	
+}
+
+function getcode(){
+
+	
+
+	var phone = $('.num01').val();
+	if($.trim(phone)==""){
+		$alert("warn","手机号码不能为空","111医药馆提示您",null);
+		return;
+	}
+	
+	var isget = isGetTaday();
+	if(isget>0){
+		$alert("warn","您今天已领过该红包","111医药馆提示您",null);
+		return;
+	}
+	
+	jQuery.ajax
+	({
+	    type: "post",
+	    url: "/login/login!validateMobileCode.action",	 
+	    data:{'mobile_username':phone},
+	    async:false, 
+	    success: function(data)
+	    {
+	            if(data==0){
+					timer = window.setInterval("timeDesc()", 1000);
+					$alert("warn","验证码发送成功!");
+					$("#getCode").attr("onclick","");
+				}else if(data==1){
+					$alert("warn","验证码发送失败!");
+				}else if(data==3){
+					$alert("warn","请输入11位有效手机号!");
+				}
+	    }
+	}); 
+}
+
+
+    $(function(){
+        /*
+        $(".get-coupon").click(function(){
+            $(".shade-bg").show();
+        }); */
+        $(".close-btn").click(function(){
+            $(".shade-bg").hide();
+            window.location.href="http://"+window.location.host;
+        })
+    })
+   
+
+function getParameters(){
+ var pars = window.location.search;
+    if(pars.charAt(0) == '?')
+            pars = pars.substring(1,pars.length);
+    var arr = pars.split("&");
+    var objs = [];
+    var eles;
+    for(var i=0;i<arr.length;i++){
+            eles = arr[i].split("=");
+            objs[eles[0]] = eles[1];
+    }
+    return objs;
+}
+
+function isGetTaday(){
+    var cnt = 0;
+	var phone = $('.num01').val();
+	var redid = getParameters().rid;
+	if($.trim(phone)==""){
+		$alert("warn","手机号码不能为空","111医药馆提示您",null);
+		return;
+	}
+	jQuery.ajax
+	({
+	    type: "post",
+	    url: "/healthLeader/lxredpack!isGetToday.action",	 
+	    data:{'mobile':phone,'rid':redid},
+	    async:false, 
+	    success: function(data)
+	    {
+	           cnt = data;
+	    }
+	}); 
+	return cnt;
+}
+
+</script>
+</html>
+

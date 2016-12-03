@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+	<!-- Configuration for the user package. -->
+	<package name="share" extends="default" namespace="/share">
+		<action name="leader" class="com.rc.portal.webapp.action.ShareLeaderAction">
+			<result name="poster" type="freemarker">/WEB-INF/pages/share/poster.ftl</result>
+		</action>
+	</package>
+</xwork>

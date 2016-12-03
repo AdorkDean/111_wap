@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="t_healthy_plan" >
+  <resultMap id="ibatorgenerated_BaseResultMap" class="com.rc.portal.vo.THealthyPlan" >
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="classification_id" property="classificationId" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="plan_explain" property="planExplain" jdbcType="VARCHAR" />
+    <result column="banner_img_url" property="bannerImgUrl" jdbcType="VARCHAR" />
+    <result column="plan_img_url" property="planImgUrl" jdbcType="VARCHAR" />
+    <result column="reminder" property="reminder" jdbcType="VARCHAR" />
+    <result column="weight" property="weight" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="create_dt" property="createDt" jdbcType="TIMESTAMP" />
+    <result column="delete_status" property="deleteStatus" jdbcType="INTEGER" />
+    <result column="wx_share_url" property="wxShareUrl" jdbcType="VARCHAR" />
+    <result column="wx_share_content" property="wxShareContent" jdbcType="VARCHAR" />
+    <result column="goods_category_id" property="goodsCategoryId" jdbcType="BIGINT" />
+  </resultMap>
+  <sql id="ibatorgenerated_Example_Where_Clause" >
+    <iterate property="oredCriteria" conjunction="or" prepend="where" removeFirstPrepend="iterate" >
+      <isEqual property="oredCriteria[].valid" compareValue="true" >
+        (
+        <iterate prepend="and" property="oredCriteria[].criteriaWithoutValue" conjunction="and" >
+          $oredCriteria[].criteriaWithoutValue[]$
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithSingleValue" conjunction="and" >
+          $oredCriteria[].criteriaWithSingleValue[].condition$
+            #oredCriteria[].criteriaWithSingleValue[].value#
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithListValue" conjunction="and" >
+          $oredCriteria[].criteriaWithListValue[].condition$
+          <iterate property="oredCriteria[].criteriaWithListValue[].values" open="(" close=")" conjunction="," >
+            #oredCriteria[].criteriaWithListValue[].values[]#
+          </iterate>
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithBetweenValue" conjunction="and" >
+          $oredCriteria[].criteriaWithBetweenValue[].condition$
+          #oredCriteria[].criteriaWithBetweenValue[].values[0]# and
+          #oredCriteria[].criteriaWithBetweenValue[].values[1]#
+        </iterate>
+        )
+      </isEqual>
+    </iterate>
+  </sql>
+  <select id="ibatorgenerated_selectByExample" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.rc.portal.vo.THealthyPlanExample" >
+    select id, classification_id, name, plan_explain, banner_img_url, plan_img_url, reminder,
+      weight, status, create_dt, delete_status, wx_share_url, wx_share_content, goods_category_id
+    from t_healthy_plan
+    <isParameterPresent >
+      <include refid="t_healthy_plan.ibatorgenerated_Example_Where_Clause" />
+      <isNotNull property="orderByClause" >
+        order by $orderByClause$
+      </isNotNull>
+    </isParameterPresent>
+  </select>
+  <select id="ibatorgenerated_selectByPrimaryKey" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.rc.portal.vo.THealthyPlan" >
+    select id, classification_id, name, plan_explain, banner_img_url, plan_img_url, reminder,
+      weight, status, create_dt, delete_status, wx_share_url, wx_share_content, goods_category_id
+    from t_healthy_plan
+    where id = #id:BIGINT#
+  </select>
+  <delete id="ibatorgenerated_deleteByPrimaryKey" parameterClass="com.rc.portal.vo.THealthyPlan" >
+    delete from t_healthy_plan
+    where id = #id:BIGINT#
+  </delete>
+  <delete id="ibatorgenerated_deleteByExample" parameterClass="com.rc.portal.vo.THealthyPlanExample" >
+    delete from t_healthy_plan
+    <include refid="t_healthy_plan.ibatorgenerated_Example_Where_Clause" />
+  </delete>
+  <insert id="ibatorgenerated_insert" parameterClass="com.rc.portal.vo.THealthyPlan" >
+    insert into t_healthy_plan (id, classification_id, name, plan_explain, banner_img_url,
+      plan_img_url, reminder, weight, status, create_dt, delete_status, wx_share_url,
+      wx_share_content, goods_category_id)
+    values (#id:BIGINT#, #classificationId:BIGINT#, #name:VARCHAR#, #planExplain:VARCHAR#,
+      #bannerImgUrl:VARCHAR#, #planImgUrl:VARCHAR#, #reminder:VARCHAR#, #weight:INTEGER#,
+      #status:INTEGER#, #createDt:TIMESTAMP#, #deleteStatus:INTEGER#, #wxShareUrl:VARCHAR#,
+      #wxShareContent:VARCHAR#, #goodsCategoryId:BIGINT#)
+	<selectKey resultClass="long" keyProperty="id"> 
+		select LAST_INSERT_ID()
+	</selectKey>
+  </insert>
+
+  <insert id="ibatorgenerated_insertSelective" parameterClass="com.rc.portal.vo.THealthyPlan" >
+    insert into t_healthy_plan
+    <dynamic prepend="(" >
+      <isNotNull prepend="," property="id" >
+        id
+      </isNotNull>
+      <isNotNull prepend="," property="classificationId" >
+        classification_id
+      </isNotNull>
+      <isNotNull prepend="," property="name" >
+        name
+      </isNotNull>
+      <isNotNull prepend="," property="planExplain" >
+        plan_explain
+      </isNotNull>
+      <isNotNull prepend="," property="bannerImgUrl" >
+        banner_img_url
+      </isNotNull>
+      <isNotNull prepend="," property="planImgUrl" >
+        plan_img_url
+      </isNotNull>
+      <isNotNull prepend="," property="reminder" >
+        reminder
+      </isNotNull>
+      <isNotNull prepend="," property="weight" >
+        weight
+      </isNotNull>
+      <isNotNull prepend="," property="status" >
+        status
+      </isNotNull>
+      <isNotNull prepend="," property="createDt" >
+        create_dt
+      </isNotNull>
+      <isNotNull prepend="," property="deleteStatus" >
+        delete_status
+      </isNotNull>
+      <isNotNull prepend="," property="wxShareUrl" >
+        wx_share_url
+      </isNotNull>
+      <isNotNull prepend="," property="wxShareContent" >
+        wx_share_content
+      </isNotNull>
+      <isNotNull prepend="," property="goodsCategoryId" >
+        goods_category_id
+      </isNotNull>
+      )
+    </dynamic>
+    values
+    <dynamic prepend="(" >
+      <isNotNull prepend="," property="id" >
+        #id:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="classificationId" >
+        #classificationId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="name" >
+        #name:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="planExplain" >
+        #planExplain:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="bannerImgUrl" >
+        #bannerImgUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="planImgUrl" >
+        #planImgUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="reminder" >
+        #reminder:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="weight" >
+        #weight:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="status" >
+        #status:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="createDt" >
+        #createDt:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="deleteStatus" >
+        #deleteStatus:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="wxShareUrl" >
+        #wxShareUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="wxShareContent" >
+        #wxShareContent:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="goodsCategoryId" >
+        #goodsCategoryId:BIGINT#
+      </isNotNull>
+      )
+    </dynamic>
+	<selectKey resultClass="long" keyProperty="id"> 
+		select LAST_INSERT_ID()
+	</selectKey>
+  </insert>
+
+  <select id="ibatorgenerated_countByExample" parameterClass="com.rc.portal.vo.THealthyPlanExample" resultClass="java.lang.Integer" >
+    select count(*) from t_healthy_plan
+    <include refid="t_healthy_plan.ibatorgenerated_Example_Where_Clause" />
+  </select>
+  <update id="ibatorgenerated_updateByExampleSelective" >
+    update t_healthy_plan
+    <dynamic prepend="set" >
+      <isNotNull prepend="," property="record.id" >
+        id = #record.id:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="record.classificationId" >
+        classification_id = #record.classificationId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="record.name" >
+        name = #record.name:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.planExplain" >
+        plan_explain = #record.planExplain:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.bannerImgUrl" >
+        banner_img_url = #record.bannerImgUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.planImgUrl" >
+        plan_img_url = #record.planImgUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.reminder" >
+        reminder = #record.reminder:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.weight" >
+        weight = #record.weight:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="record.status" >
+        status = #record.status:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="record.createDt" >
+        create_dt = #record.createDt:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="record.deleteStatus" >
+        delete_status = #record.deleteStatus:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="record.wxShareUrl" >
+        wx_share_url = #record.wxShareUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.wxShareContent" >
+        wx_share_content = #record.wxShareContent:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.goodsCategoryId" >
+        goods_category_id = #record.goodsCategoryId:BIGINT#
+      </isNotNull>
+    </dynamic>
+    <isParameterPresent >
+      <include refid="t_healthy_plan.ibatorgenerated_Example_Where_Clause" />
+    </isParameterPresent>
+  </update>
+  <update id="ibatorgenerated_updateByExample" >
+    update t_healthy_plan
+    set id = #record.id:BIGINT#,
+      classification_id = #record.classificationId:BIGINT#,
+      name = #record.name:VARCHAR#,
+      plan_explain = #record.planExplain:VARCHAR#,
+      banner_img_url = #record.bannerImgUrl:VARCHAR#,
+      plan_img_url = #record.planImgUrl:VARCHAR#,
+      reminder = #record.reminder:VARCHAR#,
+      weight = #record.weight:INTEGER#,
+      status = #record.status:INTEGER#,
+      create_dt = #record.createDt:TIMESTAMP#,
+      delete_status = #record.deleteStatus:INTEGER#,
+      wx_share_url = #record.wxShareUrl:VARCHAR#,
+      wx_share_content = #record.wxShareContent:VARCHAR#,
+      goods_category_id = #record.goodsCategoryId:BIGINT#
+    <isParameterPresent >
+      <include refid="t_healthy_plan.ibatorgenerated_Example_Where_Clause" />
+    </isParameterPresent>
+  </update>
+  <update id="ibatorgenerated_updateByPrimaryKeySelective" parameterClass="com.rc.portal.vo.THealthyPlan" >
+    update t_healthy_plan
+    <dynamic prepend="set" >
+      <isNotNull prepend="," property="classificationId" >
+        classification_id = #classificationId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="name" >
+        name = #name:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="planExplain" >
+        plan_explain = #planExplain:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="bannerImgUrl" >
+        banner_img_url = #bannerImgUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="planImgUrl" >
+        plan_img_url = #planImgUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="reminder" >
+        reminder = #reminder:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="weight" >
+        weight = #weight:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="status" >
+        status = #status:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="createDt" >
+        create_dt = #createDt:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="deleteStatus" >
+        delete_status = #deleteStatus:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="wxShareUrl" >
+        wx_share_url = #wxShareUrl:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="wxShareContent" >
+        wx_share_content = #wxShareContent:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="goodsCategoryId" >
+        goods_category_id = #goodsCategoryId:BIGINT#
+      </isNotNull>
+    </dynamic>
+    where id = #id:BIGINT#
+  </update>
+  <update id="ibatorgenerated_updateByPrimaryKey" parameterClass="com.rc.portal.vo.THealthyPlan" >
+    update t_healthy_plan
+    set classification_id = #classificationId:BIGINT#,
+      name = #name:VARCHAR#,
+      plan_explain = #planExplain:VARCHAR#,
+      banner_img_url = #bannerImgUrl:VARCHAR#,
+      plan_img_url = #planImgUrl:VARCHAR#,
+      reminder = #reminder:VARCHAR#,
+      weight = #weight:INTEGER#,
+      status = #status:INTEGER#,
+      create_dt = #createDt:TIMESTAMP#,
+      delete_status = #deleteStatus:INTEGER#,
+      wx_share_url = #wxShareUrl:VARCHAR#,
+      wx_share_content = #wxShareContent:VARCHAR#,
+      goods_category_id = #goodsCategoryId:BIGINT#
+    where id = #id:BIGINT#
+  </update>
+  <select id="selectByExampleByPage" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.rc.portal.vo.THealthyPlanExample" >
+                    select id, classification_id, name, plan_explain, banner_img_url, plan_img_url, reminder,
+                      weight, status, create_dt, delete_status, wx_share_url, wx_share_content, goods_category_id
+                    from t_healthy_plan
+                    <isParameterPresent >
+                      <include refid="t_healthy_plan.ibatorgenerated_Example_Where_Clause" />
+                      <isNotNull property="orderByClause" >
+                        order by $orderByClause$
+                      </isNotNull>
+                    </isParameterPresent>
+					limit $pageInfo.start$ ,$pageInfo.pageSize$
+  </select>
+  
+    <select id="selectHealthyPlanByMap" resultClass="java.util.HashMap" parameterClass="java.util.Map">
+  		SELECT thp.id,thp.name,thp.plan_explain,thp.banner_img_url,thp.reminder,thp.status,
+  		thp.goods_category_id,
+  		(SELECT tcc.classification_name FROM t_healthy_plan_classification AS tcc WHERE tcc.id = thp.classification_id) AS cname,
+  		thp.wx_share_url,
+      	thp.wx_share_content
+		from t_healthy_plan as thp 
+		where 1=1
+		<isNotNull prepend="and" property="id">
+		thp.id = #id# 
+		</isNotNull>
+		<isNotNull prepend="and" property="beginDate">
+		thp.create_dt &gt;= #beginDate# 
+		</isNotNull>
+		<isNotNull prepend="and" property="endDate">
+		thp.create_dt &lt;= #endDate#
+		</isNotNull>
+		limit $offSet$ ,$pageSize$
+	</select>
+	
+	<select id="selectHealthyPlanSymptomByMap" resultClass="java.util.HashMap" parameterClass="java.util.Map">
+		SELECT id,name,symptom_explain,banner_img_url,weight,type 
+		from t_healthy_plan_symptom 
+		where 1=1
+		<isNotNull prepend="and" property="id">
+		plan_id = #id# 
+		</isNotNull>
+		ORDER BY weight DESC
+	</select>
+	
+	<select id="selectHealthyPlanGoodsByMap" resultClass="java.util.HashMap" parameterClass="java.util.Map">
+		SELECT * FROM
+		(
+			SELECT
+			tg.id,
+			tg.abbreviation_picture,
+			tgp.price AS app_price,
+			tgp_wap.price AS wap_price,
+		  	tgp.`status` AS appStatus,
+			tgp_wap.`status` AS wapStatus,
+			tg.price,
+			tg.goods_name,
+			tg.short_name,
+			tg.main_title,
+			tg.type,
+			tg.spec,
+			thpg.weight,
+			tg.stock
+			from t_healthy_plan_goods as thpg 
+			LEFT JOIN t_goods as tg ON thpg.goods_id = tg.id
+			LEFT JOIN t_goods_price AS tgp ON tgp.goods_id = tg.id AND tgp.platform_type = '111yao' AND tgp.price_type = 'app'
+			LEFT JOIN t_goods_price AS tgp_wap ON tgp_wap.goods_id = tg.id AND tgp_wap.platform_type = '111yao' AND tgp_wap.price_type = 'wap'
+			where 1=1
+			<isNotNull prepend="and" property="id">
+			thpg.relation_id = #id# 
+			</isNotNull>
+			<isNotNull prepend="and" property="type">
+			thpg.type = #type# 
+			</isNotNull>
+			ORDER BY thpg.weight DESC
+		) AS tt
+		WHERE 1 = 1
+    	AND tt.stock > 0
+   		<isEqual property="dataType" compareValue="app">
+   		AND tt.appStatus = 1
+   		</isEqual>
+   		<isEqual property="dataType" compareValue="wap">
+   		AND tt.wapStatus = 1
+   		</isEqual>
+	</select>
+	
+	<select id="selectHealthyPlanCombinationByMap" resultClass="java.util.HashMap" parameterClass="java.util.Map">
+		SELECT
+			t.id,
+			t.package_name,
+			t.comment_content,
+		  p.real_name,
+		  p.head_url,
+		  p.work_year,
+		  p.remark
+		FROM
+			t_healthy_plan_combination AS t
+		LEFT JOIN t_physician AS p ON p.id = t.pharmacist_id AND t.pharmacist_id IS NOT NULL
+		WHERE 1 = 1
+		AND t.STATUS = 1
+		AND t.delete_status = 0
+		<isNotNull prepend="and" property="id">
+		t.plan_id = #id# 
+		</isNotNull>
+		ORDER BY t.weight DESC
+	</select>
+	
+	<select id="selectCategoryName" resultClass="java.util.HashMap" parameterClass="java.util.Map">
+		SELECT tp.id ,tp.name from t_healthy_plan tp where tp.classification_id=(SELECT p.classification_id FROM t_healthy_plan p where p.id = #hid# ) AND  tp.status= 1 AND tp.delete_status = 0
+	</select>
+	
+	
+	
+</sqlMap>

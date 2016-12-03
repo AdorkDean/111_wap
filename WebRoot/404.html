@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <!--缩放比例-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>404</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<!--#include virtual="/static/inc/wap/header.html" -->
+<article class="order-box pb70">
+	<article class="cart-no-pro">
+        <dl>
+            <dt><img src="/web/images/member-icon03.png"></dt>
+            <dd>
+                <p>页面不见了~</p>
+                <p><a href="#" class="no-pro-btn"><span class="countTime">5</span>&nbsp;秒后回首页</a></p>    
+            </dd>
+        </dl>
+    </article>
+</article>
+<div class="footer-bottom">
+<!--#include virtual="/static/inc/wap/footer.html" -->
+</div>
+</body>
+</html>
+<script>
+$(function()
+{
+	ctime();
+});
+var wait = 5;
+var clear = null;
+function ctime()
+{
+      clear = window.setInterval("time()", 1000);
+}
+function time() 
+{
+    if(wait == 0) 
+    {
+        window.clearInterval(clear);
+        window.location.href = "/";
+    }
+    if(wait > 0)
+    {
+        wait--;
+        $(".countTime").html(wait);
+    }
+    if(wait < 0)
+    {
+    	wait = 5;
+    }
+}    
+</script>
+<style>
+.cart-no-pro{width:100%; height:100%; position:absolute; left:0; top:0; right:0; bottom:0; text-align:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;flex:1; z-index:10;}
+a.no-pro-btn{border:1px solid #00b4b8; display: block;  margin:20px 70px 0;border-radius: 6px; text-align: center; line-height:40px; height:40px;font-size:18px !important; color:#00b4b8 !important;}
+.cart-no-pro dl{ -webkit-box-flex: 1; text-align: center; margin-top:-100px;}
+.cart-no-pro img{ width:50%;}
+.cart-no-pro dd{ margin-top: 15px;  color: #c8c8c8; font-size: 24px;}
+
+</style>

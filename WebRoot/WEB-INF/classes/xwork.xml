@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "xwork-1.1.1.dtd">
+<xwork>
+	<!-- Include webwork defaults -->	
+	<include file="config-browser.xml"/> 	
+	<include file="xwork-system.xml"/>
+	<include file="xwork-login.xml"/>
+	<include file="xwork-register.xml"/>
+	<include file="xwork-findpassword.xml"/>
+	<include file="xwork-index.xml"/>
+	<include file="xwork-member.xml"/>	
+	<include file="xwork-goods.xml"/>
+	<include file="xwork-prescription.xml"/>
+	<include file="xwork-cart.xml"/>
+	<include file="xwork-leader.xml"/>
+	<include file="xwork-location.xml"/>
+	<include file="xwork-healthleader.xml"/>
+	<include file="xwork-appleader.xml"/>
+	<include file="xwork-category.xml"/>
+	<include file="xwork-goodscomment.xml"/>
+	<include file="xwork-apphealthleader.xml"/>
+	<include file="xwork-coupon.xml"/>
+	<include file="xwork-wechat.xml"/>
+	<include file="xwork-article.xml"/>
+	<include file="xwork-healthyplan.xml"/>		
+	<include file="xwork-share.xml"/>
+	<include file="xwork-storeorder.xml"/>	
+	<include file="xwork-new-leader.xml"/>
+	<include file="xwork-lsleader.xml"/>
+</xwork>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+<!-- 	前台列表页 -->
+	<package name="goods" extends="default" namespace="/goods">
+		<action name="goodsList" class="com.rc.portal.webapp.action.GoodsListAction">
+			<result name="getGoodsList" type="freemarker" >/WEB-INF/pages/goods/goodsList.ftl</result>
+			<result name="getGoodsListByBrandId" type="freemarker" >/WEB-INF/pages/goods/goodsList_brand.ftl</result>
+			<result name="getGoodsListByKeyword" type="freemarker" >/WEB-INF/pages/goods/goodsList_search.ftl</result>
+		</action>
+		<action name="goodsdetail" class="com.rc.portal.webapp.action.GoodsAction">
+			<result name="app_rx_goods_detail" type="freemarker" >/WEB-INF/pages/goods/app_rx_goods_detail.ftl</result>
+			<result name="goodsdetail" type="freemarker" >/WEB-INF/pages/goods/wapgoodsdetail.ftl</result>
+			<result name="rxGoodsdetail" type="freemarker" >/WEB-INF/pages/goods/rxGoodsdetail.ftl</result>
+		</action>
+	</package>
+</xwork>

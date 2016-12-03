@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+.new-health-box{max-width:720px; margin:0 auto;}
+.new-health-register-list{border-top:1px solid #c7c7c7; border-bottom:1px solid #c7c7c7; padding:0 12px; overflow:hidden; margin-top:50px;}
+.new-health-register-list li{height:46px; border-top:1px solid #c7c7c7; margin-top:-1px; position:relative;}
+.new-health-register-list li b{height:46px; line-height:46px; padding:0 5px 0 32px; display:inline-block; text-align:right; color:#666; float:left;}
+.new-health-register-list li p{ padding:14px 90px 14px 85px;}
+.new-health-register-list li p.step2{padding:14px 10px 14px 95px;}
+.new-health-register-list li p input{height: 18px; line-height:18px; width:100%; color:#222;}
+.get-code{ background:#fe4310; color:#fff; width:84px; height:46px; line-height:46px; text-align:center; display:inline-block; position:absolute; right:0; top:0;}
+.code-countdown{ background:#f3f5f7; color:#d7d7d7; width:84px; height:46px; line-height:46px; text-align:center; display:inline-block; position:absolute; right:0; top:0;}
+.accept-rules{height:45px; line-height:45px; padding:0 45px; color:#999;}
+.accept-rules a{color:#222;}
+.accept-rules i{ width:13px; height:13px; display:inline-block; overflow:hidden; border:1px solid #c7c7c7; float:left; margin:15px 0; border-radius:50%; -webkit-border-radius:50%; position:relative; margin-right:5px;}
+.accept-rules i b{width:15px; height:15px; display:inline-block; overflow:hidden; background:url(../images/new-health/agree_mark.png) no-repeat center center; background-size:15px; position:absolute; left:-1px; top:-1px; display:none;}
+.accept-rules i.agree{ border:1px solid #fe4310; background:#fe4310;}
+.accept-rules i.agree b{display:block;}
+.new-health-btn{padding:0 45px;}
+.new-health-btn a{ height:44px; line-height:44px; display:block; border-radius:4px; -webkit-border-radius:4px; text-align:center; font-size:18px; color:#fff; background:#00c9f3;}
+.new-health-btn a.gray{ background:#f3f5f7; color:#d7d7d7; cursor:not-allowed;}
+.new-health-btn a:active{ background:#49d6f3;}
+.new-health-btn a.gray:active{background:#f3f5f7;}
+.new-health-welcome img{width:100%;}
+/*my article*/
+.new-health-article-list{padding:0 0 110px;}
+.new-health-article-list li{height:96px; overflow:hidden; position:relative;}
+.new-health-article-list li a.article-link{padding:15px; height:65px; display:block; background:#fff;}
+.new-health-article-list li a.article-link:active{ background:#f8f8f8;}
+.new-health-article-list .cut-line{display:block; margin:0 15px; height:1px; background:#d7d7d7;}
+.new-health-article-list li img{width:65px; height:65px; display:block; float:left;}
+.new-health-article-list li a.share{width:50px; height:35px; line-height:35px; display:block; overflow:hidden; text-align:center; border:1px solid #666; color:#666; border-radius:20px; -webkit-border-radius:20px; font-size:12px; position:absolute; right:15px; top:50%; margin-top:-18px;}
+.new-health-article-list li a.share:active{background:#f3f5f7;}
+.article-introduce{ padding:0 55px 0 70px;}
+.article-title{ color:#222; height:18px; line-height:18px; overflow:hidden; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis; font-size:16px;}
+.article-state{height:15px; line-height:15px; overflow:hidden;}
+.article-state span{ float:left; margin-right:5px; color:#999; font-size:12px;}
+.article-info{ color:#999; height:32px; line-height:16px; overflow:hidden;}
+.no-more-tips{color:#666; height:35px; line-height:35px; text-align:center;}
+.no-more-tips img{ width:110px; height:12px; margin:11px auto 12px; display:block;}
+.share-tips{height:55px; line-height:55px; text-align:center; overflow:hidden; font-size:12px; color:#222; margin:0 15px; border-bottom:1px solid #d7d7d7;}
+.share-tips b{width:45px; height:45px; display:inline-block; overflow:hidden; background:url(../images/new-health/red_ico.png) no-repeat; background-size:45px; margin:4px 10px 5px 0; vertical-align:middle;}
+.explain-title{ height:25px; line-height:25px; overflow:hidden;}
+.explain-title span{border-left:2px solid #00c9f4; display:block; height:15px; line-height:15px; margin:5px 0; padding:0 13px;}
+/*my pharmacy*/
+.pharmacy-title{color:#999; height:32px; line-height:16px; overflow:hidden;}
+.pharmacy-rebate{ font-size:16px; height:20px; line-height:20px; overflow:hidden; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.pharmacy-price{font-size:12px; color:#222; height:14px; line-height:14px; overflow:hidden; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.profit-tips{height:45px; padding-top:10px; text-align:center; overflow:hidden; font-size:12px; color:#222; margin:0 15px; border-bottom:1px solid #d7d7d7;}
+.profit-tips p b{ font-size:18px; padding:0 5px; font-weight:bold;}
+/*manage*/
+.new-health-manage{padding:0 0 110px;}
+.new-health-manage-top{height:130px; background:#00c9f4;}
+.new-health-manage-header{ float:left; margin:35px 0; font-size:15px; color:#fff; line-height:60px; width:60%; overflow:hidden;}
+.new-health-manage-header img{width:56px; height:56px; display:block; border:2px solid #99e9fb; border-radius:50%; -webkit-border-radius:50%; float:left; margin:0 10px 0 15px;}
+.new-health-info{width:40%; float:right; text-align:center; margin:20px 0 10px;}
+.new-health-info li{color:#fff; height:50px;}
+.new-health-info li p{ height:20px; line-height:20px; font-size:12px;}
+.new-health-info li p.fs18{font-size:18px; height:30px; line-height:30px; overflow:hidden; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.new-health-manage-list li{height:56px; overflow:hidden; position:relative;}
+.new-health-manage-list li b{width:19px; height:19px; display:inline-block; float:left; margin:18px 10px 18px 0; background:url(http://img.zdfei.com/static/image/temp/20160727/b66a7bbe71850aa2b71530619ac13f8b.png) no-repeat; background-size:19px;}
+.new-health-manage-list li b.ico1{ background-position:0 0;}
+.new-health-manage-list li b.ico2{ background-position:0 -19px;}
+.new-health-manage-list li b.ico3{ background-position:0 -38px;}
+.new-health-manage-list li b.ico4{ background-position:0 -57px;}
+.new-health-manage-list li b.ico5{ background-position:0 -76px;}
+.new-health-manage-list li b.ico6{ background-position:0 -95px;}
+.new-health-manage-list li b.ico7{ background-position:0 -114px;}
+.new-health-manage-list li b.ico8{ background-position:0 -133px;}
+.new-health-manage-list li a{padding:0 15px; height:55px; line-height:55px; display:block; background:#fff; color:#666;}
+.new-health-manage-list li a:active{ background:#f8f8f8;}
+.new-health-manage-list li a span{width:9px; height: 15px; display:inline-block; overflow:hidden; background:url(../images/new-health/right_corner.png) no-repeat; background-size:9px 15px; position:absolute; right:15px; top:20px;}
+.new-health-manage-list .cut-line{display:block; margin:0 0 0 15px; height:1px; background:#d7d7d7;}
+/*health material*/
+.health-center-material{padding-top:10px;}
+.tabs{height:45px;}
+.tabs a{display:block;float:left;width:50%;color:#000;text-align:center;background:#fff;line-height:45px;font-size:15px;text-decoration:none;}
+.tabs a.active{color:#fff;background:#4aa9eb;}
+.share-sc-tips{color:#3e3e3e; padding:5px 15px; line-height:1.6em; font-size:12px;}
+.material-picture li{width:50%; float:left;}
+.material-picture li a,.material-picture li img{width:100%; display:block;}
+.material-text{margin:0 15px 10px;}
+.material-text li{padding:5px 30px 5px 10px; background:#fff; border-radius:4px; -webkit-border-radius:4px; overflow:hidden; position:relative; margin-top:10px;}
+.margin-text-detals{padding:5px 30px 5px 10px; color:#3e3e3e; text-align:justify;}
+.material-text li a{ position:absolute; right:0; top:0; bottom:0; border-radius:0 4px 4px 0; -webkit-border-radius:0 4px 4px 0; font-size:12px; color:#fff; background:#feab30; text-align:center; width:20px;}
+.copy_ico{width:10px; height:14px; display:inline-block; background:url(../images/copy_ico.png) no-repeat; background-size:10px 14px; margin:0 5px;}
+.material-text li a span{ position:absolute; width:20px; height:40px; top:50%; display:inline-block; float:left; margin-top:-25px; left:0;}
+/*my profit*/
+.health-in-money{overflow:hidden}
+.list-link{height:36px;padding:0 5%;position:relative;background:#f3f5f7;line-height:36px;border-bottom:1px solid #d7d7d7;transition:all .4s ease}
+.fa-chevron-down{position:absolute;top:50%;margin-top:-7px;right:5%;height:14px;width:8px;transform:rotate(-270deg);background:url(../images/new-health/health_arrow_right.png) no-repeat;background-size:8px;transition:all .4s ease}
+.list-link i{display:block;position:absolute;left:0;top:11px;height:20px;width:2px;background:#00c9f4}
+.list-sub-menu{display:none}
+.tel-data{height:40px;border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;background:#FFF;position:relative;padding:10px 5%;margin-top:-1px}
+.tel-data span{line-height:20px;font-size:15px;font-weight:700;color:#666}
+.tel-data p{line-height:20px;font-size:14px;color:#666}
+.tel-data b{position:absolute;display:block;top:50%;right:5%;font-size:15px;margin-top:-20px;height:40px;line-height:40px;color:#ff2828;font-weight:700}
+.tel-data b.b-blue{color:#5877db}
+.in-open .list-sub-menu{display:block}
+.in-open .fa-chevron-down{transform:rotate(-90deg)}
+.in-open i{display:block}
+.more-btn{height:50px;border-bottom:1px solid #d7d7d7}
+.more-btn input{display:block;height:50px;line-height:50px;margin:0 auto}
+.for-bold{font-weight:700}
+/*share-poster*/
+.share-poster-box{width:100%;height:100%;position:absolute;left:0;top:0;right:0;bottom:0;text-align:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;flex:1;z-index:10}
+.poster-img{margin:0 20%;width:60%}
+.poster-img img{width:100%;display:block}
+.new-health-common-btn{bottom:15px;left:15px;right:15px;position:absolute}
+.new-health-common-btn a{height:50px;line-height:50px;display:block;border-radius:4px;-webkit-border-radius:4px;text-align:center;font-size:18px;color:#fff;background:-webkit-linear-gradient(left,#f49d57 ,#f7843e);background:-o-linear-gradient(right,#f49d57,#f7843e);background:-moz-linear-gradient(right,#f49d57,#f7843e);background:linear-gradient(to right,#f49d57 ,#f7843e)}
+/**/
+.search-btn-yf{ background:url(../images/new-health/new_health_search_ico.png) no-repeat; background-size:30px;}
+/*pharmacy fans*/
+.my-pharmacy-fans{padding-bottom:110px;}
+.my-fans-total{height:30px; line-height:30px; text-align:center; border-bottom:1px solid #d7d7d7;}
+.my-fans-total b{ font-weight:bold; padding:0 5px; font-size:16px;}
+.sort-way{ margin:0 15px; border-bottom:1px solid #d7d7d7;}
+.sort-way li{ float:left; width:50%;}
+.sort-way li a{height:25px; line-height:25px; display:block; text-align:center;}
+.sort-way li a.curr{color:#0fa9a3;}
+.my-fans-list li{height:91px; position:relative;}
+.my-fans-list li a{ height:60px; padding:15px; display:block;}
+.my-fans-list li a:active{ background:#f3f5f7;}
+.my-fans-list li img{width:60px; height:60px; display:block; float:left; border-radius:50%; -webkit-border-radius:50%; margin-right:15px;}
+.my-fans-list li a p{height:15px; line-height:15px; overflow:hidden; word-break:keep-all; white-space:nowrap; text-overflow:ellipsis; font-size:12px;}
+.my-fans-list li a p.fans-name,.my-fans-list li a p.fans-time{color:#999;}
+.my-fans-list li .cut-line{display:block; margin:0 15px; height:1px; background:#d7d7d7;}
+/*footer*/
+.new-health-footer{border-top:1px solid #999; height:110px; position:fixed; bottom:-55px; width:100%; background:#fff; z-index:9;}
+.new-health-footer-nav{height:55px; overflow:hidden;}
+.new-health-footer-nav li{width:33.3%; float:left; height:55px;}
+.new-health-footer-nav li b{width:20px; height:20px; display:block; overflow:hidden; margin:8px auto 0; background:url(../images/new-health/new_health_footer_ico.png) no-repeat; background-size:20px;}
+.new-health-footer-nav a{ text-align:center; color:#999;}
+.new-health-footer-nav a.footer-current{color:#00c9f3;}
+.new-health-footer-nav a p{line-height:25px;}
+.new-health-footer-nav a b.my-article{background-position:0 0;}
+.new-health-footer-nav a.footer-current b.my-article{background-position:0 -20px;}
+.new-health-footer-nav a b.my-pharmacy{background-position:0 -40px;}
+.new-health-footer-nav a.footer-current b.my-pharmacy{background-position:0 -60px;}
+.new-health-footer-nav a b.my-manage{background-position:0 -80px;}
+.new-health-footer-nav a.footer-current b.my-manage{background-position:0 -100px;}
+.new-health-copy{ text-align:center;}
+.new-health-copy h1{font-size:18px; color:#00c9f4; padding-top:10px;}
+.new-health-copy p{color:#666;}
+
+.login-btn{display:none;}
+
+/*share*/
+.black-cover{ position:fixed; background:rgba(0,0,0,.8); left:0; top:0; right:0; bottom:0; z-index:199;}
+.hb-img{width:60%; margin:25px 20%; position:relative;}
+.hb-img img{width:100%; display:block;}
+.share-tips-corner{width:130px; height:45px; background:url(../images/share_tips.png) no-repeat; background-size:130px 45px; margin:10px 45px 10px 0;}
+.close-hb{ width:15px; height:15px; display:inline-block; background:url(../images/close-hb.png) no-repeat; background-size:15px; position:absolute; z-index:110; right:5px; top:5px;}
+
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){
+.poster-img{width:50%; margin:0 25%;}
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+.poster-img{width:60%; margin:0 20%;}
+}
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){
+.poster-img{width:70%; margin:0 15%;}
+}
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){
+.poster-img{width:80%; margin:0 10%;}
+}
+
+/**/
+.profit-info-list{height:75px; background:url(../images/new-health/profit_bg.jpg) no-repeat; background-size:cover;}
+.profit-info-list li{width:50%; height:75px; overflow:hidden; float:left;}
+.profit-info-list li p{color:#fff; text-align:center;}
+.profit-details{ font-size:20px; line-height:32px; padding-top:10px;}
+
+.health-exit-btn{ padding:17px 42px; background: #f3f5f7;}
+.health-exit-btn input{height:44px; display: block; width:100%; border-radius:5px; background:#00c9f3; color:#FFF; font-size:14px;}
+
+/**/
+.pharmacy-rebate{color:#fe4310;}
+.new-health-article-list li a.share{border:1px solid #00c9f4; color:#fff;background:#00c9f4; margin-top:-30px;}
+.new-health-article-list li a.add_product{width:50px; height:35px; line-height:35px; display:block; overflow:hidden; text-align:center; border:1px solid #00c9f4; color:#fff; border-radius:20px; -webkit-border-radius:20px; font-size:12px; position:absolute; right:15px; top:50%; margin-top:-18px; background:#00c9f4;}
+.new-health-article-list li a.delete-pro{width:50px; text-align:center; display:block; position:absolute; right:15px; top:65px; color:#666; font-size:12px;}
+.new-health-search{height:38px; overflow:hidden; border-bottom:1px solid #d7d7d7; background:#fff; position:relative;}
+.new-health-search-bar{ height:30px; background:#efefef; border-radius:20px; -webkit-border-radius:20px; position:absolute; left:40px; right:40px; top:3px; padding:0 40px 0 15px;}
+.new-health-search-bar input{width:100%; height:16px; line-height:16px; margin:7px 0; overflow:hidden;}
+.new-health-search-btn{ width:30px; height:30px; display:inline-block; background:url(../images/new-health/new_health_search_ico.png) no-repeat; background-size:30px; position:absolute; right:0; top:0;}
+.cancel-search{width:38px; height:38px; line-height:38px; text-align:center; display:inline-block; position:absolute; right:0; top:0; display:none;}
+.profit-tips{ position:relative;}
+.add-pro-btn{height:26px; line-height:26px; padding:0 10px; display:inline-block; font-size:14px; position:absolute; right:0; top:15px;}
+.hb-top1{position:relative;}
+.hb-top1 img.for-hb-bg1{width:100%; display:block;}
+.hb-header-img1{width:30px; height:30px; display:block; border:1px solid #fff; border-radius:50%; -webkit-border-radius:50%; position:absolute; top:20%; left:8%;}
+.hb-code1{width:26%; display:block; position:absolute; left:14%; top:39%;}
+.hb-footer{height:44px; width:100%; position:absolute; bottom:0;}
+.hb-footer img{width:100%; display:block;}
+.into-btn{width:32%; height:8%; display:block; position:absolute; left:11%; top:84%; color:#fff;}
+.into-btn span{ display:none;}
+.hot-pro{ text-align:center; height:24px; line-height:24px; margin-bottom:5px;}
+.hb-pro-list{margin-left:30px;}
+.hb-pro-list li{ float:left; width:50%;}
+.hb-pro-list li a{ display:block; margin-right:30px;}
+.hb-pro-list li a img{width:80%; display:block; margin:0 10% 5px;}
+.hb-pro-list li a p{font-size:12px; line-height:14px;}
+.show-more-hbpro{border:1px solid #fe4310; height:36px; line-height:36px; display:block; border-radius:20px; -webkit-border-radius:20px; text-align:center; color:#fe4310; margin:15px 30px 0 30px;}
+.new-health-hb2{ position:relative;}
+.hb-footer2{position:absolute; bottom:0;}
+.hb-footer2 img{width:100%;}
+.hb-top2 img.for-hb-bg2{width:100%; display:block;}
+.hb-header-img2{width:30px; height:30px; display:block; border:1px solid #fff; border-radius:50%; -webkit-border-radius:50%; position:absolute; top:3%; left:35%;}
+.hb-code2{width:27%; display:block; position:absolute; left:36%; top:43%;}
+.into-btn2{width:28%; height:9%; display:block; position:absolute; left:35%; top:84%; color:#fff;}
+.into-btn2 span{ display:none;}
+/*update*/
+.profit-info-list{height:106px; background:url(../images/new-health/profit_bg.jpg) no-repeat; background-size:cover;}
+.profit-info-list li{width:50%; height:53px; overflow:hidden; float:left;}
+.profit-info-list li p{color:#fff; text-align:center; line-height:18px;}
+.profit-details{ font-size:14px; line-height:18px; padding-top:8px;}
+.profit-info-list li a{width:75px; height:25px; line-height:25px; display:block; margin:14px auto 0; color:#00c9f4; text-align:center; background:#fff; border-radius:4px; -webkit-border-radius:4px;}
+.choice-way-box{padding-top:50px;}
+.choice-way-tips{height:34px; line-height:34px; overflow:hidden; padding:0 25px; color:#999; font-size:12px;}
+.choice-way-tips b{width:14px; height:14px; display:inline-block; overflow:hidden; float:left; background:url(../images/new-health/light_ico.png) no-repeat; background-size:14px; margin:10px 6px 0 0;}
+.choice-way-tips span{color:#222;}
+.choice-way-btn{ font-size:15px; height:50px; line-height:50px; margin-top:100px; text-align:center;}
+.choice-way-btn ul{margin:0 25px 0 40px;}
+.choice-way-btn ul li{float:left; width:50%;}
+.choice-way-btn ul li a{background:#00c9f3; border-radius:4px; -webkit-border-radius:4px; overflow:hidden; display:block; position:relative; margin-right:15px;}
+.choice-way-btn ul li a b{ position:absolute; color:#fff; left:10px; top:0px;}
+.choice-way-btn ul li a img{width:100%; display:block;}
+.choice-way-btn ul li a:active{ background:#4dd9f7;}
+.new-health-register-list.new-health-account li b{ text-align:right; width:70px;}
+.new-health-register-list.new-health-account li p{padding:14px 10px 14px 119px}
+.account-info-box{padding:0 45px;}
+.account-number{height:32px; line-height:32px; overflow:hidden;}
+.account-number span{float:left;}
+.account-number img{width:16px; height:16px; float:left; margin:8px;}
+.account-number p{color:#00c9f3; font-size:15px;}
+.fill-money-box p{height:32px; line-height:32px;}
+.fill-money-info{height:85px; padding:0 8px; border:1px solid #d7d7d7; border-radius:4px; -webkit-border-radius:4px; margin-bottom:20px;}
+.for-fill-input{height:44px; padding:8px 24px; position:relative;}
+.for-fill-input b{position:absolute; font-weight:bold; left:0; top:14px; font-size:18px; font-family:Arialws;}
+.for-fill-input input{width:100%; height:44px; line-height:44px; font-size:40px; color:#222;}
+.fill-tips{height:25px; line-height:25px; border-top:1px solid #d7d7d7; padding:0 10px; color:#fe4310; font-size:12px;}
+.choice-account-tips{height:50px; line-height:50px; font-size:15px; text-align:center;}
+.choice-account-list{ padding:0 10px;}
+.choice-account-list li{ margin-bottom:10px;}
+.choice-account-list li a{ display:block; position:relative; border-radius:4px; -webkit-border-radius:4px; overflow:hidden;}
+.choice-account-list li a img{width:100%; display:block;}
+.account-kind{ height:24px; line-height:24px; position:absolute; top:15%; left:10px; right:10px; font-size:18px; color:#fff;}
+.account-kind b{width:20px; height:20px; display:inline-block; overflow:hidden; float:left; margin:2px 8px; background:url(../images/new-health/card_bank_ico.png) no-repeat; background-size:20px;}
+.account-kind b.bank_ico1{background:url(../images/new-health/card_bank_ico.png) no-repeat; background-size:20px;}
+.account-kind b.alipay_ico{background:url(../images/new-health/card_alipay_ico.png) no-repeat; background-size:20px;}
+.card-kind{ position:absolute; top:40%; left:46px;  font-size:12px; color:#fff;}
+.account-details{color:#fff; font-size:18px; position:absolute; left:46px; top:60%;}
+.account-manage-btn a{ margin:10px; height:43px; line-height:43px; text-align:center; display:block; background:#f3f5f7; border:1px solid #d7d7d7; border-radius:4px; -webkit-border-radius:4px; font-size:16px; color:#666;}
+.account-manage-btn a b{width:43px; height:43px; display:inline-block; overflow:hidden; background-size:43px; vertical-align:top; margin-left:-21px;}
+.account-manage-btn a b.add_ico{background:url(../images/new-health/add_ico.png) no-repeat; background-size:43px;}
+.account-manage-btn a b.unlock_ico{background:url(../images/new-health/unlock_ico.png) no-repeat; background-size:43px;}
+/**/
+.black-cover{ position:fixed; background:rgba(0,0,0,.6); left:0; top:0; right:0; bottom:0;}
+.black-cover .account-manage-btn{ bottom:0; position:absolute; width:100%;}
+.new-health-register-list li div.step2{padding:14px 10px 14px 95px; color:#00c9f3; font-size:15px;}
+.card-ico{width:16px; height:16px; display:inline-block; overflow:hidden; background:url(../images/new-health/card_ico.png) no-repeat; background-size:16px; float:left; margin:0 5px 0 12px;}
+
+/*login*/
+.new-health-login-bg img{width:100%; display:block;}
+.new-health-login-list{border-top:1px solid #c7c7c7; border-bottom:1px solid #c7c7c7; padding:0 12px; overflow:hidden;}
+.new-health-login-list li{height:46px; border-top:1px solid #c7c7c7; margin-top:-1px; position:relative;}
+.new-health-login-list li b{width:19px; height:19px; display:inline-block; overflow:hidden; background:url(../images/new-health/login_form_ico.png) no-repeat; background-size:19px 38px; float:left; margin:14px 8px 0;}
+.new-health-login-list li b.login-lock{ background-position:0 -19px;}
+.new-health-login-list li p{ padding:14px 0 14px 35px;}
+.new-health-login-list li p input{width:100%;}
+.new-health-login-tips{padding:10px 45px; font-size:12px;}
+.new-health-register-now{color:#fe4310;}

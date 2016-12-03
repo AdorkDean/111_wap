@@ -1,0 +1,109 @@
+@charset "utf-8";
+        #clipArea {
+            margin: 50px 5% 10px;
+            height: 350px;
+            width: 90%;
+            background: #FFF;
+        }
+        #file {
+            width: 40px;
+            height: 30px;
+            position: absolute;
+            border: none;
+            background: none;
+            top: 5px;
+            right: 40px;
+        }
+        #file:before {
+            width: 80px;
+            height: 30px;
+            border: none;
+            line-height: 30px;
+            text-align: center;
+            background: #000;
+            color: #FFF;
+            content: "选取";
+            cursor: pointer;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: -1px;
+            z-index: 9;
+        }
+        .exitBtn {
+            width: 80px;
+            height: 30px;
+            border: none;
+            line-height: 30px;
+            text-align: center;
+            background: #000;
+            color: #FFF;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+        .submit-btn {
+            height: 50px;
+            width: 100%;
+            padding: 10px 5%;
+        }
+        .submit {
+            display: block;
+            height: 50px;
+            width: 90%;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 6px;
+            background: #f69e4f;
+            font-size: 18px;
+            color: #FFF;
+            border: none;
+        }
+        .hand-top {
+            display: block;
+            width:40px;
+            height:40px;
+            background:url("http://img.zdfei.com/static/image/temp/20160302/dcd1037e385d10dfa76ec44dbe85e466.png") no-repeat;
+            background-size: 40px 40px;
+            position: absolute;
+            top:55px;
+            left:30px;
+        }
+        .hand-bottom {
+            display: block;
+            width:40px;
+            height:40px;
+            background:url("http://img.zdfei.com/static/image/temp/20160302/bec24e8137403d70488c5d524a5efd60.png") no-repeat;
+            background-size: 40px 40px;
+            position: absolute;
+            top:358px;
+            right:32px;
+        }
+        .zwcMask 
+	{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:1000;
+		margin: 0;
+		text-align: center;
+		height:100%;
+		background: #000;
+		overflow:hidden; 
+	}
+        .divMasks 
+	{
+		display:none;
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:9999;
+		background:gray;
+		opacity:.2;
+	}
+	

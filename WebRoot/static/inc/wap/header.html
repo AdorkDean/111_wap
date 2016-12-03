@@ -1,0 +1,121 @@
+<link href="/web/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/web/css/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="/web/css/search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/web/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/web/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/web/js/common.new.js"></script>
+<script type="text/javascript" src="/web/js/alert.main.js"></script>
+<script type="text/javascript" src="/web/js/iscroll.js"></script>
+<script type="text/javascript" src="/web/js/loadingbefore.js"></script>
+<script type="text/javascript" src="/web/js/search.js"></script>
+<header class="header" id="header_1">
+     <a onclick="window.location.href='/zt/category.html'" class="top-logo"></a>
+	 <div class="search-box">
+        <a class="classify_search" onclick="focusSearch()"></a>
+        <p class="search-input-box"><input class="search-input" placeholder="可以搜索药品、品牌或症状..." id="header_search_input_common"/></p>
+     </div>
+     <a class="iconfont top-right-btn-member" onclick="window.location.href='/member/profile.action'"></a>
+</header>
+<header class="header header-yf" id="header_2" style="display:none;">
+        <div class="new-header-img">
+            <img src="/web/images/header_img.jpg" class="new-head-portrait"/>
+            <div class="new-title-name">
+                <img src="http://ui1.111yao.com/static/image/temp/20160229/c9781860dc5f0be1b3a97349049545b1.png"/>
+                <span id="whoseHouse">龙大夫的药房</span>
+            </div>
+        </div>
+        <div class="new-header-top clearfix">
+            <div class="search-box-yf">
+                <a class="iconfont search-btn-yf" onclick="search_new()">f</a>
+                <p class="search-input-box-yf"><input class="search-input-yf" name="keyword" id="search-input-new-v" placeholder="可以搜索药品、品牌或症状..."/></p>
+            </div>
+            <a onclick="window.location.href='/member/profile.action'" class="new-top-member"></a>
+        </div>
+</header>
+<script type="text/javascript">
+	function loaded(){}
+	$(function()
+	{
+		//显示不同的头部
+		var host = window.location.host;
+		if(host.indexOf("shop") > 0)
+		{
+			var params = host.split(".");
+			var leaderId = params[0];
+			$.ajax(
+		    {
+		        url: "/index!getLeaderInfo.action?leaderId="+leaderId,
+		        type: 'POST',
+		        cache: false,
+		        success: function(data)
+		        {
+		        	if(data != '' && data != null && data != undefined)
+		        	{
+		        		$("#header_2").show();
+			        	var ui1 = "http://ui1.111yao.com";
+		        		var leaderId = data.id;
+			        	var headurl = ui1+data.head_url;
+			        	if(headurl == null || headurl == '' || headurl == undefined)
+			        	{
+			        		headurl = ui1+"/static/image/temp/20151014/b09e2b114b6779b8fe47bcd8d38fe48a.png";
+			        	}
+			        	var displayName = "我的药房";
+			        	var nickname = data.nick_name;
+			        	var realname = data.real_name;
+			        	if(nickname != null && nickname != '' && nickname != undefined)
+			        	{
+			        		displayName = nickname + "的药房";
+			        	}
+			        	else
+			        	{
+			        		if(realname != null && realname != '' && realname != undefined)
+			        		{
+			        			displayName = realname + "的药房";
+			        		}
+			        	}
+			        	$("#whoseHouse").html(displayName);
+			        	$(".new-head-portrait").attr("src",headurl);
+		        	}
+		        	else
+		        	{
+		        		$("#header_1").show();
+		        	}
+		        },
+		        error: function()
+		        {
+		        	console.log("server error");
+		        }
+		    }); 			
+		}
+		else
+		{
+			$("#header_1").show();
+		}
+		
+		$("#header_search_input_common").focus(function(){
+			focusSearch();
+		});
+	});
+	function focusSearch() {
+		window.scroll(0, 0);
+		$("#result_content_id").hide();
+		$(".search_include_ui").show();
+		$("#search-value-ui-id").focus();
+		new IScroll('.wrapper3', {eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false});
+	}
+</script>
+<!--#include virtual="/static/inc/wap/search_include.html" -->
+<style>
+.classify_search {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    background: url("http://img.zdfei.com/static/image/temp/20160725/e426cedd7070c9f516d5f38ce94a10cc.png") no-repeat center center;
+    background-size: 14px;
+    padding: 8px;
+}
+</style>
+

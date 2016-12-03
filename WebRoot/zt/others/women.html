@@ -1,0 +1,648 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <!--缩放比例-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>女神范</title>
+    <style type="text/css">
+        html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,textarea,input,span,figure,aside,time,article{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}
+        article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+        audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+        audio:not([controls]){display:none}
+        html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+        body{width:100%;font-family:"SimHei",Helvetica,Arial,sans-serif;font-size:14px;color:#000;background:#e0e1e5}
+        input,textarea{font-family:"SimHei",Helvetica,Arial,sans-serif;color:#fff}
+        input:-moz-placeholder,textarea:-moz-placeholder{color:#fff}
+        input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#fff}
+        input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#fff}
+        a{color:#fff;text-decoration:none;/*-webkit-tap-highlight-color:rgba(0,0,0,0.2);*/-webkit-tap-highlight-color:transparent}
+        a:hover{text-decoration:none}
+        a:focus{outline:thin dotted}
+        a:hover,a:active{outline:0}
+        textarea,input{resize:none;outline:0;font-size:100%;-webkit-tap-highlight-color:rgba(255,0,0,0)}
+        textarea{resize:none;-webkit-appearance:none}
+        ul,ol{list-style:none}
+        em{font-style:normal}
+        .clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0;overflow:hidden}
+        .fl{float:left}
+        .fr{float:right}
+
+
+        .national_wap{ background-color: #fe5165; position:relative; left:0; top:84px;}
+        /*content*/
+        .banner,.banner img{width:100%; display:block;}
+        .title,.title img{width:100%; display:block;}
+        .banner span{display:none;}
+        /*优惠券*/
+        .discountbox{ padding: 0 0 0 3px;}
+        .discountbox li{ width:33.3%; float: left;}
+        .discountbox li a{ display: block; padding-right:3px;}
+        .discountbox li a img{ width: 100%; display:block;}
+        /*product_list*/
+        .content-box{overflow:hidden;}
+        .Junfold a.show-list{height:60px; line-height:60px; color:#e0e1e5; font-size:16px; width:100%; display:block; position:relative; background:#28211b; text-align:center; border-top:1px #ccc solid; margin-top:-1px;}
+        .Junfold a b{color:#fff; padding:0 2px;}
+        .subject-list{padding-top:6px;}
+        .list-corner{width:18px; height:10px; background:url(../images/corner.svg) no-repeat; background-size:18px 10px;-o-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); position:absolute; right:20px; top:25px; display:none;}
+        .Junfold.on .list-corner{-o-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+        .subject-list ul{padding:0 0 0 6px;}
+        .subject-list li{width:50%; float:left;}
+        .subject-box{background:#fff; overflow:hidden; margin:0 6px 6px 0;position:relative;}
+        .subject-info{margin:0 6px; padding:6px 0;}
+        .subject-info .for-img{display:block; box-shadow:0 0 0 1px #e0e1e5 inset; overflow:hidden; padding:1px; position:relative;}
+        .for-img img{width:100%;}
+        .subject-title{height:20px; line-height:20px; font-size:15px; overflow:hidden; word-break:keep-all; white-space:nowrap; text-overflow:ellipsis; margin-top:5px; color:#2a2a2a; text-align: center;}
+        .subject-spec{ color:#5c5c5c; font-size:12px; height:16px; line-height:16px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; opacity: 0; filter:Alpha(opacity=0);}
+        .selling-price{ text-align: center; font-size:15px; font-weight:bold; color:#e51837;}
+        .selling-price span{ display:inline-block;}
+        .original-price{ text-align: center; font-size:12px; color:#8a8684; text-decoration:line-through; display:none;}
+        .buy-now-btn{height:30px; line-height:30px; background:#db0100; display:block;  text-align:center; font-size:15px; color:#fff; margin-top:6px;}
+        .txtcenter{ background: white; display:-webkit-box; -webkit-box-align:center;}
+        .footer{ clear:both; padding:0 0 0 6px;}
+        .footer ol li{ width:33.3%; float: left; }
+        .footer ol li a{ display: block; margin-right:6px;}
+        .footer ol li a img{ width: 100%;}
+    </style>
+</head>
+<body>
+<!--#include virtual="/static/inc/wap/header.html" -->
+<article class="national_wap">
+    <a id="top" name="top"></a>
+    <h1 class="banner">
+        <span>女神范</span>
+        <img src="http://ui1.111yao.com/static/image/temp/20151107/8ad23184c6f0c9bf4083c9d7eba46a8e.jpg">
+    </h1>
+    <div>
+        <ol class="discountbox clearfix">
+            <li onclick="getCoupon(5)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151107/61f134db5c007d9d4a4fe338a9c3f084.jpg"/></a></li>
+            <li onclick="getCoupon(10)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151107/06303579f2280b6f1ed45c664c9f0713.jpg"/></a></li>
+            <li onclick="getCoupon(20)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151107/bac644262086fddc3820b16c28b15903.jpg"/></a></li>
+        </ol>
+    </div>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151107/ffa8bfbf9a8394d4d14bc56f6e6e83a5.jpg">
+    </h2>
+    <ul class="content-box">
+        <li class="Junfold on">
+            <div class="subject-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/0b282a2fe30c69c30f3d81735de9e5d5.jpg"></div>
+                                <p class="subject-title">排毒养颜胶囊
+                                </p>
+                                <p class="subject-spec" style="text-align:center; opacity: 1; filter:Alpha(opacity=1);;">双效调节 无“逗”佳人</p>
+                                <p class="original-price">价格￥128</p>
+                                <p class="selling-price">活动价 ￥<span id="product1">79</span></p>
+                                <a href="http://www.111yao.com/p/633.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/ff2f53214103fe62b1fa172e873705ef.jpg"></div>
+                                <p class="subject-title">闪亮滴眼液眼药水3盒</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格：￥158</p>
+                                <p class="selling-price">活动价 ￥<span id="product2">32.3</span></p>
+                                <a href="http://www.111yao.com/p/3464.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/0f422a97e3f79742cd5593e36845a01a.jpg"></div>
+                                <p class="subject-title">敖东安神补脑液*3盒</p>
+                                <p class="subject-spec"></p>
+                                <p class ="original-price">价格￥</p>
+                                <p class="selling-price">活动家价 ￥<span id="product3">88</span></p>
+                                <a href="http://www.111yao.com/p/647.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/38e2368ce6e876967311e555e417f21c.jpg"></div>
+                                <p class="subject-title">痛经宝颗粒</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product4">25.9</span></p>
+
+                                <a href="http://www.111yao.com/p/1259.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/88d88835b8e0c92fd28b4ed21aa86afb.jpg"></div>
+                                <p class="subject-title">协和芦荟凝胶（2支）</p>
+                                <p class="subject-spec">测量准确 健康监测</p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product5">19.9</span></p>
+                                 <a href="http://www.111yao.com/p/2659.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/60491e58fcfa62dca2584032be73a6f7.jpg"></div>
+                                <p class="subject-title">小林可贴暖宝宝</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">原价￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product6">35 </span></p>
+                                <a href="http://www.111yao.com/p/2039.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <div style="padding:0 6px 0 6px;">
+        <ul class="content-box">
+            <li class="Junfold on">
+                <div style="padding: 0;" class="subject-list">
+                    <ul class="clearfix txtcenter">
+                        <li>
+                            <div class="subject-box">
+                                <div class="subject-info">
+                                    <div style="box-shadow: none;" class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/d2736d2b941efcddd25a3d94ca98c77a.jpg"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="subject-box">
+                                <div class="subject-info">
+                                    <p class="subject-title">优生骨胶原美白嫩肤护手霜（2支）</p>
+                                    <p class="subject-spec"></p>
+                                    <p class="selling-price">活动价 ￥<span id="product7">29.9</span></p>
+                                    <a href="http://www.111yao.com/p/2716.html" class="buy-now-btn">立即购买</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151107/b4df81ecf5e9a3fad269711e2ad22396.jpg">
+    </h2>
+    <ul class="content-box">
+        <li class="Junfold on">
+            <div class="subject-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/75e67825cbe887c9ac6cc9020bf62465.jpg"></div>
+                                <p class="subject-title">三精克霉唑阴道片</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product8">9.9</span></p>
+                                <a href="http://www.111yao.com/p/1437.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/6c68899e1a4044e4d568d1471ebcaf43.jpg"></div>
+                                <p class="subject-title">御生堂肠清茶</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product9">45.8</span></p>
+                                <a href="http://www.111yao.com/p/4050.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/b3f78521f1003fc14a4f01169d8f1571.jpg"></div>
+                                <p class="subject-title">九芝堂逍遥丸5盒</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price"></p>
+                                <p class="selling-price">活动价 ￥<span id="product10">49.9</span></p>
+                                <a href="http://www.111yao.com/p/1337.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/3a8ab7706a94cd24ec07f599c58d3ddc.jpg"></div>
+                                <p class="subject-title">妇科千金片</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product11">47.8</span></p>
+                                <a href="http://www.111yao.com/p/2347.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/3689dcdf900e9911a6e0d4988ae7f13c.jpg"></div>
+                                <p class="subject-title">驴胶补血颗粒</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product12">98</span></p>
+                                <a href="http://www.111yao.com/p/660.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/f17613ae3518b309c9a9d63940fa887d.jpg"></div>
+                                <p class="subject-title">汤臣倍健天然维生素E软胶囊</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product13">106</span></p>
+                                <a href ="http://www.111yao.com/p/581.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151107/3532e174d7b43a8f9fa9acf966c11434.jpg">
+    </h2>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151107/819358b3de5bd294a9b380a6fcb28c43.jpg">
+    </h2>
+    <ul class="content-box">
+        <li class="Junfold on">
+            <div class="subject-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/908151e07ce68f44e8781d205f79cc5c.jpg"></div>
+                                <p class="subject-title">鱼跃压缩式空气雾化器</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product14">399</span></p>
+                                <a href="http://www.111yao.com/p/2117.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/e562b45de5815056d0fb301e4c3d77a0.jpg"></div>
+                                <p class="subject-title">复方碳酸钙泡腾颗粒（盖笛欣）</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product15">46.5</span></p>
+                                <a href="http://www.111yao.com/p/659.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/79019ea101c953116a6d60f3dfe37358.jpg"></div>
+                                <p class="subject-title">迪巧维D钙咀嚼片</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product16">37.5</span></p>
+                                <a href="http://www.111yao.com/p/1507.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/04f1ca22c29d01032e88967cd770e798.jpg"></div>
+                                <p class="subject-title">斯利安叶酸片</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product17">39</span></p>
+                                <a href="http://www.111yao.com/p/643.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/ea74d852f1d899948e06c66f7b487423.jpg"></div>
+                                <p class="subject-title">纤音电子体温计</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product18">7.1</span></p>
+                                <a href="http://www.111yao.com/p/2531.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/50efdf836c9ed2429fe10b1db58eab54.jpg"></div>
+                                <p class="subject-title">亚宝丁桂儿脐贴2贴</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product19">12.5</span></p>
+                                <a href="http://www.111yao.com/p/535.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <div style="padding:0 6px 0 6px;">
+        <ul class="content-box">
+            <li class="Junfold on">
+                <div style="padding: 0;" class="subject-list">
+                    <ul class="clearfix txtcenter">
+                        <li>
+                            <div class="subject-box">
+                                <div class="subject-info">
+                                    <div style="box-shadow: none;" class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/28dedf8ef52d67d5fea176e57a5a39d0.jpg"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="subject-box">
+                                <div class="subject-info">
+                                    <p class="subject-title">三精乳酸菌素片</p>
+                                    <p class="selling-price">活动价 ￥<span id="product20">14.9</span></p>
+                                    <a href="http://www.111yao.com/p/3468.html" class="buy-now-btn">立即购买</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151107/99773fae9d69ea6fbf344fae06046517.jpg">
+    </h2>
+    <div style="padding:0 6px 0 6px;">
+        <ul class="content-box">
+            <li class="Junfold on">
+                <div style="padding: 0;" class="subject-list">
+                    <ul class="clearfix txtcenter">
+                        <li>
+                            <div class="subject-box">
+                                <div class="subject-info">
+                                    <div style="box-shadow: none;" class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/fc396bd55a8ec9d953a62a4c47e64aa8.jpg"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="subject-box">
+                                <div class="subject-info">
+                                    <p class="subject-title">脑白金胶囊、口服液</p>
+                                    <p class="selling-price">活动价 ￥<span id="product21">148</span></p>
+                                    <a href="http://www.111yao.com/p/1548.html" class="buy-now-btn">立即购买</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <ul class="content-box">
+        <li class="Junfold on">
+            <div class="subject-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/f22bcb929cf2270b069aa596339424e4.jpg"></div>
+                                <p class="subject-title">神威解郁安神颗粒</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product22">14.5</span></p>
+                                <a href="http://www.111yao.com/p/735.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/fdcbeab23afed2b1553ec3035147dffc.jpg"></div>
+                                <p class="subject-title">恩威洁尔阴洗液（2瓶）</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product23">35.9</span></p>
+                                <a href="http://www.111yao.com/p/2026.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/1b2aa3f2c4f061997a816202725473ba.jpg"></div>
+                                <p class="subject-title">佛慈逍遥丸</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product24">9.8</span></p>
+                                <a href="http://www.111yao.com/p/740.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/ae68f944cc66b49baabb66c8f5875073.jpg"></div>
+                                <p class="subject-title">独一味参芪五味子片</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product25">23.9</span></p>
+                                <a href="http://www.111yao.com/p/1058.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/c18bd9db132cb82c29a7cacb1aed636a.jpg"></div>
+                                <p class="subject-title">御生堂糖脂茶60g（2.5g*24袋）</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product26">128</span></p>
+                                <a href="http://www.111yao.com/p/4052.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151107/7976a2e9e36f0d40904a2ae8f9518299.jpg"></div>
+                                <p class="subject-title">同仁堂坤宝丸</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥</p>
+                                <p class="selling-price">活动价 ￥<span id="product27">18.8</span></p>
+                                <a href="http://www.111yao.com/p/77.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151107/afcfbac8e55e63f7ca317e90ebd1d7e3.jpg">
+    </h2>
+    <div class="footer">
+        <ol>
+            <li><a href="http://m.111yao.com/nzt/m/women.html"><img src="http://ui1.111yao.com/static/image/temp/20151106/fc26fbf394de3b0ee51d83aa6f124761.jpg"></a></li>
+            <li><a href="http://m.111yao.com/nzt/m/theold.html" target="_self"><img src="http://ui1.111yao.com/static/image/temp/20151106/54d89102438b44f7992b32ea3c160270.jpg"></a></li>
+            <li><a href="http://m.111yao.com/nzt/m/man.html"><img src="http://ui1.111yao.com/static/image/temp/20151106/470a9d066992d489437033972dd48289.jpg"></a></li>
+        </ol>
+    </div>
+    <h2 class="title">
+        <a class="gotop" href="#top" target="_self"><img src="http://ui1.111yao.com/static/image/temp/20151107/2c39a164c939187de90758f24c6ac0d9.jpg"></a>
+    </h2>
+</article>
+<!--#include virtual="/static/inc/wap/footer.html" -->
+</body>
+<script>
+
+//优惠券获取
+function getCoupon(id)
+{
+	if(!checklogin())
+	{
+		window.location.href="/login/login!index.action?redirectUrl="+window.location.href;
+	}
+	else
+	{
+		$.ajax(
+		{
+			url: "/coupon/coupon!bindingCoupon.action?couponId="+id,
+			type: "GET",
+			cache: false,
+			async: false,
+			success: function(data) 
+			{
+				if(data == 1)
+				{
+					$alert("success","恭喜您，已成功领取该优惠券！");
+				}
+				if(data == 2)
+				{
+					$alert("warn","抱歉，您已领取过此优惠券！");
+				}
+				if(data == 3)
+				{
+					$alert("warn","抱歉，此优惠券已发完！");
+				}
+				if(data == 4)
+				{
+					$alert("error","服务器错误，请确认您已经联网！");
+				}
+				if(data == 5)
+			    {
+					$alert("error","无效优惠券！");
+			    }
+			}
+		});	
+	}
+}
+
+
+    var p_start = "[" ;
+    var p_end = "]" ;
+    var p1 = "{'goodsId':'633','nowPrice':'79.00','platform':'1','htmlObjId':'product1'}," ;
+    var p2 = "{'goodsId':'3464','nowPrice':'32.30','platform':'1','htmlObjId':'product2'}," ;
+    var p3 = "{'goodsId':'647','nowPrice':'88.00','platform':'1','htmlObjId':'product3'}," ;
+    var p4 = "{'goodsId':'1259','nowPrice':'25.90','platform':'1','htmlObjId':'product4'}," ;
+    var p5 = "{'goodsId':'2659','nowPrice':'19.90','platform':'1','htmlObjId':'product5'}," ;
+    var p6 = "{'goodsId':'2039','nowPrice':'35.00','platform':'1','htmlObjId':'product6'}," ;
+    var p7 = "{'goodsId':'2716','nowPrice':'29.90','platform':'1','htmlObjId':'product7'}," ;
+    var p8 = "{'goodsId':'1437','nowPrice':'9.90','platform':'1','htmlObjId':'product8'}," ;
+    var p9 = "{'goodsId':'4050','nowPrice':'45.80','platform':'1','htmlObjId':'product9'}," ;
+    var p10 = "{'goodsId':'1337','nowPrice':'49.90','platform':'1','htmlObjId':'product10'}," ;
+
+    var p11 = "{'goodsId':'2347','nowPrice':'47.80','platform':'1','htmlObjId':'product11'}," ;
+    var p12 = "{'goodsId':'660','nowPrice':'98.00','platform':'1','htmlObjId':'product12'}," ;
+    var p13 = "{'goodsId':'581','nowPrice':'106.00','platform':'1','htmlObjId':'product13'}," ;
+    var p14 = "{'goodsId':'2117','nowPrice':'399.00','platform':'1','htmlObjId':'product14'}," ;
+    var p15 = "{'goodsId':'659','nowPrice':'45.50','platform':'1','htmlObjId':'product15'}," ;
+    var p16 = "{'goodsId':'1507','nowPrice':'37.50','platform':'1','htmlObjId':'product16'}," ;
+    var p17 = "{'goodsId':'643','nowPrice':'39.00','platform':'1','htmlObjId':'product17'}," ;
+    var p18 = "{'goodsId':'2531','nowPrice':'7.10','platform':'1','htmlObjId':'product18'}," ;
+    var p19 = "{'goodsId':'535','nowPrice':'12.50','platform':'1','htmlObjId':'product19'}," ;
+    var p20 = "{'goodsId':'3468','nowPrice':'14.90','platform':'1','htmlObjId':'product20'}," ;
+    var p21 = "{'goodsId':'1548','nowPrice':'148.00','platform':'1','htmlObjId':'product21'}," ;
+    var p22 = "{'goodsId':'735','nowPrice':'14.50','platform':'1','htmlObjId':'product22'}," ;
+    var p23 = "{'goodsId':'2026','nowPrice':'35.90','platform':'1','htmlObjId':'product23'}," ;
+    var p24 = "{'goodsId':'740','nowPrice':'9.80','platform':'1','htmlObjId':'product24'}," ;
+    var p25 = "{'goodsId':'1058','nowPrice':'23.90','platform':'1','htmlObjId':'product25'}," ;
+    var p26 = "{'goodsId':'4052','nowPrice':'128.00','platform':'1','htmlObjId':'product26'}," ;
+    var p27 = "{'goodsId':'77','nowPrice':'18.80','platform':'1','htmlObjId':'product27'}" ;
+    var params = p_start + p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11 + p12 + p13 + p14 + p15 + p16 + p17 + p18 +p19 + p20 + p21 + p22 + p23 + p24 + p25 + p26 + p27 + p_end ;
+    $.ajax
+    ({
+        type: "get",
+        url: "http://www.111yao.com/index!countpricebyplatform.action",
+        async: false,
+        data: "params="+params,
+        dataType: "jsonp",
+        jsonp: "jsoncallback",
+        success: function(data)
+        {
+            if(data != null && data != '' && data != undefined)
+            {
+                for(var i=0; i<data.length; i++)
+                {
+                    //商品ID
+                    var goodsId = data[i].goodsId;
+                    //现在价格
+                    var nowPrice = data[i].nowPrice;
+                    //平台
+                    var platform = data[i].platform;
+                    //HTML对象ID
+                    var htmlObjId = data[i].htmlObjId;
+                    //把价格渲染到元素中
+                    var objs = nowPrice.toString().split(".");
+                    var obj_l = "<b class='price_b_l' id='p_l_"+i+"'>"+objs[0]+"</b>";
+                    var obj_m = "<b class='price_b_m' id='p_m_"+i+"'>.</b>";
+                    var obj_r = "<span class='price_s_r' id='p_r_"+i+"'>"+objs[1]+"</span>";
+                    $("#"+htmlObjId).html(obj_l+obj_m+obj_r);
+                }
+            }
+            else
+            {
+                console.log("Datas null !");
+            }
+        },
+        error: function()
+        {
+            console.log("Server error !");
+        }
+    });
+
+</script>
+</html>

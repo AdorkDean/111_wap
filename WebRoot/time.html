@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+    <title>time.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+  </head>
+  
+  <body>
+    <div id="box-btn-id"><a onclick="ctime()">请输入验证码</a> <span style="display:none;">请输入验证码</span></div>
+
+<script type="text/javascript">
+    var wait = 6;
+    var clear = null;
+    var aObject = document.getElementById("box-btn-id").getElementsByTagName("a")[0];
+    var spanObject = document.getElementById("box-btn-id").getElementsByTagName("span")[0];
+        function ctime(){
+	        aObject.style.display = "none";
+	        spanObject.style.display = "block";
+            clear = window.setInterval("time()", 1000);
+         }
+    function time() {
+        if(wait == 0) {
+            window.clearInterval(clear);
+            wait = 5;
+            aObject.style.display = "block";
+            spanObject.style.display = "none";
+        }
+        if(wait > 0)
+        {
+            wait--;
+            spanObject.innerHTML = wait;
+        }
+        if(wait < 0)
+        {
+        	wait = 6;
+        }
+    }
+
+</script>
+
+  </body>
+</html>

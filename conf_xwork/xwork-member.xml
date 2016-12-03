@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+	<package name="member" extends="default" namespace="/member">
+		
+		<action name="order" class="com.rc.portal.webapp.action.MemberOrderAction" method="list">
+			<result name="list" type="freemarker">/WEB-INF/pages/member/order/list.ftl</result>
+			<result name="order_add" type="freemarker">/WEB-INF/pages/member/order/order_add.ftl</result>
+			<result name="order_coupon_list" type="freemarker">/WEB-INF/pages/member/order/order_coupon_list.ftl</result>
+			<result name="order_receiver_list" type="freemarker">/WEB-INF/pages/member/order/order_receiver_list.ftl</result>
+			<result name="receiver_update" type="freemarker">/WEB-INF/pages/member/order/receiver_update.ftl</result>
+			<result name="more" type="freemarker">/WEB-INF/pages/member/order/more.ftl</result>
+			<result name="detail" type="freemarker">/WEB-INF/pages/member/order/detail.ftl</result>
+			<result name="pay_submit" type="freemarker">/WEB-INF/pages/member/order/pay_submit.ftl</result>
+			<result name="logistics" type="freemarker">/WEB-INF/pages/member/order/logistics.ftl</result>
+			<result name="pay_result" type="freemarker">/WEB-INF/pages/member/order/pay_result.ftl</result>
+			<result name="order_pay" type="freemarker">/WEB-INF/pages/member/order/order_pay.ftl</result>
+			<result name="shippingAddressAdd" type="freemarker">/WEB-INF/pages/member/order/shippingAddressAdd.ftl</result>
+			<result name="shippingAddressSelect" type="freemarker">/WEB-INF/pages/member/order/shippingAddressSelect.ftl</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		
+		<action name="profile" class="com.rc.portal.webapp.action.MemberProfileAction" method="index">
+			<result name="index" type="freemarker">/WEB-INF/pages/member/profile/index.ftl</result>
+			<result name="pointExchange" type="freemarker">/WEB-INF/pages/member/point/pointExchange.ftl</result>
+			<interceptor-ref name="loginStack"/>  
+		</action>
+
+		<action name="coupon" class="com.rc.portal.webapp.action.MemberCouponAction" method="list">
+			<result name="couponlist" type="freemarker">/WEB-INF/pages/coupon/couponlist.ftl</result>
+			<result name="addcou" type="freemarker">/WEB-INF/pages/coupon/addcou.ftl</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+
+		<action name="collect" class="com.rc.portal.webapp.action.MemberCollectAction" method="goods">
+			<result name="goods" type="freemarker">/WEB-INF/pages/member/collect/goods.ftl</result>
+			<result name="more" type="freemarker">/WEB-INF/pages/member/collect/more.ftl</result>
+			<result name="brand" type="freemarker">/WEB-INF/pages/member/collect/brand.ftl</result>
+			<interceptor-ref name="loginStack"/> 
+		</action>
+		
+		<action name="return" class="com.rc.portal.webapp.action.MemberReturnAction" method="list">
+			<result name="index" type="freemarker">/WEB-INF/pages/member/return/index.ftl</result>
+			<result name="list" type="freemarker">/WEB-INF/pages/member/return/list.ftl</result>
+			<result name="more" type="freemarker">/WEB-INF/pages/member/return/more.ftl</result>
+			<result name="detail" type="freemarker">/WEB-INF/pages/member/return/detail.ftl</result>
+			<result name="logistics" type="freemarker">/WEB-INF/pages/member/return/logistics.ftl</result>			
+			<result name="redirect_index" type="redirect">/member/return!index.action?id=${id}&amp;flag=${flag}</result>
+			<result name="returnList" type="redirect">/member/return.action</result>
+			<interceptor-ref name="loginStack"/> 
+		</action>
+		
+		<action name="receiver" class="com.rc.portal.webapp.action.MemberReceiverAction">
+			<result name="list" type="freemarker">/WEB-INF/pages/member/receiver/list.ftl</result>
+			<result name="add" type="freemarker">/WEB-INF/pages/member/receiver/add.ftl</result>
+			<result name="edit" type="freemarker">/WEB-INF/pages/member/receiver/edit.ftl</result>
+			<result name="success" type="redirect">/member/receiver!list.action</result>
+			<interceptor-ref name="loginStack"/> 
+		</action>
+		
+		<action name="amountout" class="com.rc.portal.webapp.action.MemberAmountOutAction">
+			<result name="amountOut" type="freemarker">/WEB-INF/pages/member/leader/amount_out.ftl</result>
+			<result name="amountList" type="freemarker">/WEB-INF/pages/member/leader/amount_list.ftl</result>
+			
+			
+			<result name="youke_page" type="redirect">/healthLeader/healthLeader!gotoHealthLeaderZizhi.action</result>
+			<result name="not_pass" type="freemarker">/WEB-INF/pages/member/health-leader/leader_nopass_page.ftl</result>
+			<result name="has_submit" type="freemarker">/WEB-INF/pages/member/health-leader/leader_auditing_page.ftl</result>
+			<result name="apply_healt_leader" type="redirect">/healthLeader/healthLeader!healthLeader.action</result>
+			
+		    <interceptor-ref name="loginStack"/> 
+		</action>
+		
+		<action name="amountout_st" class="com.rc.portal.webapp.action.MemberAmountOutAction">
+		    <result name="amountOut" type="freemarker" >/WEB-INF/pages/member/leader/amount_out.ftl</result>
+			<interceptor-ref name="submitToken"/>
+		</action>
+		
+		<action name="comment" class="com.rc.portal.webapp.action.MemberCommentAction" method="index">
+			<result name="index" type="freemarker">/WEB-INF/pages/member/comment/index.ftl</result>
+			<interceptor-ref name="loginStack"/> 
+		</action>
+		
+		<action name="orderList" class="com.rc.portal.webapp.action.OrderListAction" >
+			<result name="getOrderList" type="freemarker">/WEB-INF/pages/member/order/order_member_list.ftl</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		<action name="jifen" class="com.rc.portal.webapp.action.JifenListAction" >
+			<result name="getThirtyJifen" type="freemarker">/WEB-INF/pages/member/integral/member_integral_list.ftl</result>
+			<result name="getIntegralList" type="freemarker">/WEB-INF/pages/member/integral/integral_more_list.ftl</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		
+		<action name="bindingMember" class="com.rc.portal.webapp.action.BindingMemberAction" >
+			<result name="success" type="freemarker">/nzt/m/goddess.html</result>
+		</action>
+		
+		<action name="reserveOrder" class="com.rc.portal.webapp.action.MemberReserveOrderAction" >
+			<result name="reserve_order_add" type="freemarker">/WEB-INF/pages/member/reserveorder/reserve_order_add.ftl</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		
+	</package>
+</xwork>

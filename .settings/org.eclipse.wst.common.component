@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="art_portal">
+        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/conf_xwork"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/conf_spring"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/conf_system"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/jms"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/filter"/>
+        <dependent-module archiveName="111_upmanframework.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/111_upmanframework/111_upmanframework">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commonsproject.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/111_commonsproject/111_commonsproject">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/art_portal/WebRoot/WEB-INF/classes"/>
+        <property name="me-merge-utility-modules" value="true"/>
+        <property name="context-root" value="/111_wap"/>
+    </wb-module>
+</project-modules>

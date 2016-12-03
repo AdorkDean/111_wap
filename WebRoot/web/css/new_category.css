@@ -1,0 +1,24 @@
+.search-box{background: #efefef; border-radius:20px; border:1px solid #efefef;}
+.classify_search{display: block; position: absolute; top:0; right:0; width:14px; height:14px; background: url("http://img.zdfei.com/static/image/temp/20160725/e426cedd7070c9f516d5f38ce94a10cc.png") no-repeat center center; background-size:14px;padding:8px; }
+.search-input-box{margin-left:20px;}
+.main_box .class_list_nav_box ul li.on{border-left:3px solid #00a9a4;height:44px; line-height:44px;border-bottom:1px solid #d7d7d7;border-top:1px solid #d7d7d7; }
+.main_box .class_list_nav_box ul li{border-bottom:1px solid #d7d7d7; height:44px; line-height:44px;overflow:hidden;}
+.classify_ban{width:100%; height:70px; position: relative;}
+.classify_ban img{width:100%; height:70px; display: block;}
+.classify_ban_text{position: absolute; top:0; left:0; width:100%; height:70px; /*background: rgba(0,0,0,.5);*/}
+.classify_ban_text span{color:#FFF;margin-top:17px; font-size:15px; text-align:center; display: block;}
+.classify_ban_text p{color:#FFF; margin-top:9px; font-size:12px; text-align: center;}
+.main_box .class_box .class_box_inner{padding:0;}
+.classify-part-list{margin-top:1px;}
+.classify-part-list span{display: block; float:left; width:79px; height:37px; background: #d3d3d3; text-align: center; line-height:37px; margin-right:1px; font-size:12px;}
+.classify-main-list li{float:left; width:32%; height:37px; text-align: center; line-height:37px; margin-right:1px; font-size:12px;}
+.class_box_over{padding-bottom:50px;}
+#arrow_erea {width:100%;height:10px;margin-top:-7px;z-index:1;position:relative;}
+#arrow_erea img {position:absolute;margin-left:42%;}
+
+.mask-ui {position:fixed;z-index:9900;background: rgba(22,22,22,.3);top:0;left:0;width:100%;height:100%;display:none;}
+.loading-img {display:none;position:fixed;height:auto;z-index:100000;top:45%;left:45%;background:gray;padding:10px;border-radius:10px;opacity:.6;filter:alpha(opacity=60);}
+.loading-img img {widht:30px;height:30px;}
+
+.back-to-top {bottom:55px;display:none;}
+.kefu {display: none;}

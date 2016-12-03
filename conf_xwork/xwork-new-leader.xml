@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+	<package name="newleader" extends="default" namespace="/newleader">
+		<action name="newleader" class="com.rc.portal.webapp.action.NewLeaderAction" >
+			<result name="welcome" type="freemarker">/WEB-INF/pages/member/newLeader/welcome.ftl</result>
+			<result name="skipLeader" type="freemarker">/WEB-INF/pages/member/newLeader/register.ftl</result>
+		    <result name="add_healthleader_basicPage" type="freemarker">/WEB-INF/pages/member/newLeader/add_healthleader_basicPage.ftl</result>
+		    <result name="leader" type="redirect">/leader/leaderPharmacy!leaderPharmacy.action</result>
+		</action>
+	</package>
+</xwork>

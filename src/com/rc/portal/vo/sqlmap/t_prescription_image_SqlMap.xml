@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="t_prescription_image" >
+  <resultMap id="ibatorgenerated_BaseResultMap" class="com.rc.portal.vo.TPrescriptionImage" >
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="prescription_id" property="prescriptionId" jdbcType="BIGINT" />
+    <result column="path" property="path" jdbcType="VARCHAR" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="modify_date" property="modifyDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="ibatorgenerated_Example_Where_Clause" >
+    <iterate property="oredCriteria" conjunction="or" prepend="where" removeFirstPrepend="iterate" >
+      <isEqual property="oredCriteria[].valid" compareValue="true" >
+        (
+        <iterate prepend="and" property="oredCriteria[].criteriaWithoutValue" conjunction="and" >
+          $oredCriteria[].criteriaWithoutValue[]$
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithSingleValue" conjunction="and" >
+          $oredCriteria[].criteriaWithSingleValue[].condition$
+            #oredCriteria[].criteriaWithSingleValue[].value#
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithListValue" conjunction="and" >
+          $oredCriteria[].criteriaWithListValue[].condition$
+          <iterate property="oredCriteria[].criteriaWithListValue[].values" open="(" close=")" conjunction="," >
+            #oredCriteria[].criteriaWithListValue[].values[]#
+          </iterate>
+        </iterate>
+        <iterate prepend="and" property="oredCriteria[].criteriaWithBetweenValue" conjunction="and" >
+          $oredCriteria[].criteriaWithBetweenValue[].condition$
+          #oredCriteria[].criteriaWithBetweenValue[].values[0]# and
+          #oredCriteria[].criteriaWithBetweenValue[].values[1]#
+        </iterate>
+        )
+      </isEqual>
+    </iterate>
+  </sql>
+  <select id="ibatorgenerated_selectByExample" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.rc.portal.vo.TPrescriptionImageExample" >
+    select id, prescription_id, path, create_date, modify_date
+    from t_prescription_image
+    <isParameterPresent >
+      <include refid="t_prescription_image.ibatorgenerated_Example_Where_Clause" />
+      <isNotNull property="orderByClause" >
+        order by $orderByClause$
+      </isNotNull>
+    </isParameterPresent>
+  </select>
+  <select id="ibatorgenerated_selectByPrimaryKey" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.rc.portal.vo.TPrescriptionImage" >
+    select id, prescription_id, path, create_date, modify_date
+    from t_prescription_image
+    where id = #id:BIGINT#
+  </select>
+  <delete id="ibatorgenerated_deleteByPrimaryKey" parameterClass="com.rc.portal.vo.TPrescriptionImage" >
+    delete from t_prescription_image
+    where id = #id:BIGINT#
+  </delete>
+  <delete id="ibatorgenerated_deleteByExample" parameterClass="com.rc.portal.vo.TPrescriptionImageExample" >
+    delete from t_prescription_image
+    <include refid="t_prescription_image.ibatorgenerated_Example_Where_Clause" />
+  </delete>
+  <insert id="ibatorgenerated_insert" parameterClass="com.rc.portal.vo.TPrescriptionImage" >
+    insert into t_prescription_image (id, prescription_id, path, create_date, modify_date)
+    values (#id:BIGINT#, #prescriptionId:BIGINT#, #path:VARCHAR#, #createDate:TIMESTAMP#,
+      #modifyDate:TIMESTAMP#)
+	<selectKey resultClass="long" keyProperty="id"> 
+		select LAST_INSERT_ID()
+	</selectKey>
+  </insert>
+
+  <insert id="ibatorgenerated_insertSelective" parameterClass="com.rc.portal.vo.TPrescriptionImage" >
+    insert into t_prescription_image
+    <dynamic prepend="(" >
+      <isNotNull prepend="," property="id" >
+        id
+      </isNotNull>
+      <isNotNull prepend="," property="prescriptionId" >
+        prescription_id
+      </isNotNull>
+      <isNotNull prepend="," property="path" >
+        path
+      </isNotNull>
+      <isNotNull prepend="," property="createDate" >
+        create_date
+      </isNotNull>
+      <isNotNull prepend="," property="modifyDate" >
+        modify_date
+      </isNotNull>
+      )
+    </dynamic>
+    values
+    <dynamic prepend="(" >
+      <isNotNull prepend="," property="id" >
+        #id:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="prescriptionId" >
+        #prescriptionId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="path" >
+        #path:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="createDate" >
+        #createDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="modifyDate" >
+        #modifyDate:TIMESTAMP#
+      </isNotNull>
+      )
+    </dynamic>
+	<selectKey resultClass="long" keyProperty="id"> 
+		select LAST_INSERT_ID()
+	</selectKey>
+  </insert>
+
+  <select id="ibatorgenerated_countByExample" parameterClass="com.rc.portal.vo.TPrescriptionImageExample" resultClass="java.lang.Integer" >
+    select count(*) from t_prescription_image
+    <include refid="t_prescription_image.ibatorgenerated_Example_Where_Clause" />
+  </select>
+  <update id="ibatorgenerated_updateByExampleSelective" >
+    update t_prescription_image
+    <dynamic prepend="set" >
+      <isNotNull prepend="," property="record.id" >
+        id = #record.id:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="record.prescriptionId" >
+        prescription_id = #record.prescriptionId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="record.path" >
+        path = #record.path:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="record.createDate" >
+        create_date = #record.createDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="record.modifyDate" >
+        modify_date = #record.modifyDate:TIMESTAMP#
+      </isNotNull>
+    </dynamic>
+    <isParameterPresent >
+      <include refid="t_prescription_image.ibatorgenerated_Example_Where_Clause" />
+    </isParameterPresent>
+  </update>
+  <update id="ibatorgenerated_updateByExample" >
+    update t_prescription_image
+    set id = #record.id:BIGINT#,
+      prescription_id = #record.prescriptionId:BIGINT#,
+      path = #record.path:VARCHAR#,
+      create_date = #record.createDate:TIMESTAMP#,
+      modify_date = #record.modifyDate:TIMESTAMP#
+    <isParameterPresent >
+      <include refid="t_prescription_image.ibatorgenerated_Example_Where_Clause" />
+    </isParameterPresent>
+  </update>
+  <update id="ibatorgenerated_updateByPrimaryKeySelective" parameterClass="com.rc.portal.vo.TPrescriptionImage" >
+    update t_prescription_image
+    <dynamic prepend="set" >
+      <isNotNull prepend="," property="prescriptionId" >
+        prescription_id = #prescriptionId:BIGINT#
+      </isNotNull>
+      <isNotNull prepend="," property="path" >
+        path = #path:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="createDate" >
+        create_date = #createDate:TIMESTAMP#
+      </isNotNull>
+      <isNotNull prepend="," property="modifyDate" >
+        modify_date = #modifyDate:TIMESTAMP#
+      </isNotNull>
+    </dynamic>
+    where id = #id:BIGINT#
+  </update>
+  <update id="ibatorgenerated_updateByPrimaryKey" parameterClass="com.rc.portal.vo.TPrescriptionImage" >
+    update t_prescription_image
+    set prescription_id = #prescriptionId:BIGINT#,
+      path = #path:VARCHAR#,
+      create_date = #createDate:TIMESTAMP#,
+      modify_date = #modifyDate:TIMESTAMP#
+    where id = #id:BIGINT#
+  </update>
+  <select id="selectByExampleByPage" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.rc.portal.vo.TPrescriptionImageExample" >
+                    select id, prescription_id, path, create_date, modify_date
+                    from t_prescription_image
+                    <isParameterPresent >
+                      <include refid="t_prescription_image.ibatorgenerated_Example_Where_Clause" />
+                      <isNotNull property="orderByClause" >
+                        order by $orderByClause$
+                      </isNotNull>
+                    </isParameterPresent>
+					limit $pageInfo.start$ ,$pageInfo.pageSize$
+  </select>
+</sqlMap>

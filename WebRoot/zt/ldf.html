@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<!--允许全屏-->
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+<!--缩放比例-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>龙大夫专区</title>
+<style type="text/css">
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,textarea,input,span,figure,aside,time,article{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body{width:100%;font-family:"SimHei",Helvetica,Arial,sans-serif;font-size:14px;color:#000;background:#e0e1e5}
+input,textarea{font-family:"SimHei",Helvetica,Arial,sans-serif;color:#fff}
+input:-moz-placeholder,textarea:-moz-placeholder{color:#fff}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#fff}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#fff}
+a{color:#fff;text-decoration:none;/*-webkit-tap-highlight-color:rgba(0,0,0,0.2);*/-webkit-tap-highlight-color:transparent}
+a:hover{text-decoration:none}
+a:focus{outline:thin dotted}
+a:hover,a:active{outline:0}
+textarea,input{resize:none;outline:0;font-size:100%;-webkit-tap-highlight-color:rgba(255,0,0,0)}
+textarea{resize:none;-webkit-appearance:none}
+ul,ol{list-style:none}
+em{font-style:normal}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0;overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+
+/*content*/
+.banner,.banner img{width:100%; display:block;}
+.title,.title img{width:100%; display:block;}
+.banner span{display:none;}
+
+/*product_list*/
+.content-box{overflow:hidden;}
+.Junfold a.show-list{height:60px; line-height:60px; color:#e0e1e5; font-size:16px; width:100%; display:block; position:relative; background:#28211b; text-align:center; border-top:1px #ccc solid; margin-top:-1px;}
+.Junfold a b{color:#fff; padding:0 2px;}
+.subject-list{padding-top:6px;}
+.list-corner{width:18px; height:10px; background:url(../images/corner.svg) no-repeat; background-size:18px 10px;-o-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); position:absolute; right:20px; top:25px; display:none;}
+.Junfold.on .list-corner{-o-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+.subject-list ul{padding:0 0 0 6px;}
+.subject-list li{width:50%; float:left;}
+.subject-box{background:#fff; overflow:hidden; margin:0 6px 6px 0;position:relative;}
+.subject-info{margin:0 6px; padding:6px 0;}
+.subject-info .for-img{display:block; box-shadow:0 0 0 1px #e0e1e5 inset; overflow:hidden; padding:1px; position:relative;}
+.for-img img{width:100%;}
+.subject-title{height:20px; line-height:20px; font-size:15px; overflow:hidden; word-break:keep-all; white-space:nowrap; text-overflow:ellipsis; margin-top:5px; color:#2a2a2a;}
+.subject-spec{ color:#5c5c5c; font-size:12px; height:16px; line-height:16px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.selling-price{font-size:15px; font-weight:bold; color:#e51837;}
+.original-price{font-size:12px; color:#8a8684; text-decoration:line-through;}
+.buy-now-btn{height:34px; line-height:34px; background:#af271e; display:block;  text-align:center; font-size:15px; color:#fff; margin-top:6px;}
+.division-erea {float:left;width:100%;height:85px;}
+</style>
+</head>
+
+<body onload="_loaded()">
+<input type="hidden" id="header-nav" value="5"/>
+<!--#include virtual="/static/inc/wap/header.html" -->
+<script type="text/javascript">
+	var myScroll;
+	function _loaded(){
+		myScroll = new IScroll('#wrapper',{eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+		myScroll.scrollTo(-($(window).width()/3),0,0,0);
+	}
+</script>
+<div class="division-erea"></div>
+<article>
+  <h1 class="banner">
+    <span>龙大夫专区</span>
+    <img src="http://ui.111yao.com/upload/image/201509/453e1266b3484cc581ec9c780b11e167.jpg">
+  </h1>
+  <h2 class="title">
+    <img src="http://ui.111yao.com/upload/image/201509/8c58d0bdedfdc9131118aa93a9f0ccc0.jpg">
+  </h2>
+  <ul class="content-box">
+  	<li class="Junfold on">
+      <div class="subject-list">
+        <ul class="clearfix">
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/e59c186c717506fb873e981a7a4525fe.jpg"></div>
+                <p class="subject-title">欧脉红外按摩棒</p>
+                <p class="subject-spec">IT型 按摩棒</p>
+                <p class="selling-price">龙大夫价  ￥90.00</p>
+                <p class="original-price">原价￥190</p>
+                <a href="http://wap.111yao.com/m/1939.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/915cb9b67898316873d429a051e3f53b.jpg"></div>
+                <p class="subject-title">氨糖软骨素加钙片</p>
+                <p class="subject-spec">60g(1.og*60片)/盒*3盒</p>
+                <p class="selling-price">龙大夫价  ￥480.00</p>
+                <p class="original-price">原价￥580.00</p>
+                <a href="http://wap.111yao.com/m/3322.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/8034bfb103ab428d74ce2896c8b65781.jpg"></div>
+                <p class="subject-title">福牌阿胶 (铁盒)</p>
+                <p class="subject-spec">500g</p>
+                <p class="selling-price">龙大夫价  ￥689.00</p>
+                <p class="original-price">原价￥789</p>
+                <a href="http://wap.111yao.com/m/3998.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/40eaf826352dde60c7fc33ce34e44a93.jpg"></div>
+                <p class="subject-title">汤臣倍健蛋白质粉</p>
+                <p class="subject-spec">450g</p>
+                <p class="selling-price">龙大夫价  ￥213.00</p>
+                <p class="original-price">原价￥313</p>
+                <a href="http://wap.111yao.com/m/4015.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/273e0886934ead06022c5b70204c06b1.jpg"></div>
+                <p class="subject-title">汇仁  肾宝片</p>
+                <p class="subject-spec">2盒</p>
+                <p class="selling-price">龙大夫价  ￥544.00</p>
+                <p class="original-price">原价￥644</p>
+                <a href="http://wap.111yao.com/m/3900.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/6b0a72de51eba50a11c84051ec289f0b.jpg"></div>
+                <p class="subject-title">护眼仪眼部按摩器</p>
+                <p class="subject-spec">&nbsp;</p>
+                <p class="selling-price">龙大夫价  ￥59.00</p>
+                <p class="original-price">原价￥159</p>
+                <a href="http://wap.111yao.com/m/2651.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/5c42a7917fd7e66eb648beeb40ad1dee.jpg"></div>
+                <p class="subject-title">子弹飞  六味地黄丸</p>
+                <p class="subject-spec">1000丸*3瓶</p>
+                <p class="selling-price">龙大夫价  ￥197.00</p>
+                <p class="original-price">原价￥297</p>
+                <a href="http://wap.111yao.com/m/4018.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/ac58d2e208c864766dcbf9129158850d.jpg"></div>
+                <p class="subject-title">碧生源牌常润茶</p>
+                <p class="subject-spec">（2.5*15袋/盒*4盒）<sup>*2盒</sup></p>
+                <p class="selling-price">龙大夫价  ￥170.00</p>
+                <p class="original-price">原价￥270</p>
+                <a href="http://wap.111yao.com/m/4016.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <h2 class="title">
+    <img src="http://ui.111yao.com/upload/image/201509/a6d13d0c64eb3ba21afa6db836957ba1.jpg">
+  </h2>
+  <ul class="content-box">
+    <li class="Junfold on">
+      <div class="subject-list">
+        <ul class="clearfix">
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/7da527d913440a8f6fba83d03ea2a7bb.jpg"></div>
+                <p class="subject-title">碧生源牌减肥茶</p>
+                <p class="subject-spec">2.5g*15袋/盒*4盒</p>
+                <p class="selling-price">龙大夫价  ￥170.00</p>
+                <p class="original-price">原价￥270</p>
+                <a href="http://wap.111yao.com/m/4017.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/38dce6b79b5b784354fd34750602f413.jpg"></div>
+                <p class="subject-title">养生堂牌天然维E</p>
+                <p class="subject-spec">软胶囊VE160粒+VC90片</p>
+                <p class="selling-price">龙大夫价  ￥158.00</p>
+                <p class="original-price">原价￥258</p>
+                <a href="http://wap.111yao.com/m/438.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/a621e45f3ba2e7134def84ee9413abaa.jpg"></div>
+                <p class="subject-title">汤臣倍健纤巧纤纤</p>
+                <p class="subject-spec">胶囊0.4g*90粒</p>
+                <p class="selling-price">龙大夫价  ￥88.00</p>
+                <p class="original-price">原价￥188</p>
+                <a href="http://wap.111yao.com/m/2965.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/12afee34d07554ffb35241d3ce7bc79f.jpg"></div>
+                <p class="subject-title">同仁堂 珍珠粉</p>
+                <p class="subject-spec">15g</p>
+                <p class="selling-price">龙大夫价  ￥138.00</p>
+                <p class="original-price">原价￥238</p>
+                <a href="http://wap.111yao.com/m/774.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/1102442ad4a34700f7bf802e3312ac43.jpg"></div>
+                <p class="subject-title">延更丹牌青松丸</p>
+                <p class="subject-spec">0.16g*400粒</p>
+                <p class="selling-price">龙大夫价  ￥166.00</p>
+                <p class="original-price">原价￥266</p>
+                <a href="http://wap.111yao.com/m/2643.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/44ee7a9e730c37ef59d3054fc1994dbe.jpg"></div>
+                <p class="subject-title">汤臣倍健 婷好青春</p>
+                <p class="subject-spec">胶囊0.2*60粒</p>
+                <p class="selling-price">龙大夫价  ￥108.00</p>
+                <p class="original-price">原价￥208</p>
+                <a href="http://wap.111yao.com/m/109.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/40fda40b8a6eaad50f6a254d6ea74fb4.jpg"></div>
+                <p class="subject-title">汤臣倍健 大豆磷</p>
+                <p class="subject-spec">1000mg*200粒</p>
+                <p class="selling-price">龙大夫价  ￥88.00</p>
+                <p class="original-price">原价￥188</p>
+                <a href="http://wap.111yao.com/m/1686.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/e444a4cc6a27f2296fdbd9e7dc4945ee.jpg"></div>
+                <p class="subject-title">汤臣倍健 鱼油</p>
+                <p class="subject-spec">软胶囊 1000mg*200粒</p>
+                <p class="selling-price">龙大夫价  ￥88.00</p>
+                <p class="original-price">原价￥188</p>
+                <a href="http://wap.111yao.com/m/1295.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/45fd9c8692a323152f4bf6cac9ec72a1.jpg"></div>
+                <p class="subject-title">汤臣倍健 液体钙</p>
+                <p class="subject-spec">软胶囊1000mg*200粒</p>
+                <p class="selling-price">龙大夫价  ￥88.00</p>
+                <p class="original-price">原价￥188</p>
+                <a href="http://wap.111yao.com/m/2540.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/f21295132e4070d498427d5ad6cb954a.jpg"></div>
+                <p class="subject-title">纤音电子血压计</p>
+                <p class="subject-spec">腕式血压计AES-W111</p>
+                <p class="selling-price">龙大夫价  ￥59.00</p>
+                <p class="original-price">原价￥159</p>
+                <a href="http://wap.111yao.com/m/2195.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/aa1135e9f44593ee08d568b17a4ca97e.jpg"></div>
+                <p class="subject-title">纤音 老人助听器</p>
+                <p class="subject-spec">VIVO206</p>
+                <p class="selling-price">龙大夫价  ￥266.00</p>
+                <p class="original-price">原价￥366</p>
+                <a href="http://wap.111yao.com/m/2288.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/6d37e71a15c346022d132e8817035b7d.jpg"></div>
+                <p class="subject-title">紫外远红外舒缓枕</p>
+                <p class="subject-spec">&nbsp;</p>
+                <p class="selling-price">龙大夫价  ￥96.00</p>
+                <p class="original-price">原价￥196</p>
+                <a href="http://wap.111yao.com/m/2288.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <h2 class="title">
+    <img src="http://ui.111yao.com/upload/image/201509/407820cceeb0cddafd7f7e03e87fe5be.jpg">
+  </h2>
+  <ul class="content-box">
+    <li class="Junfold on">
+      <div class="subject-list">
+        <ul class="clearfix">
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/0fa4319c25135c356ebcad230ba460ed.jpg"></div>
+                <p class="subject-title">纤音 TDP神灯特定</p>
+                <p class="subject-spec">电磁波治疗器CQ-10A</p>
+                <p class="selling-price">龙大夫价  ￥98.00</p>
+                <p class="original-price">原价￥198</p>
+                <a href="http://wap.111yao.com/m/2368.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/67143cb8cedb4f226385e62d192da468.jpg"></div>
+                <p class="subject-title">同仁堂 中国结礼盒</p>
+                <p class="subject-spec">西洋参60g*2瓶+枸杞80g/罐</p>
+                <p class="selling-price">龙大夫价  ￥379.00</p>
+                <p class="original-price">原价￥479</p>
+                <a href="http://wap.111yao.com/m/2223.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/d580fb8d3f68a3962c3828065ddf0bf2.jpg"></div>
+                <p class="subject-title">迈克大夫 体温计</p>
+                <p class="subject-spec">额温抢FRIDMI</p>
+                <p class="selling-price">龙大夫价  ￥118.00</p>
+                <p class="original-price">原价￥218</p>
+                <a href="http://wap.111yao.com/m/962.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/dc350c6666dfeab5dc78a83db29f5073.jpg"></div>
+                <p class="subject-title">慢严舒柠清</p>
+                <p class="subject-spec">利咽颗粒18袋*5盒</p>
+                <p class="selling-price">龙大夫价  ￥168.00</p>
+                <p class="original-price">原价￥268</p>
+                <a href="http://wap.111yao.com/m/3940.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/2ead4390aceabbeeaa674b8ba55a77b5.jpg"></div>
+                <p class="subject-title">惠氏金钙尔奇添佳片</p>
+                <p class="subject-spec">1.04g*240片(60片*4瓶)</p>
+                <p class="selling-price">龙大夫价  ￥159.00</p>
+                <p class="original-price">原价￥259</p>
+                <a href="http://wap.111yao.com/m/2330.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/aeaa59a339252a592b3e8ffd648fb71e.jpg"></div>
+                <p class="subject-title">三诺金稳智能</p>
+                <p class="subject-spec">血糖仪套装</p>
+                <p class="selling-price">龙大夫价  ￥399.00</p>
+                <p class="original-price">原价￥499</p>
+                <a href="http://wap.111yao.com/m/4010.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/1b1bedf0b0d072fb25fea9cbb11d49ab.jpg"></div>
+                <p class="subject-title">海王金樽片</p>
+                <p class="subject-spec">1g*3片*6袋*3盒</p>
+                <p class="selling-price">龙大夫价  ￥125.00</p>
+                <p class="original-price">原价￥225</p>
+                <a href="http://wap.111yao.com/m/3941.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subject-box">
+              <div class="subject-info">
+                <div class="for-img"><img src="http://ui.111yao.com/upload/image/201509/2d843580dbc03a29557a8caa3a46cc84.jpg"></div>
+                <p class="subject-title">大山楂丸</p>
+                <p class="subject-spec">9g*20丸*3瓶</p>
+                <p class="selling-price">龙大夫价  ￥59.00</p>
+                <p class="original-price">原价￥159</p>
+                <a href="http://wap.111yao.com/m/4014.html" class="buy-now-btn">立即抢购</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</article>
+<!--#include virtual="/static/inc/wap/footer.html" -->
+</body>
+</html>

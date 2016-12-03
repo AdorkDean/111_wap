@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+	<package name="appleader" extends="default" namespace="/appleader">
+		<action name="amountout" class="com.rc.portal.webapp.action.AppMemberAmountOutAction">
+			<result name="amountOut" type="freemarker">/WEB-INF/pages/member/appLeader/amount_out.ftl</result>
+			<result name="amountList" type="freemarker">/WEB-INF/pages/member/appLeader/amount_list.ftl</result>
+		    <interceptor-ref name="loginStack"/> 
+		</action>
+		
+		<action name="amountout_st" class="com.rc.portal.webapp.action.AppMemberAmountOutAction">
+		    <result name="list" type="redirect" >amountout!amountList.action</result>
+			<interceptor-ref name="submitToken"/>
+		</action>
+		
+		<action name="appleader" class="com.rc.portal.webapp.action.AppLeaderAction" >
+			<result name="list" type="freemarker">/WEB-INF/pages/member/appLeader/leaderGoods_list.ftl</result>
+			<result name="ranking" type="freemarker">/WEB-INF/pages/member/appLeader/ranking.ftl</result>
+			<result name="pill" type="freemarker">/WEB-INF/pages/member/appLeader/pill.ftl</result>
+			<result name="brokerage" type="freemarker">/WEB-INF/pages/member/appLeader/brokerage.ftl</result>
+			<result name="leader" type="freemarker">/WEB-INF/pages/member/appLeader/leader.ftl</result>
+			<result name="url" type="redirect">${url}</result>
+		</action>
+	</package>
+</xwork>

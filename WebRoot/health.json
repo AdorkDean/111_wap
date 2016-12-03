@@ -1,0 +1,89 @@
+{
+    "fenlei": [
+        {
+            "fangAnList": [
+                {
+                    "id": 1,
+                    "img": "a.jpg",
+                    "name": "方案1"
+                },
+                {
+                    "id": 2,
+                    "img": "a.jpg",
+                    "name": "方案2"
+                },
+                {
+                    "id": 3,
+                    "img": "a.jpg",
+                    "name": "方案3"
+                }
+            ],
+            "fenLeiId": 100,
+            "fenLeiName": "分类一"
+        },
+        {
+            "fangAnList": [
+                {
+                    "id": 4,
+                    "img": "a.jpg",
+                    "name": "方案4"
+                },
+                {
+                    "id": 5,
+                    "img": "a.jpg",
+                    "name": "方案5"
+                },
+                {
+                    "id": 6,
+                    "img": "a.jpg",
+                    "name": "方案6"
+                }
+            ],
+            "fenLeiId": 101,
+            "fenLeiName": "分类二"
+        },
+        {
+            "fangAnList": [
+                {
+                    "id": 7,
+                    "img": "a.jpg",
+                    "name": "方案7"
+                },
+                {
+                    "id": 8,
+                    "img": "a.jpg",
+                    "name": "方案8"
+                },
+                {
+                    "id": 9,
+                    "img": "a.jpg",
+                    "name": "方案9"
+                }
+            ],
+            "fenLeiId": 102,
+            "fenLeiName": "分类三"
+        }
+    ],
+    "tuijian": [
+        {
+            "id": 10,
+            "img": "a.jpg",
+            "name": "方案10"
+        },
+        {
+            "id": 11,
+            "img": "a.jpg",
+            "name": "方案11"
+        },
+        {
+            "id": 12,
+            "img": "a.jpg",
+            "name": "方案12"
+        },
+        {
+            "id": 13,
+            "img": "a.jpg",
+            "name": "方案12"
+        }
+    ]
+}

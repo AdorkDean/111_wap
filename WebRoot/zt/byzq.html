@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>包邮专区</title>
+<style>
+	.loading-img {display:none;position:fixed;height:auto;z-index:100000;top:45%;left:45%;background:gray;padding:10px;border-radius:10px;opacity:.6;filter:alpha(opacity=60);}
+	.loading-img img {widht:30px;height:30px;}
+</style>
+</head>
+
+<body class="bg-white" onload="loaded()">
+<input type="hidden" id="header-nav" value="6"/>
+<!--#include virtual="/static/inc/wap/header.html" -->
+    <article class="index-main">
+       <ul class="free-shipping-list">
+       </ul>
+    </article>
+    <div class="loading-img" id="loadimg"><img src="/web/images/loading_img.jpg"/></div>
+	<!--#include virtual="/static/inc/wap/footer.html" -->
+<script>
+    var pageNo = 1;
+    var pageSize = 10;
+    if(pageNo == 1)
+    {
+		$.ajax(
+		{
+			url: "/index!promotionproduct.action?pageNo="+pageNo+"&pageSize="+pageSize,
+			type: "GET",
+			dataType: "json",
+			cache: false,
+			async: false,
+			success: function(data) 
+			{
+				pageNo += 1;
+				var liObject = "";
+				var datas = eval(data.list);
+				if(datas != '' && datas != null)
+				{
+					for(var i=0;i<datas.length;i++)
+					{
+						var id = datas[i].id;
+						var marketPrice = datas[i].marketPrice;
+						var price = datas[i].price;
+						var pname = datas[i].pname;
+						var image;
+						if(datas[i].image != null && datas[i].image != '')
+						{
+							image = imgUrl+datas[i].image;
+						}
+						else
+						{
+							image = "/web/images/300.jpg";
+						}
+						liObject += 
+					        "<li class='clearfix'>"
+					         	+"<a href='/m/"+id+".html'>"
+					            	+"<dl>"
+					                	+"<dt><img src='"+image+"'><dt>"
+					                    +"<dd>"
+					                    	+"<p class='free-shipping-title'>"+pname+"</p>"
+					                        +"<p class='free-shipping-price'>¥"+price+"<i>¥"+marketPrice+"</i></p>"
+					                    +"</dd>"
+					                +"</dt>"
+					            +"</a>"
+					            +"<a onclick='addshopcart("+id+")' class='iconfont list-pro-into-cart'>C</a>"
+					         +"</li>";
+					}
+				}
+				else
+				{
+					liObject = "<li class='clearfix' style='text-align:center;'>暂时没有数据可以显示！</li>"
+				}
+				$(".free-shipping-list").show().append(liObject);
+			}
+		});
+    }
+	$(function()
+	{
+		$(window).scroll(function()
+		{
+			if(isBottom(this))
+			{
+				$("#loadimg").show();
+				$.ajax(
+				{
+					url: "/index!promotionproduct.action?pageNo="+pageNo+"&pageSize="+pageSize,
+					type: "GET",
+					dataType: "json",
+					cache: false,
+					async: false,
+					success: function(data) 
+					{
+						pageNo += 1;
+						var liObject = "";
+						var datas = eval(data.list);
+						if(datas != '' && datas != null)
+						{
+							for(var i=0;i<datas.length;i++)
+							{
+								var id = datas[i].id;
+								var marketPrice = datas[i].marketPrice;
+								var price = datas[i].price;
+								var pname = datas[i].pname;
+								var image;
+								if(datas[i].image != null && datas[i].image != '')
+								{
+									image = imgUrl+datas[i].image;
+								}
+								else
+								{
+									image = "/web/images/300.jpg";
+								}
+								liObject += 
+						        "<li class='clearfix'>"
+						         	+"<a href='/m/"+id+".html'>"
+						            	+"<dl>"
+						                	+"<dt><img src='"+image+"'><dt>"
+						                    +"<dd>"
+						                    	+"<p class='free-shipping-title'>"+pname+"</p>"
+						                        +"<p class='free-shipping-price'>¥"+price+"<i>¥"+marketPrice+"</i></p>"
+						                    +"</dd>"
+						                +"</dt>"
+						            +"</a>"
+						            +"<a onclick='addshopcart("+id+")' class='iconfont list-pro-into-cart'>C</a>"
+						         +"</li>";
+							}
+						}
+						else
+						{
+							flag = false;
+							liObject += "<li class='clearfix' style='text-align:center;color:gray;'>没有更多商品可以显示</li>";
+						}
+						$(".free-shipping-list").show().append(liObject);
+						window.setTimeout(function()
+						{
+							$("#loadimg").hide();
+						},500)
+					}
+				});
+			}
+		});
+	});
+	
+	//Put goods into shopping cart
+	function addshopcart(id)
+	{
+		var rs = add_cart(id,1);
+		if(rs > 0)
+		{
+			$alert("success","已成功添加至购物车");
+			getnum();
+			return false;
+		} 
+		if(rs == -2)
+		{
+			$alert("warn","库存不足");
+			return false;
+		}
+		if(rs == -3)
+		{
+			$alert("warn","超出购买数量");
+			return false;
+		}
+		if(rs == 0)
+		{
+			$alert("warn","操作失败");
+			return false;
+		}
+		if(rs == -200)
+		{
+			$alert("error","该商品已下架");
+			return false;
+		}
+		if(rs == -100)
+		{
+			$alert("error","该商品为处方药");
+			return false;
+		}
+	}
+	
+	//Get the number of shopping cart from server
+	function getnum()
+	{
+		jQuery.ajax
+		({
+	       type: "post",
+	       url: "/carts/cart!getCartSum.action",	 
+	       async:false, 
+	       success: function(data)
+	       {
+	    	   if(parseInt(data) > 0)
+	    	   {
+		    	   $(".count-msg").html(data).show();
+	    	   }
+	       }
+	     }); 	  
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+	<!-- Configuration for the user package. -->
+	<package name="register" extends="default" namespace="/register">
+		<action name="register" class="com.rc.portal.webapp.action.RegisterAction">
+			<result name="registerone" type="freemarker">/WEB-INF/pages/register/registerOne.ftl</result>
+			<result name="registertwo" type="freemarker">/WEB-INF/pages/register/registerTwo.ftl</result>
+			<result name="agreement" type="freemarker">/WEB-INF/pages/register/agreement.ftl</result>
+			<result name="index" type="freemarker">/WEB-INF/pages/register/index.ftl</result>
+			<!-- <result name="wxindex" type="freemarker">${base}/index.html</result> -->
+			<result name="wxindex" type="redirect">${url}</result>
+			<!-- <result name="redirect" type="redirect">/register/register!home.action</result> -->
+		</action>
+	</package>
+</xwork>

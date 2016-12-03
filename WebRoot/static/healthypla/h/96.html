@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>测试 007</title>
+<link href="/web/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/web/css/iconfont.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/web/js/jquery.min.js"></script>
+<script type="text/javascript" src="/web/js/iscroll.js"></script>
+<script type="text/javascript" src="/web/js/wap-cart.js"></script>
+<script type="text/javascript" src="/web/js/alert.main.js"></script>
+<script type="text/javascript">
+var myScroll;
+function loaded() 
+{
+	var sum = $("#csum").val();
+	for(var i=0;i<sum;i++)
+	{
+		myScroll = new IScroll('.wrapper'+i, { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+	}
+}
+</script>
+</head>
+<body onload="loaded()">
+<div class="care-main">
+    <input type="hidden" id="csum" value="6"/>
+    <input type="hidden" id="hid" value="96"/>
+    <input type="hidden" value="3" id="priceLooperNumber"/>
+		<div class="care-part clearfix">
+	    	<div class="care-adv-tit"><img src="http://img.zdfei.com//static/image/healthyplan//201512/037c3e7b2587c97647ef306f619d9902.jpg"></div>
+		
+		<!--滑动菜单-开始-->
+		<nav class="health-nav-box wrapper3">
+	            <div class="health-nav-box-list">
+	                <ul id="newscroller">
+	                </ul>
+	            </div>
+	    </nav>
+		<!--滑动菜单-结束-->
+		
+		
+		<!-- 症状介绍 -->
+	        <div class="symptom clearfix">
+	            <a href="javascript:void(0)" class="out-details" onclick="zhankai(1,0);">
+	            <input type="hidden" id="exp0" value="没事没事没事"/>
+	                <span class="symptom-tag">症状介绍</span>
+	                <div class="symptom-text clearfix">
+	                    <span class="symptom-corner fr"></span>
+							<p>没事没事没事</p>
+	                </div>
+	            </a>
+	        </div>
+		</div>
+    
+    
+    <div class="care-part clearfix"  >
+	
+            
+            <div class="recomm-product">
+        	
+        	    <input type="hidden" value="2" id="obj_two_0"/>
+	            <div class="recomm-two clearfix">
+	            	<ul class="clearfix">
+	            	<input type="hidden" value="2" id="obj_two_size_0"/>
+	                	<li>
+	                    	<a href="#" href="javascript:;" onclick="product(4097,&quot;钙尔奇维生素D钙软胶囊110粒&quot;);"><img src="http://img.zdfei.com//static/image/upload/image/201509/1e768808-8a53-48e1-9c76-7e744d8e081b-thumbnail.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-two-title" onclick="product(4097,&quot;钙尔奇维生素D钙软胶囊110粒&quot;);">钙尔奇维生素D钙软胶囊110粒<span>补充钙和维生素D</span></p>
+	                            <p class="recomm-two-price bszjg150_4097" id="goods_price_two_in_0_0">¥169</p>
+	                            <p class="recomm-into-cart gwc150_4097"><a href="javascript:;" onclick="addTao(1,4097)">加入购物车</a></p>
+		                		<input type="hidden" value="4097" id="goods_id_two_in_0_0"/>
+	                        </div>
+	                    </li>
+	                	<li>
+	                    	<a href="#" href="javascript:;" onclick="product(4131,&quot;惠氏爱儿乐妈妈孕产妇营养配方奶粉&quot;);"><img src="http://img.zdfei.com//static/image//201510/4d80ec77fcb40403286b6771989024da.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-two-title" onclick="product(4131,&quot;惠氏爱儿乐妈妈孕产妇营养配方奶粉&quot;);">惠氏爱儿乐妈妈孕产妇营养配方奶粉<span>孕产妇营养配方奶粉</span></p>
+	                            <p class="recomm-two-price bszjg150_4131" id="goods_price_two_in_0_1">¥197</p>
+	                            <p class="recomm-into-cart gwc150_4131"><a href="javascript:;" onclick="addTao(1,4131)">加入购物车</a></p>
+		                		<input type="hidden" value="4131" id="goods_id_two_in_0_1"/>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+        	
+        </div>
+    </div>
+    
+    
+    <div class="care-part clearfix" style="margin-top:10px;" >
+    	<div class="care-adv-tit"><img src="http://img.zdfei.com//static/image/healthyplan//201512/f26c9269b37ad2ecb096c72232d06def.jpg"></div>
+	
+        <div class="symptom clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(1,1);">
+            <input type="hidden" id="exp1" value="的撒打算实打实的是大大撒大苏打撒旦实打实的似的撒旦撒实打实的"/>
+                <span class="symptom-tag">伴随1</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>的撒打算实打实的是大大撒大苏打撒旦实打实的似的撒旦撒实打实的</p>
+                </div>
+            </a>
+        </div>
+            
+            <div class="recomm-product">
+        	
+        	    <input type="hidden" value="2" id="obj_two_1"/>
+	            <div class="recomm-two clearfix">
+	            	<ul class="clearfix">
+	            	<input type="hidden" value="2" id="obj_two_size_1"/>
+	                	<li>
+	                    	<a href="#" href="javascript:;" onclick="product(4081,&quot;沛优牌辅助降血脂软胶囊90g(1.0g*90粒）&quot;);"><img src="http://img.zdfei.com//static/image/upload/image/201508/7926f495-de23-4e12-a2d8-804b919bdd29-thumbnail.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-two-title" onclick="product(4081,&quot;沛优牌辅助降血脂软胶囊90g(1.0g*90粒）&quot;);">沛优牌辅助降血脂软胶囊90g(1.0g*90粒）<span>调节三高，辅助降血脂</span></p>
+	                            <p class="recomm-two-price bszjg151_4081" id="goods_price_two_in_1_0">¥95</p>
+	                            <p class="recomm-into-cart gwc151_4081"><a href="javascript:;" onclick="addTao(1,4081)">加入购物车</a></p>
+		                		<input type="hidden" value="4081" id="goods_id_two_in_1_0"/>
+	                        </div>
+	                    </li>
+	                	<li>
+	                    	<a href="#" href="javascript:;" onclick="product(4090,&quot;纤音电子血压计臂式AES-U181(智能语音)+纤音电子体温计DT-101A&quot;);"><img src="http://img.zdfei.com//static/image/upload/image/201508/12ce5c62-0ded-4f08-80be-4bb014cd3a4b-thumbnail.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-two-title" onclick="product(4090,&quot;纤音电子血压计臂式AES-U181(智能语音)+纤音电子体温计DT-101A&quot;);">纤音电子血压计臂式AES-U181(智能语音)+纤音电子体温计DT-101A<span>测量准确，携带方便</span></p>
+	                            <p class="recomm-two-price bszjg151_4090" id="goods_price_two_in_1_1">¥159</p>
+	                            <p class="recomm-into-cart gwc151_4090"><a href="javascript:;" onclick="addTao(1,4090)">加入购物车</a></p>
+		                		<input type="hidden" value="4090" id="goods_id_two_in_1_1"/>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+        	
+        </div>
+    </div>
+    
+    
+    <div class="care-part clearfix" style="margin-top:10px;" >
+    	<div class="care-adv-tit"><img src="http://img.zdfei.com//static/image/healthyplan//201512/2e2d70ebddb02f527614238d67a88286.jpg"></div>
+	
+        <div class="symptom clearfix">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(1,2);">
+            <input type="hidden" id="exp2" value="收到大萨达大三大四的阿斯顿撒大萨达啊实打实的"/>
+                <span class="symptom-tag">伴随2</span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>收到大萨达大三大四的阿斯顿撒大萨达啊实打实的</p>
+                </div>
+            </a>
+        </div>
+            
+            <div class="recomm-product">
+        	
+        	    <input type="hidden" value="2" id="obj_two_2"/>
+	            <div class="recomm-two clearfix">
+	            	<ul class="clearfix">
+	            	<input type="hidden" value="2" id="obj_two_size_2"/>
+	                	<li>
+	                    	<a href="#" href="javascript:;" onclick="product(4081,&quot;沛优牌辅助降血脂软胶囊90g(1.0g*90粒）&quot;);"><img src="http://img.zdfei.com//static/image/upload/image/201508/7926f495-de23-4e12-a2d8-804b919bdd29-thumbnail.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-two-title" onclick="product(4081,&quot;沛优牌辅助降血脂软胶囊90g(1.0g*90粒）&quot;);">沛优牌辅助降血脂软胶囊90g(1.0g*90粒）<span>调节三高，辅助降血脂</span></p>
+	                            <p class="recomm-two-price bszjg152_4081" id="goods_price_two_in_2_0">¥95</p>
+	                            <p class="recomm-into-cart gwc152_4081"><a href="javascript:;" onclick="addTao(1,4081)">加入购物车</a></p>
+		                		<input type="hidden" value="4081" id="goods_id_two_in_2_0"/>
+	                        </div>
+	                    </li>
+	                	<li>
+	                    	<a href="#" href="javascript:;" onclick="product(4068,&quot;桂林三金桂林西瓜霜3.5g&quot;);"><img src="http://img.zdfei.com//static/image/upload/image/201508/67922adf-0614-4840-ba9d-c4b62ba9eb24-thumbnail.jpg"></a>
+	                        <div class="recomm-two-info">
+	                            <p class="recomm-two-title" onclick="product(4068,&quot;桂林三金桂林西瓜霜3.5g&quot;);">桂林三金桂林西瓜霜3.5g<span>清热解毒，消肿止痛</span></p>
+	                            <p class="recomm-two-price bszjg152_4068" id="goods_price_two_in_2_1">¥14.2</p>
+	                            <p class="recomm-into-cart gwc152_4068"><a href="javascript:;" onclick="addTao(1,4068)">加入购物车</a></p>
+		                		<input type="hidden" value="4068" id="goods_id_two_in_2_1"/>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+        	
+        </div>
+    </div>
+    
+	    <div class="care-tips clearfix">
+	    	<h2>温馨提示：</h2>
+	        <p>真的真的真的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈呵呵呵哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈呵呵呵呵呵呵呵哈哈哈哈哈哈哈呵呵呵呵哈哈哈哈哈哈</p>
+	    </div>
+    
+    <!-- 推荐套餐 -->
+    <input type="hidden" id="bigSize" value="6"/>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐1
+        </h2>
+        <div class="symptom sy-comment clearfix" style="border-bottom:#efefef 1px solid;">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,0);">
+            <input type="hidden" id="ccexp0" value="似的旦撒大三大四的阿斯顿"/>
+                <span class="sy-comment-tag">
+                	<img class="ys_head_url" src="http://img.zdfei.com//static/image/head/20160108/74dd37a4b7c1e22e81f28897c8611365.png"/>
+                	<span class="ys_real_name">test</span>
+                	<span class="ys_work_year">从业3年</span>
+                </span>
+                <span class="arrow_right_h"></span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>似的旦撒大三大四的阿斯顿</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper0">
+                <div class="scroller" style="width:0px">
+                    <ul class="recomm-pro-plus clearfix">
+                    <input type="hidden" id="smallSize_0" value="0"/>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="totalSave_0">¥0</b><span>组合套餐</span><b id="combinePrce_0">¥0</b>
+                    <p>原价<i id="oldPrice_0">¥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,63)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐2
+        </h2>
+        <div class="symptom sy-comment clearfix" style="border-bottom:#efefef 1px solid;">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,1);">
+            <input type="hidden" id="ccexp1" value="好好"/>
+                <span class="sy-comment-tag">
+                	<img class="ys_head_url" src="http://img.zdfei.com//static/image/head/20151016/c8b90f36de8f14c297295c4854d2c150.png"/>
+                	<span class="ys_real_name">李药师</span>
+                	<span class="ys_work_year">从业10年</span>
+                </span>
+                <span class="arrow_right_h"></span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>好好</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper1">
+                <div class="scroller" style="width:200px">
+                    <ul class="recomm-pro-plus clearfix">
+                    <input type="hidden" id="smallSize_1" value="2"/>
+                        <li>
+                            <a href="javascript:;" onclick="product(4132,&quot;九芝堂逍遥丸+驴胶补血颗粒&quot;);">
+                                <img src="http://img.zdfei.com//static/image//201510/54ae8214f599dae5d1ff96a77e79dddb.jpg"/>
+                                <p class="recomm-pro-tit">九芝堂逍遥丸+驴胶补血颗粒</p>
+                                <input type="hidden" id="app_price_1_0" value="99.00"/>
+                                <input type="hidden" id="old_price_1_0" value="120.00"/>
+                                <input type="hidden" id="goods_id_1_0" value="4132"/>
+                                <input type="hidden" id="goods_name_1_0" value="九芝堂逍遥丸+驴胶补血颗粒"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4064,&quot;增强免疫力粉&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/4672542c-8b6a-47f4-a67f-3385fab78287-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">增强免疫力粉</p>
+                                <input type="hidden" id="app_price_1_1" value="358.00"/>
+                                <input type="hidden" id="old_price_1_1" value="498.00"/>
+                                <input type="hidden" id="goods_id_1_1" value="4064"/>
+                                <input type="hidden" id="goods_name_1_1" value="增强免疫力粉"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="totalSave_1">¥0</b><span>组合套餐</span><b id="combinePrce_1">¥0</b>
+                    <p>原价<i id="oldPrice_1">¥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,62)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐3
+        </h2>
+        <div class="symptom sy-comment clearfix" style="border-bottom:#efefef 1px solid;">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,2);">
+            <input type="hidden" id="ccexp2" value="好"/>
+                <span class="sy-comment-tag">
+                	<img class="ys_head_url" src="http://img.zdfei.com//static/image/head/20151016/c8b90f36de8f14c297295c4854d2c150.png"/>
+                	<span class="ys_real_name">李药师</span>
+                	<span class="ys_work_year">从业10年</span>
+                </span>
+                <span class="arrow_right_h"></span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>好</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper2">
+                <div class="scroller" style="width:100px">
+                    <ul class="recomm-pro-plus clearfix">
+                    <input type="hidden" id="smallSize_2" value="1"/>
+                        <li>
+                            <a href="javascript:;" onclick="product(4090,&quot;纤音U181语音血压计组合装&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/12ce5c62-0ded-4f08-80be-4bb014cd3a4b-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">纤音U181语音血压计组合装</p>
+                                <input type="hidden" id="app_price_2_0" value="159.00"/>
+                                <input type="hidden" id="old_price_2_0" value="380.00"/>
+                                <input type="hidden" id="goods_id_2_0" value="4090"/>
+                                <input type="hidden" id="goods_name_2_0" value="纤音U181语音血压计组合装"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="totalSave_2">¥0</b><span>组合套餐</span><b id="combinePrce_2">¥0</b>
+                    <p>原价<i id="oldPrice_2">¥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,61)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐4
+        </h2>
+        <div class="symptom sy-comment clearfix" style="border-bottom:#efefef 1px solid;">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,3);">
+            <input type="hidden" id="ccexp3" value="好好好好好"/>
+                <span class="sy-comment-tag">
+                	<img class="ys_head_url" src="http://img.zdfei.com//static/image/head/20151016/c8b90f36de8f14c297295c4854d2c150.png"/>
+                	<span class="ys_real_name">李药师</span>
+                	<span class="ys_work_year">从业10年</span>
+                </span>
+                <span class="arrow_right_h"></span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>好好好好好</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper3">
+                <div class="scroller" style="width:400px">
+                    <ul class="recomm-pro-plus clearfix">
+                    <input type="hidden" id="smallSize_3" value="4"/>
+                        <li>
+                            <a href="javascript:;" onclick="product(4130,&quot;汇仁肾宝片+雄赳赳益康胶囊&quot;);">
+                                <img src="http://img.zdfei.com//static/image//201510/bb3537358a20a1b52ee1422368c0fb1f.jpg"/>
+                                <p class="recomm-pro-tit">汇仁肾宝片+雄赳赳益康胶囊</p>
+                                <input type="hidden" id="app_price_3_0" value="418.00"/>
+                                <input type="hidden" id="old_price_3_0" value="589.00"/>
+                                <input type="hidden" id="goods_id_3_0" value="4130"/>
+                                <input type="hidden" id="goods_name_3_0" value="汇仁肾宝片+雄赳赳益康胶囊"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4081,&quot;辅助降血脂软胶囊&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/7926f495-de23-4e12-a2d8-804b919bdd29-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">辅助降血脂软胶囊</p>
+                                <input type="hidden" id="app_price_3_1" value="95.00"/>
+                                <input type="hidden" id="old_price_3_1" value="199.00"/>
+                                <input type="hidden" id="goods_id_3_1" value="4081"/>
+                                <input type="hidden" id="goods_name_3_1" value="辅助降血脂软胶囊"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4126,&quot;雀巢超级较大婴儿及幼儿配方奶粉&quot;);">
+                                <img src="http://img.zdfei.com//static/image//201510/80ce0c0dfc30ae5aa2fcc8253a8b7ac8.jpg"/>
+                                <p class="recomm-pro-tit">雀巢超级较大婴儿及幼儿配方奶粉</p>
+                                <input type="hidden" id="app_price_3_2" value="339.00"/>
+                                <input type="hidden" id="old_price_3_2" value="350.00"/>
+                                <input type="hidden" id="goods_id_3_2" value="4126"/>
+                                <input type="hidden" id="goods_name_3_2" value="雀巢超级较大婴儿及幼儿配方奶粉"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4068,&quot;西瓜霜&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/67922adf-0614-4840-ba9d-c4b62ba9eb24-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">西瓜霜</p>
+                                <input type="hidden" id="app_price_3_3" value="14.20"/>
+                                <input type="hidden" id="old_price_3_3" value="25.80"/>
+                                <input type="hidden" id="goods_id_3_3" value="4068"/>
+                                <input type="hidden" id="goods_name_3_3" value="西瓜霜"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="totalSave_3">¥0</b><span>组合套餐</span><b id="combinePrce_3">¥0</b>
+                    <p>原价<i id="oldPrice_3">¥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,60)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐5
+        </h2>
+        <div class="symptom sy-comment clearfix" style="border-bottom:#efefef 1px solid;">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,4);">
+            <input type="hidden" id="ccexp4" value="很好很好很好"/>
+                <span class="sy-comment-tag">
+                	<img class="ys_head_url" src="http://img.zdfei.com//static/image/head/20160108/74dd37a4b7c1e22e81f28897c8611365.png"/>
+                	<span class="ys_real_name">test</span>
+                	<span class="ys_work_year">从业3年</span>
+                </span>
+                <span class="arrow_right_h"></span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>很好很好很好</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper4">
+                <div class="scroller" style="width:400px">
+                    <ul class="recomm-pro-plus clearfix">
+                    <input type="hidden" id="smallSize_4" value="4"/>
+                        <li>
+                            <a href="javascript:;" onclick="product(4126,&quot;雀巢超级较大婴儿及幼儿配方奶粉&quot;);">
+                                <img src="http://img.zdfei.com//static/image//201510/80ce0c0dfc30ae5aa2fcc8253a8b7ac8.jpg"/>
+                                <p class="recomm-pro-tit">雀巢超级较大婴儿及幼儿配方奶粉</p>
+                                <input type="hidden" id="app_price_4_0" value="339.00"/>
+                                <input type="hidden" id="old_price_4_0" value="350.00"/>
+                                <input type="hidden" id="goods_id_4_0" value="4126"/>
+                                <input type="hidden" id="goods_name_4_0" value="雀巢超级较大婴儿及幼儿配方奶粉"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4130,&quot;汇仁肾宝片+雄赳赳益康胶囊&quot;);">
+                                <img src="http://img.zdfei.com//static/image//201510/bb3537358a20a1b52ee1422368c0fb1f.jpg"/>
+                                <p class="recomm-pro-tit">汇仁肾宝片+雄赳赳益康胶囊</p>
+                                <input type="hidden" id="app_price_4_1" value="418.00"/>
+                                <input type="hidden" id="old_price_4_1" value="589.00"/>
+                                <input type="hidden" id="goods_id_4_1" value="4130"/>
+                                <input type="hidden" id="goods_name_4_1" value="汇仁肾宝片+雄赳赳益康胶囊"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4081,&quot;辅助降血脂软胶囊&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/7926f495-de23-4e12-a2d8-804b919bdd29-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">辅助降血脂软胶囊</p>
+                                <input type="hidden" id="app_price_4_2" value="95.00"/>
+                                <input type="hidden" id="old_price_4_2" value="199.00"/>
+                                <input type="hidden" id="goods_id_4_2" value="4081"/>
+                                <input type="hidden" id="goods_name_4_2" value="辅助降血脂软胶囊"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4062,&quot;缓解体力疲劳粉&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/30e0a641-62f8-4cef-81f6-ee684b5f193a-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">缓解体力疲劳粉</p>
+                                <input type="hidden" id="app_price_4_3" value="358.00"/>
+                                <input type="hidden" id="old_price_4_3" value="398.00"/>
+                                <input type="hidden" id="goods_id_4_3" value="4062"/>
+                                <input type="hidden" id="goods_name_4_3" value="缓解体力疲劳粉"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="totalSave_4">¥0</b><span>组合套餐</span><b id="combinePrce_4">¥0</b>
+                    <p>原价<i id="oldPrice_4">¥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,59)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <article class="package-tj">
+    	<h2 class="package-tj-title clearfix">
+        	<span>药师推荐</span>套餐6
+        </h2>
+        <div class="symptom sy-comment clearfix" style="border-bottom:#efefef 1px solid;">
+            <a href="javascript:void(0)" class="out-details" onclick="zhankai(2,5);">
+            <input type="hidden" id="ccexp5" value="好好好好好好好好好好好啊好"/>
+                <span class="sy-comment-tag">
+                	<img class="ys_head_url" src="http://img.zdfei.com//static/image/head/20151016/c8b90f36de8f14c297295c4854d2c150.png"/>
+                	<span class="ys_real_name">李药师</span>
+                	<span class="ys_work_year">从业10年</span>
+                </span>
+                <span class="arrow_right_h"></span>
+                <div class="symptom-text clearfix">
+                    <span class="symptom-corner fr"></span>
+						<p>好好好好好好好好好好好啊好</p>
+                </div>
+            </a>
+        </div>
+        <div class="wrapper wrapper5">
+                <div class="scroller" style="width:600px">
+                    <ul class="recomm-pro-plus clearfix">
+                    <input type="hidden" id="smallSize_5" value="6"/>
+                        <li>
+                            <a href="javascript:;" onclick="product(4084,&quot;江中乳酸菌素片&quot;);">
+                                <img src="http://img.zdfei.com//static/image//201511/27780f97276690770222033f55f86c46.jpg"/>
+                                <p class="recomm-pro-tit">江中乳酸菌素片</p>
+                                <input type="hidden" id="app_price_5_0" value="48.90"/>
+                                <input type="hidden" id="old_price_5_0" value="85.00"/>
+                                <input type="hidden" id="goods_id_5_0" value="4084"/>
+                                <input type="hidden" id="goods_name_5_0" value="江中乳酸菌素片"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4131,&quot;惠氏爱儿乐妈妈孕产妇营养配方奶粉&quot;);">
+                                <img src="http://img.zdfei.com//static/image//201510/4d80ec77fcb40403286b6771989024da.jpg"/>
+                                <p class="recomm-pro-tit">惠氏爱儿乐妈妈孕产妇营养配方奶粉</p>
+                                <input type="hidden" id="app_price_5_1" value="197.00"/>
+                                <input type="hidden" id="old_price_5_1" value="197.00"/>
+                                <input type="hidden" id="goods_id_5_1" value="4131"/>
+                                <input type="hidden" id="goods_name_5_1" value="惠氏爱儿乐妈妈孕产妇营养配方奶粉"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4064,&quot;增强免疫力粉&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/4672542c-8b6a-47f4-a67f-3385fab78287-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">增强免疫力粉</p>
+                                <input type="hidden" id="app_price_5_2" value="358.00"/>
+                                <input type="hidden" id="old_price_5_2" value="498.00"/>
+                                <input type="hidden" id="goods_id_5_2" value="4064"/>
+                                <input type="hidden" id="goods_name_5_2" value="增强免疫力粉"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4126,&quot;雀巢超级较大婴儿及幼儿配方奶粉&quot;);">
+                                <img src="http://img.zdfei.com//static/image//201510/80ce0c0dfc30ae5aa2fcc8253a8b7ac8.jpg"/>
+                                <p class="recomm-pro-tit">雀巢超级较大婴儿及幼儿配方奶粉</p>
+                                <input type="hidden" id="app_price_5_3" value="339.00"/>
+                                <input type="hidden" id="old_price_5_3" value="350.00"/>
+                                <input type="hidden" id="goods_id_5_3" value="4126"/>
+                                <input type="hidden" id="goods_name_5_3" value="雀巢超级较大婴儿及幼儿配方奶粉"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4081,&quot;辅助降血脂软胶囊&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/7926f495-de23-4e12-a2d8-804b919bdd29-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">辅助降血脂软胶囊</p>
+                                <input type="hidden" id="app_price_5_4" value="95.00"/>
+                                <input type="hidden" id="old_price_5_4" value="199.00"/>
+                                <input type="hidden" id="goods_id_5_4" value="4081"/>
+                                <input type="hidden" id="goods_name_5_4" value="辅助降血脂软胶囊"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" onclick="product(4062,&quot;缓解体力疲劳粉&quot;);">
+                                <img src="http://img.zdfei.com//static/image/upload/image/201508/30e0a641-62f8-4cef-81f6-ee684b5f193a-thumbnail.jpg"/>
+                                <p class="recomm-pro-tit">缓解体力疲劳粉</p>
+                                <input type="hidden" id="app_price_5_5" value="358.00"/>
+                                <input type="hidden" id="old_price_5_5" value="398.00"/>
+                                <input type="hidden" id="goods_id_5_5" value="4062"/>
+                                <input type="hidden" id="goods_name_5_5" value="缓解体力疲劳粉"/>
+                            </a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+            <!--立即购买-->
+            <div class="price-box clearfix">
+            	<div class="total-price">
+                	<span>共节省</span><b id="totalSave_5">¥0</b><span>组合套餐</span><b id="combinePrce_5">¥0</b>
+                    <p>原价<i id="oldPrice_5">¥0</i></p>
+                </div>
+                <a href="javascript:;" onclick="addTao(2,58)" class="sy-buy">立即购买</a>
+            </div>
+    </article>
+    <!--推荐套餐-->
+</div>
+<!---->
+<div class="b-cover">
+	<div class="describ">
+    	<div class="describ-tit">
+        	<a href="javascript:void(0)" class="describ-x"></a>
+                        详细描述
+        </div>
+        <div class="describ-details">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<style type="text/css">
+.care-part{ background:#fff;}
+.care-adv-tit img{width:100%; display:block;}
+.symptom{height:80px;overflow:hidden;position:relative;}
+.symptom a{height:75px; display:block;}
+.symptom-tag{width:48px;overflow:hidden;background:#0fa9a3; display:inline-block; font-size:12px; color:#fff; text-align:center; padding:0 6px; border-radius:5px; -webkit-border-radius:5px; position:absolute; top:50%; margin:-15px 0 0 15px;}
+.symptom-corner{width:9px; height:15px; display:inline-block; background:url(/web/images/symptom_corner.png) no-repeat; background-size:9px 15px; float:right; margin:20px 15px 0 15px;}
+.symptom-text{ height:54px; padding:11px 0 10px 90px;}
+.symptom-text p {font-size: 12px;line-height: 18px;height: 54px;overflow: hidden;position: relative;left: 20px;width: 75%;}
+.recomm-one-img{float:left; width:50%;}
+.recomm-one-img a{ display:block; margin:0 15px;}
+.recomm-one-img a img{width:100%; display:block;}
+.recomm-one-info{ float:left; width:50%; padding-top:15px;}
+.recomm-one-info p{padding:0 15px;}
+.recomm-one-title{color:#222; height:38px; overflow:hidden; line-height:1.4em;}
+.recomm-one-title span{ display:block; font-size:12px;}
+.recomm-one-price{color:#fc4044; font-size:15px;}
+.recomm-one .recomm-into-cart a,.recomm-two .recomm-into-cart a{ font-size:15px; color:#fe4310; display:block; height:30px; line-height:30px; border-radius:5px; -webkit-border-radius:5px; border:1px solid #fe4310; margin:5px 0 0 0; text-align:center;}
+.c-line{margin:0 0 0 15px; height:1px; background:#d7d7d7;}
+.recomm-two{margin-top:1px;}
+.recomm-two li{ float:left; width:50%; padding-bottom:15px;}
+.recomm-two li a{margin:0 15px; display:block;}
+.recomm-two li a img{width:100%; display:block;}
+.recomm-two-info p{ padding:0 15px;}
+.recomm-two-title{color:#222; height:38px; overflow:hidden; line-height:1.4em;}
+.recomm-two-title span{ display:block; font-size:12px;}
+.recomm-two-price{color:#fc4044; font-size:15px;}
+.care-tips{padding:15px 15px 0; color:#3e3e3e; border-top:1px solid #d7d7d7; background:#fff;}
+.care-tips h2{ font-size:15px;}
+.care-tips p{margin:5px 0 15px; font-size:12px; line-height:1.6em;}
+.package-tj{ background:#fff; margin-top:10px;}
+.package-tj-title{height:45px; line-height:45px; font-size:12px; color:#222;}
+.package-tj-title span{background:#0fa9a3; display:inline-block; font-size:12px; line-height:1.4em; color:#fff; text-align:center; padding:0 6px; border-radius:5px; -webkit-border-radius:5px; margin:15px;}
+.sy-comment{border-bottom:none;}
+.sy-comment-tag{display:inline-block; font-size:12px; text-align:center; padding:0 6px;float:left;width:19%;height:80px;background-color:#efefef;border-radius:10px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
+.price-box{margin:0 15px; border-top:1px solid #d7d7d7; padding:10px 0;}
+.total-price{ text-align:right; line-height:16px;}
+.total-price span{ margin:0 5px 0 20px; color:#222; font-size:12px;}
+.total-price b{ font-size:15px; color:#fc4044;}
+.total-price p{color:#999; font-size:10px;}
+.total-price p i{ font-style:normal; text-decoration:line-through; margin-left:5px;}
+.sy-buy{ width:108px; height:32px; line-height:32px; color:#fff; display:inline-block; float:right; text-align:center; font-size:15px; border-radius:5px; -webkit-border-radius:5px; background:#fe4310; margin-top:5px;}
+.b-cover{ position:fixed; background:rgba(0,0,0,.8); top:0; left:0; right:0; bottom:0; z-index:100; display:none;}
+.describ{ position:absolute; height:70%; top:100%; left:0; right:0; background:#efeff4;}
+.describ-tit{height:50px; line-height:50px; border-bottom:1px solid #d7d7d7; font-size:15px; padding:0 10px;}
+.describ-tit a{ display:inline-block; float:right; width:16px; height:16px; background:url(/web/images/describ_x.png) no-repeat; background-size:16px; margin:17px 0;}
+.describ-details{padding:10px; color:#222; height:80%; line-height:1.6em; overflow-y:auto;}
+.wrapper{position:relative;z-index:1;height:120px;width:100%;background:#fff;overflow:hidden;-ms-touch-action:none;top:10px;}
+.scroller{position:absolute;z-index:1;-webkit-tap-highlight-color:transparent;width:580px;height:120px;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none}
+.scroller ul{list-style:none;width:100%;padding:0;margin:0; background:#fff;}
+.scroller li{width:95px;height:120px;background:#fff;float:left;overflow:hidden; position:relative;}
+.recomm-pro-plus li a,.recomm-pro-plus li a img{width:80px; height:80px; display:block;}
+.recomm-pro-plus li span{ width:15px; height:80px; line-height:80px; text-align:center; display:inline-block; position:absolute; right:0; top:0; font-size:18px;}
+.recomm-pro-plus li:first-child{ margin-left:10px;}
+.recomm-pro-plus li:last-child span{ display:none;}
+.recomm-pro-tit{ padding:0 5px; font-size:12px; color:#222; line-height:1.4em; height:32px; overflow:hidden;}
+.health-nav-box{position:fixed ;z-index:99;}
+.health-nav-box{position:relative;z-index:99;height:40px;width:100%;background:#f3f5f7;overflow:hidden;-ms-touch-action:none}
+.health-nav-box-list{position:absolute;z-index:1;-webkit-tap-highlight-color:transparent;width:450px;height:40px;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none}
+.health-nav-box-list ul{list-style:none;width:100%;padding:0;margin:0}
+.health-nav-box-list li{width:90px;height:40px;float:left;line-height:40px;background-color:#f3f5f7;font-size:14px;overflow:hidden;text-align:center; color:#fff;}
+.health-nav-box-list li a{color:#999999; pointer-events: none; display: inline-block; height: 38px; line-height: 38px;}
+.health-nav-box-list li.curr a{ color: #0fa9a3; border-bottom:2px solid #0fa9a3;}
+.arrow_right_h {float:left;height:75px;width:11px;height:75px;background:url('http://img.zdfei.com/static/image/temp/20160627/88a739825f1bf1b52c55e64f13f0f65c.jpg') center no-repeat;}
+.ys_head_url {float: left;width: 35px;height: 35px;border-radius: 50%;margin-top: 5px;margin-left: 23%;}
+.ys_real_name {float: left;width: 50px;height: 15px;line-height: 15px;display: block;text-align: center;margin-left: 9px;font-size: 12px;margin-top:2px;}
+.ys_work_year {float: left;width: 50px;height: 15px;line-height: 15px;display: block;text-align: center;margin-left: 9px;font-size: 12px;margin-top:2px;}
+</style>
+
+<script type="text/javascript">
+//var _url = "http://router.111yao.com/sltRouter?method=countpricefrom";
+var _url = "/index!countpricefrompc.action";
+var jsonp_url = "http://wap.portal.com/healthyplan/healthyplan!getPlanCategorysJSONP.action";
+$(function()
+{
+	//收起详细内容
+	$('.describ-x').click(function()
+	{
+		$('.b-cover').hide();	
+	});
+	
+	//获取头部导航分类名称
+	try{getNavication();}catch(e){console.log(e)}
+	
+	//动态获取关联商品的价格
+    try{getPriceInGoods();}catch(e){console.log(e)}
+	
+	//组合套餐动态获取商品价格
+    try{getDynamicPriceWithCombination();}catch(e){console.log(e)}
+	
+});
+
+//动态获取关联商品的价格
+function getPriceInGoods()
+{
+	var pln = $.trim($("#priceLooperNumber").val());
+	var ps = "";
+	for(var i=0;i<pln;i++)
+	{
+		//关联一个商品
+		var oneObj = document.getElementById("goods_price_one_in_"+i);
+		if(oneObj != null)
+		{
+			var hj = "goods_price_one_in_"+i;
+			var goods_id = $.trim($("#goods_id_one_in_"+i).val());
+			var p1 = "{'goodsId':"+goods_id+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj+"'}";
+			ps += p1 + ",";
+		}
+		//关联两个商品
+		var twoObj = document.getElementById("obj_two_"+i);
+		if(twoObj != null)
+		{
+			var twoSize = parseInt($.trim($("#obj_two_size_"+i).val()));
+			for(var j=0; j<twoSize; j++)
+			{
+				var hj = "goods_price_two_in_"+i+"_"+j;
+				var goods_id = $.trim($("#goods_id_two_in_"+i+"_"+j).val());
+				var p2 = "{'goodsId':"+goods_id+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj+"'}";
+				ps += p2 + ",";
+			}
+		}
+		//关联三个商品
+		var threeObj = document.getElementById("obj_three_"+i);
+		if(threeObj != null)
+	    {
+	    	var hj1 = "goods_price_three_in_1_"+i;
+			var goods_id_1 = $.trim($("#goods_id_three_in_1_"+i).val());
+			var p3_1 = "{'goodsId':"+goods_id_1+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj1+"'}";
+			
+	    	var hj2 = "goods_price_three_in_2_"+i;
+			var goods_id_2 = $.trim($("#goods_id_three_in_2_"+i).val());
+			var p3_2 = "{'goodsId':"+goods_id_2+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj2+"'}";
+			
+	    	var hj3 = "goods_price_three_in_3_"+i;
+			var goods_id_3 = $.trim($("#goods_id_three_in_3_"+i).val());
+			var p3_3 = "{'goodsId':"+goods_id_3+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj3+"'}";
+			
+			var $p3 = p3_1 + ","+p3_2+","+p3_3;
+			ps += $p3 + ",";
+	    }
+	}
+	ps = ps.substring(0,ps.length-1);
+	var p_start = "[" ;
+	var p_end = "]" ;
+	var params = p_start + ps + p_end ;
+    $.ajax
+    ({
+        type: "post",
+        url: _url,
+        data: {"params":params},
+        async: false,
+        success: function(datas)
+        {
+        	var data = eval(datas);
+		    if(data != null && data != '' && data != undefined)
+            {
+                for(var i=0; i<data.length; i++)
+                {
+                    var nowPrice = data[i].nowPrice;
+                    var htmlObjId = data[i].htmlObjId;
+                    $("#"+htmlObjId).html("¥"+nowPrice);
+                }
+            }
+            else
+            {
+                console.log("Datas null !");
+            }
+        },
+        error: function()
+        {
+            console.log("Server error !");
+        }
+    });
+}
+
+//组合套餐动态获取商品价格
+function getDynamicPriceWithCombination()
+{
+	var bigSize = $.trim($("#bigSize").val());
+	var ps = "";
+	for(var i=0; i<bigSize; i++)
+	{
+		var smallSize = $.trim($("#smallSize_"+i).val());
+		for(var j=0; j<smallSize; j++)
+		{
+			var goods_id = $.trim($("#goods_id_"+i+"_"+j).val());
+	  		var hj = "app_price_"+i+"_"+j;
+	  		var p1 = "{'goodsId':"+goods_id+",'nowPrice':'00.00','platform':'2','htmlObjId':'"+hj+"'}"; 
+	  		ps += p1 + ",";
+		}
+	}
+	ps = ps.substring(0,ps.length-1);
+  	var p_start = "[" ;
+	var p_end = "]" ;
+	var params = p_start + ps + p_end ;
+    $.ajax
+    ({
+        type: "post",
+        url: _url,
+        data: {"params":params},
+        async: false,
+        success: function(datas)
+        {
+        	var data = eval(datas);
+            if(data != null && data != '' && data != undefined)
+            {
+                for(var i=0; i<data.length; i++)
+                {
+                    var nowPrice = data[i].nowPrice;
+                    var htmlObjId = data[i].htmlObjId;
+                    $("#"+htmlObjId).val(nowPrice);
+                }
+                combinationPrice();
+            }
+            else
+            {
+                console.log("Datas null !");
+                combinationPrice();
+            }
+        },
+        error: function()
+        {
+            console.log("Server error !");
+            combinationPrice();
+        }
+    });
+}
+
+//组合套装计算价格
+function combinationPrice()
+{
+	var bigSize = $.trim($("#bigSize").val());
+	for(var i=0; i<bigSize; i++)
+	{
+		var totalWapPrice = 0;
+		var totalOldPrice = 0;
+		var savePrice = 0;
+		var smallSize = $.trim($("#smallSize_"+i).val());
+		for(var j=0; j<smallSize; j++)
+		{
+			//APP站价格
+			var app_price = parseFloat($.trim($("#app_price_"+i+"_"+j).val()));
+			//原价格
+			var old_price = parseFloat($.trim($("#old_price_"+i+"_"+j).val()));
+			totalWapPrice += app_price;
+			totalOldPrice += old_price;
+		}
+		savePrice = parseFloat(totalOldPrice - totalWapPrice);
+		savePrice = savePrice.toFixed(2);
+		//共节省
+		$("#totalSave_"+i).html("¥"+savePrice);
+		//组合价
+		$("#combinePrce_"+i).html("¥"+totalWapPrice.toFixed(2));
+		//原价
+		$("#oldPrice_"+i).html("¥"+totalOldPrice.toFixed(2));
+	}
+}
+
+
+//产品详情页
+function product(id,name)
+{
+	document.location = "id*"+id+"*"+name;
+}
+
+//展开详细内容
+function zhankai(t,i)
+{
+	var v = "";
+	if(1==t)
+	{
+		v=$("#exp"+i+"").val();
+	}
+	else
+	{
+		v=$("#ccexp"+i+"").val();
+	}
+	$('.describ-details').text(v);
+	$('.b-cover').show();
+	$('.describ').animate({top:"30%"});
+}
+
+//获取头部导航分类名称
+function getNavication()
+{
+	var hid = $.trim($("#hid").val());
+	$.ajax
+	({
+		type: "get",
+		url: jsonp_url,
+		async: false,
+		data: "hid="+hid,
+		dataType: "jsonp",
+		jsonp: "jsoncallback",
+		success: function(data) 
+		{  
+			var liobj = "";
+			for(var i=0; i<data.length; i++)
+			{
+				var cname = data[i].name;
+				var id = data[i].id;
+				var c = "";
+				if(id == hid)
+				{
+					c = "curr";
+				}
+				liobj += "<li class='"+c+"' onclick='toHealty("+id+")'><a>"+cname+"</a></li>";
+			}
+			$(".health-nav-box-list ul").append(liobj);
+			//动态控制滚动条长度
+			var lg = document.getElementById("newscroller").getElementsByTagName("li").length;
+			$(".health-nav-box-list").css("width",lg*90+"px");
+			var isoll = new IScroll('.wrapper3', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+			var clientWidth = $(window).width();
+		    var showLiNum = Math.floor(clientWidth / 90);
+		    var lg = $("#newscroller li").length-1;
+		    var currIndex = $("#newscroller li.curr").index();
+		    if(lg == currIndex)
+		    {
+			    if (currIndex > (showLiNum - 1)) 
+			    {
+			    	var u = navigator.userAgent, app = navigator.appVersion;
+			    	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+			    	if(isiOS)
+			    	{
+			    		isoll.scrollTo((-(currIndex - showLiNum + 1) * 90)+45, 0);
+			    	}
+			    	else
+			    	{
+				        isoll.scrollTo(-(currIndex - showLiNum + 1) * 90, 0);
+			    	}
+			    }
+		    }
+		    else
+		    {
+			    if (currIndex > (showLiNum - 1)) 
+			    {
+			        isoll.scrollTo(-(currIndex - showLiNum + 1) * 90, 0);
+			    }
+		    }
+        },  
+        error: function() 
+        {  
+            console.log("Server error !"); 
+        }  
+	});
+}
+
+//菜单点击事件
+function toHealty(id)
+{
+	window.location.href = "/static/healthypla/h/"+id+".html";
+}
+
+</script>

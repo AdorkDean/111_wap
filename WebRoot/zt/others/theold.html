@@ -1,0 +1,417 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <!--缩放比例-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>关爱老人</title>
+    <style type="text/css">
+        html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,textarea,input,span,figure,aside,time,article{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}
+        article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+        audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+        audio:not([controls]){display:none}
+        html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+        body{width:100%;font-family:"SimHei",Helvetica,Arial,sans-serif;font-size:14px;color:#000;background:#e0e1e5}
+        input,textarea{font-family:"SimHei",Helvetica,Arial,sans-serif;color:#fff}
+        input:-moz-placeholder,textarea:-moz-placeholder{color:#fff}
+        input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#fff}
+        input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#fff}
+        a{color:#fff;text-decoration:none;/*-webkit-tap-highlight-color:rgba(0,0,0,0.2);*/-webkit-tap-highlight-color:transparent}
+        a:hover{text-decoration:none}
+        a:focus{outline:thin dotted}
+        a:hover,a:active{outline:0}
+        textarea,input{resize:none;outline:0;font-size:100%;-webkit-tap-highlight-color:rgba(255,0,0,0)}
+        textarea{resize:none;-webkit-appearance:none}
+        ul,ol{list-style:none}
+        em{font-style:normal}
+        .clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0;overflow:hidden}
+        .fl{float:left}
+        .fr{float:right}
+
+
+        .national_wap{ background-color: #d84621;position:relative; left:0; top:84px;}
+        /*content*/
+        .banner,.banner img{width:100%; display:block;}
+        .title,.title img{width:100%; display:block;}
+        .banner span{display:none;}
+        /*product_list*/
+        .content-box{overflow:hidden;}
+        .Junfold a.show-list{height:60px; line-height:60px; color:#e0e1e5; font-size:16px; width:100%; display:block; position:relative; background:#28211b; text-align:center; border-top:1px #ccc solid; margin-top:-1px;}
+        .Junfold a b{color:#fff; padding:0 2px;}
+        .subject-list{padding-top:6px;}
+        .list-corner{width:18px; height:10px; background:url(../images/corner.svg) no-repeat; background-size:18px 10px;-o-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); position:absolute; right:20px; top:25px; display:none;}
+        .Junfold.on .list-corner{-o-transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+        .subject-list ul{padding:0 0 0 6px;}
+        .subject-list li{width:50%; float:left;}
+        .subject-box{background:#fff; overflow:hidden; margin:0 6px 6px 0;position:relative;}
+        .subject-info{margin:0 6px; padding:6px 0;}
+        .subject-info .for-img{display:block; box-shadow:0 0 0 1px #e0e1e5 inset; overflow:hidden; padding:1px; position:relative;}
+        .for-img img{width:100%;}
+        .subject-title{height:20px; line-height:20px; font-size:15px; overflow:hidden; word-break:keep-all; white-space:nowrap; text-overflow:ellipsis; margin-top:5px; color:#2a2a2a; text-align: center;}
+        .subject-spec{ color:#5c5c5c; font-size:12px; height:16px; line-height:16px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; opacity: 0; filter:Alpha(opacity=0); }
+        .selling-price{ text-align: center; font-size:15px; font-weight:bold; color:#e51837;}
+        .selling-price span{ display:inline-block;}
+        .original-price{ text-align: center; font-size:12px; color:#8a8684; text-decoration:line-through;}
+        .buy-now-btn{height:30px; line-height:30px; background:#db0100; display:block;  text-align:center; font-size:15px; color:#fff; margin-top:6px;}
+        .footer{ clear:both; padding:0 0 0 6px;}
+        .footer ol li{ width:33.3%; float: left; }
+        .footer ol li a{ display: block; margin-right:6px;}
+        .footer ol li a img{ width: 100%;}
+    </style>
+</head>
+<body>
+<!--#include virtual="/static/inc/wap/header.html" -->
+<article class="national_wap">
+    <a id="top" name="top"></a>
+    <h1 class="banner">
+        <span>关爱老人</span>
+        <img src="http://ui1.111yao.com/static/image/temp/20151106/82406e658b45b672e0ff1163b531a881.jpg">
+    </h1>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151106/9694e8e8d31d2e32ac04a7454464de3a.jpg">
+    </h2>
+    <ul class="content-box">
+        <li class="Junfold on">
+            <div class="subject-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/64fc99ad9b92769779b9feea3f7f4b49.jpg"></div>
+                                <p class="subject-title">三诺安信血糖仪单机+50瓶装试纸</p>
+                                <p class="subject-spec"></p>
+                                <p class="original-price">价格￥128</p>
+                                <p class="selling-price">活动价 ￥<span id="product">99</span></p>
+                                <a href="http://www.111yao.com/p/2048.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/1f9eb4a36e95dd72495069aa781a4678.jpg"></div>
+                                <p class="subject-title">三诺安稳试纸瓶装50条</p>
+                                <p class="subject-spec">（智能语音）AES-U181</p>
+                                <p class="original-price">价格：￥158</p>
+                                <p class="selling-price">活动价 ￥<span id="product2">62</span></p>
+                                <a href="http://www.111yao.com/p/1924.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/3043727b8260c1a0a93d844e7d174868.jpg"></div>
+                                <p class="subject-title">三诺安稳血糖仪含试纸50条</p>
+                                <p class="subject-spec">HEM-7051</p>
+                                <p class ="original-price">价格￥328</p>
+                                <p class="selling-price">活动家价 ￥<span id="product3">229</span></p>
+                                <a href="http://www.111yao.com/p/3407.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/a5ec482ee2d2b00564f50d78aaf05c89.jpg"></div>
+                                <p class="subject-title">自动家用上臂式智能血压测量仪器
+                                </p>
+                                <p class="subject-spec">HT-520(仿真人捶打 舒适享受)</p>
+                                <p class="original-price">价格￥399</p>
+                                <p class="selling-price">活动价 ￥<span id="product4">88</span></p>
+
+                                <a href="http://www.111yao.com/p/2790.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/965655a0645562b75fef761d34a07d0b.jpg"></div>
+                                <p class="subject-title">纤音电子U181臂式智能血压测量仪</p>
+                                <p class="subject-spec">测量准确 健康监测</p>
+                                <p class="original-price">价格￥268</p>
+                                <p class="selling-price">活动价 ￥<span id="product5">99</span></p>
+                                 <a href="http://www.111yao.com/p/2808.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/0743b6e5acb8e8eced48eb1a5bae9217.jpg"></div>
+                                <p class="subject-title">纤音 腕式电子血压计（大屏语音）</p>
+                                <p class="subject-spec">塑造迷人好身体</p>
+                                <p class="original-price">原价￥199</p>
+                                <p class="selling-price">活动价 ￥<span id="product6">159.00</span></p>
+                                <a href="http://www.111yao.com/p/1197.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151106/604ae15a52b4f85fa3b9f41975c5a637.jpg">
+    </h2>
+    <ul class="content-box">
+        <li class="Junfold on">
+            <div class="subject-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/7460507dd7617d7ced7ef83a3c4110ae.jpg"></div>
+                                <p class="subject-title">纤音耳背式无线助听器</p>
+                                <p class="subject-spec">滋阴补肾 体现本能</p>
+                                <p class="original-price">价格￥165</p>
+                                <p class="selling-price">活动价 ￥<span id="product7">79</span></p>
+                                <a href="http://www.111yao.com/p/2203.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/740bcc37f9b8360bc2bb752f8211c8a4.jpg"></div>
+                                <p class="subject-title">纤音TE-002耳背式老人助听器</p>
+                                <p class="subject-spec">组合装 更优惠</p>
+                                <p class="original-price">价格￥214</p>
+                                <p class="selling-price">活动价 ￥<span id="product8">79</span></p>
+                                <a href="http://www.111yao.com/p/1833.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/005e081ae283da110687ecc887f3d29e.jpg"></div>
+                                <p class="subject-title">西门子pockettio HP盒式助听器</p>
+                                <p class="subject-spec">调和阴阳 温阳补肾 扶正固本</p>
+                                <p class="original-price">价格￥598</p>
+                                <p class="selling-price">活动价 ￥<span id="product9">239</span></p>
+                                <a href ="http://www.111yao.com/p/2537.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/f0c40cd7491bf6d3f3a25ea48aeb1302.jpg"></div>
+                                <p class="subject-title">鱼跃制氧机9f-3 医用制氧机</p>
+                                <p class="subject-spec">双重滋补 激发本能</p>
+                                <p class="original-price">价格￥5800</p>
+                                <p class="selling-price">活动价 ￥<span id="product10">3580</span></p>
+                                <a href="http://www.111yao.com/p/3317.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/a997f2b9cb76662748a6a24d63f87ad3.jpg"></div>
+                                <p class="subject-title">鱼跃折叠带坐便H058B加宽轮椅车
+                                </p>
+                                <p class="subject-spec">让亲每日实现延时梦想</p>
+                                <p class="original-price">价格￥798</p>
+                                <p class="selling-price">活动价 ￥<span id="product11">588</span></p>
+                                <a href="http://www.111yao.com/p/2085.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/4146d0d5ba4d22a2f798859b4fcf9e43.jpg"></div>
+                                <p class="subject-title">古优 氨基葡萄糖钙片1g*30片</p>
+                                <p class="subject-spec">直臂平面 爱活力四射</p>
+                                <p class="original-price">价格￥59</p>
+                                <p class="selling-price">活动价 ￥<span id="product12">29.9</span></p>
+                                <a href="http://www.111yao.com/p/1662.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151106/437ec0c1aba6e5a777d7e42cd3275e9c.jpg">
+    </h2>
+    <ul class="content-box">
+        <li class="Junfold on">
+            <div class="subject-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/458baf72b92861469f3f6fd7aa65f368.jpg"></div>
+                                <p class="subject-title">纤音敲敲乐颈肩按摩颈椎牵引器</p>
+                                <p class="subject-spec">每日善存 健康加分</p>
+                                <p class="original-price">价格￥198</p>
+                                <p class="selling-price">活动价 ￥<span id="product13">79</span></p>
+                                <a href="http://www.111yao.com/p/2335.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/3c73eb2a8b2706eb3ceb5c24b27a2720.jpg"></div>
+                                <p class="subject-title">紫环颈椎治疗仪（基础款）</p>
+                                <p class="subject-spec">水果味 吸收更好</p>
+                                <p class="original-price">价格￥499</p>
+                                <p class="selling-price">活动价 ￥<span id="product14">259</span></p>
+                                <a href="http://www.111yao.com/p/4115.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/16efbdf3f8decb317d2731707b70ed64.jpg"></div>
+                                <p class="subject-title">敖东安神补脑液20支3盒</p>
+                                <p class="subject-spec">专业配制 缓解疲劳</p>
+                                <p class="original-price">价格￥176</p>
+                                <p class="selling-price">活动价 ￥<span id="product15">88</span></p>
+                                <a href="http://www.111yao.com/p/647.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/17786cecf951d4a7e0c2db9e90a054ae.jpg"></div>
+                                <p class="subject-title">九芝堂驴胶补血颗粒30袋盆装</p>
+                                <p class="subject-spec">合理搭配 增强免疫</p>
+                                <p class="original-price">价格￥158</p>
+                                <p class="selling-price">活动价 ￥<span id="product16">98</span></p>
+                                <a href="http://www.111yao.com/p/660.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/24193b058b817a7ffd3c635e1efbe45f.jpg"></div>
+                                <p class="subject-title">九芝堂逍遥丸200浓缩丸 5盒</p>
+                                <p class="subject-spec">肠胃问题 轻松搞定</p>
+                                <p class="original-price">价格￥98</p>
+                                <p class="selling-price">活动价 ￥<span id="product17">69</span></p>
+                                <a href="http://www.111yao.com/p/1337.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subject-box">
+                            <div class="subject-info">
+                                <div class="for-img"><img src="http://ui1.111yao.com/static/image/temp/20151106/1aa9e446d99df4096a0fe0d48846eb99.jpg"></div>
+                                <p class="subject-title">同仁堂人参归脾丸10丸3盒</p>
+                                <p class="subject-spec">调肠胃 促消化</p>
+                                <p class="original-price">价格￥58</p>
+                                <p class="selling-price">活动价 ￥<span id="product18">35.5</span></p>
+                                <a href="http://www.111yao.com/p/1279.html" class="buy-now-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <h2 class="title">
+        <img src="http://ui1.111yao.com/static/image/temp/20151106/260836b85ec0d676228e94a94224dfae.jpg">
+    </h2>
+    <div class="footer">
+        <ol>
+            <li><a href="http://m.111yao.com/nzt/m/women.html"><img src="http://ui1.111yao.com/static/image/temp/20151106/fc26fbf394de3b0ee51d83aa6f124761.jpg"></a></li>
+            <li><a href="http://m.111yao.com/nzt/m/theold.html" target="_self"><img src="http://ui1.111yao.com/static/image/temp/20151106/54d89102438b44f7992b32ea3c160270.jpg"></a></li>
+            <li><a href="http://m.111yao.com/nzt/m/man.html"><img src="http://ui1.111yao.com/static/image/temp/20151106/470a9d066992d489437033972dd48289.jpg"></a></li>
+        </ol>
+    </div>
+    <h2 class="title">
+        <a class="gotop" href="#top" target="_self"><img src="http://ui1.111yao.com/static/image/temp/20151106/4b85fba9401687f476cd76937b2afd1b.jpg"></a>
+    </h2>
+</article>
+<!--#include virtual="/static/inc/wap/footer.html" -->
+</body>
+<script>
+    var p_start = "[" ;
+    var p_end = "]" ;
+    var p1 = "{'goodsId':'2048','nowPrice':'99.00','platform':'1','htmlObjId':'product1'}," ;
+    var p2 = "{'goodsId':'1924','nowPrice':'62.00','platform':'1','htmlObjId':'product2'}," ;
+    var p3 = "{'goodsId':'3407','nowPrice':'229.00','platform':'1','htmlObjId':'product3'}," ;
+    var p4 = "{'goodsId':'2790','nowPrice':'88.00','platform':'1','htmlObjId':'product4'}," ;
+    var p5 = "{'goodsId':'2808','nowPrice':'99.00','platform':'1','htmlObjId':'product5'}," ;
+    var p6 = "{'goodsId':'1197','nowPrice':'159.90','platform':'1','htmlObjId':'product6'}," ;
+    var p7 = "{'goodsId':'2203','nowPrice':'79.00','platform':'1','htmlObjId':'product7'}," ;
+    var p8 = "{'goodsId':'1833','nowPrice':'79.00','platform':'1','htmlObjId':'product8'}," ;
+    var p9 = "{'goodsId':'2537','nowPrice':'239.00','platform':'1','htmlObjId':'product9'}," ;
+    var p10 = "{'goodsId':'3317','nowPrice':'3580','platform':'1','htmlObjId':'product10'}," ;
+
+    var p11 = "{'goodsId':'2085','nowPrice':'588.00','platform':'1','htmlObjId':'product11'}," ;
+    var p12 = "{'goodsId':'1662','nowPrice':'29.90','platform':'1','htmlObjId':'product12'}," ;
+    var p13 = "{'goodsId':'2335','nowPrice':'79.00','platform':'1','htmlObjId':'product13'}," ;
+    var p14 = "{'goodsId':'4115','nowPrice':'499.00','platform':'1','htmlObjId':'product14'}," ;
+    var p15 = "{'goodsId':'647','nowPrice':'88.00','platform':'1','htmlObjId':'product15'}," ;
+    var p16 = "{'goodsId':'660','nowPrice':'98.00','platform':'1','htmlObjId':'product16'}," ;
+    var p17 = "{'goodsId':'1337','nowPrice':'98.00','platform':'1','htmlObjId':'product17'}," ;
+    var p18 = "{'goodsId':'1279','nowPrice':'35.50','platform':'1','htmlObjId':'product18'}" ;
+    var params = p_start + p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11 + p12 + p13 + p14 + p15 + p16 + p17 + p18 + p_end ;
+    $.ajax
+    ({
+        type: "get",
+        url: "http://www.111yao.com/index!countpricebyplatform.action",
+        async: false,
+        data: "params="+params,
+        dataType: "jsonp",
+        jsonp: "jsoncallback",
+        success: function(data)
+        {
+            if(data != null && data != '' && data != undefined)
+            {
+                for(var i=0; i<data.length; i++)
+                {
+                    //商品ID
+                    var goodsId = data[i].goodsId;
+                    //现在价格
+                    var nowPrice = data[i].nowPrice;
+                    //平台
+                    var platform = data[i].platform;
+                    //HTML对象ID
+                    var htmlObjId = data[i].htmlObjId;
+                    //把价格渲染到元素中
+                    var objs = nowPrice.toString().split(".");
+                    var obj_l = "<b class='price_b_l' id='p_l_"+i+"'>"+objs[0]+"</b>";
+                    var obj_m = "<b class='price_b_m' id='p_m_"+i+"'>.</b>";
+                    var obj_r = "<span class='price_s_r' id='p_r_"+i+"'>"+objs[1]+"</span>";
+                    $("#"+htmlObjId).html(obj_l+obj_m+obj_r);
+                }
+            }
+            else
+            {
+                console.log("Datas null !");
+            }
+        },
+        error: function()
+        {
+            console.log("Server error !");
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>品牌特卖</title>
+</head>
+
+<body onload="loaded()">
+<input type="hidden" id="header-nav" value="5"/>
+<!--#include virtual="/static/inc/wap/header.html" -->
+    <script type='text/javascript'>
+    $(function(){
+        $('dl').groupList(true);
+        $("#back-to-top").click(function() 
+   	    {
+   	        $('.brand_sale').animate(
+   	        {
+   	            scrollTop: 0
+   	        },
+   	        1000);
+   	        return false;
+   	    });
+    });
+    $.fn.groupList = function(selfScroll){
+        var list = this;
+        var listTopOffset = list.offset().top;
+        var titleHeight = $(list).find('dt:first').height();
+
+        var currentContext = selfScroll ? list : window;
+        if(selfScroll){
+            list.css({
+                'height':$(window).height() - listTopOffset,
+                'overflow':'auto'
+            });
+        }
+        $(currentContext).on('scroll',function(){
+        	/** show back to top position */
+        	if($(currentContext).scrollTop() > 50) 
+	        {
+	            $("#back-to-top").show();
+	        } 
+	        else 
+	        {
+	            $("#back-to-top").hide();
+	        }
+            if($(currentContext).scrollTop()-(selfScroll ? 0 : listTopOffset) < titleHeight){
+                clearFixed();
+            }else{
+                var lis = list.find('li');
+                for(var i = 0, len = lis.length ; i < len ; i++){
+                    if(isOnSight(lis[i])){
+                        clearFixed().filter('.clone').remove();
+                        lis.eq(i).parent().parent().prev().clone(true).addClass('clone').css({
+                            'top': selfScroll ? listTopOffset : 0,
+                            'position':'fixed',
+                            'width':'100%'
+                        }).appendTo(list);
+                        break;
+                    }
+                }
+            }
+        });
+        var isOnSight = function(item){
+            return selfScroll ? listTopOffset < $(item).offset().top + $(item).outerHeight() : $(currentContext).scrollTop() <  $(item).offset().top + $(item).outerHeight();
+        };
+        var clearFixed = function(){
+            return $(list).find('dt').css({
+                'position':''
+            });
+        };
+    }
+    </script>
+<section class="brand_wrap">
+    <section class="brand_cont">
+        <dl class="brand_sale">
+        <span class="footer-span">
+            <!--#include virtual="/static/inc/wap/footer.html" -->
+        </span>
+        </dl>
+    </section>
+    <a class="iconfont cart" href="javascript:void(0)">C</a>
+    <div class="brand_rightlist">
+        <ol>
+            <li><a href="#a1">A</a></li>
+            <li><a href="#a2">B</a></li>
+            <li><a href="#a3">C</a></li>
+            <li><a href="#a4">D</a></li>
+            <li><a href="#a5">E</a></li>
+            <li><a href="#a6">F</a></li>
+            <li><a href="#a7">G</a></li>
+            <li><a href="#a8">H</a></li>
+            <li><a href="#a9">I</a></li>
+            <li><a href="#a10">J</a></li>
+            <li><a href="#a11">K</a></li>
+            <li><a href="#a12">L</a></li>
+            <li><a href="#a13">M</a></li>
+            <li><a href="#a14">N</a></li>
+            <li><a href="#a15">O</a></li>
+            <li><a href="#a16">P</a></li>
+            <li><a href="#a17">Q</a></li>
+            <li><a href="#a18">R</a></li>
+            <li><a href="#a19">S</a></li>
+            <li><a href="#a20">T</a></li>
+            <li><a href="#a21">U</a></li>
+            <li><a href="#a22">V</a></li>
+            <li><a href="#a23">W</a></li>
+            <li><a href="#a24">X</a></li>
+            <li><a href="#a25">Y</a></li>
+            <li><a href="#a26">Z</a></li>
+        </ol>
+    </div>
+</section>
+<style>
+#back-to-top{width:42px; height:42px; display:inline-block; background:url(/web/images/bt_top.png) no-repeat; background-size:42px; border-radius:50%; -webkit-border-radius:50%; position:fixed; right:10px; bottom:100px; font-size:34px; z-index:99; display:none;}
+</style>
+<script type="text/javascript">
+$.ajax(
+{
+	url: "/index!brandsale.action",
+	type: "GET",
+	dataType: "json",
+	cache: false,
+	async: false,
+	success: function(data) 
+	{
+		var datas = eval(data.list);
+		if(datas != '')
+		{
+			var htmlobjs = "";
+			for(var i=0;i<datas.length-1;i++)
+			{
+				var zimu = (datas[i].zimu+"").toUpperCase();
+				var conList = eval(datas[i].list);
+				var dt = "<dt><a class='capital' name='a"+(i+1)+"' id='a"+(i+1)+"'>"+zimu+"</a></dt>";
+				var ddstart = "<dd class='brand_list'>";
+				var ulstart = "<ul>";
+				var ulend = "</ul>";
+				var ddend = "</dd>";
+				var lis = "";
+				if(conList != null)
+				{
+					for(var j=0;j<conList.length;j++)
+					{
+						var id = conList[j].id;
+						var pingyin = conList[j].pingyin;
+						var name = conList[j].name;
+						lis += "<li onclick='gobranddetail("+id+")'>"+name+"</li>";
+					}
+				}
+				htmlobjs += (dt + ddstart + ulstart + lis + ulend + ddend);
+			}
+			$(".footer-span").before(htmlobjs);
+		}
+	}
+});
+function gobranddetail(id)
+{
+	window.location.href = "/goods/goodsList!getGoodsListByBrandId.action?brandid="+id+"&sort=1";
+}
+
+$(function()
+{
+	//Click A-Z event
+	$(".brand_rightlist").find("ol li").each(function(index)
+	{
+		$(this).click(function()
+		{
+			$("#back-to-top").css("display","block");
+		});
+	});
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

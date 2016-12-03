@@ -1,0 +1,40 @@
+.camera-yf{width:20px; height:18px; background: url("../images/camera_ico.png") no-repeat; background-size: 20px 18px;}
+.num-btn{display: inline-block; vertical-align: middle;}
+.left-yf{display:inline-block; width:16px;height:16px; background: url("../images/subtract_ico.png") no-repeat; background-size: 16px;vertical-align: middle;}
+.right-yf{display:inline-block; width:16px;height:16px; background: url("../images/add_ico.png") no-repeat; background-size: 16px;vertical-align: middle;}
+.number-yf{display:inline-block; height:16px; width:30px; line-height:16px;vertical-align: middle; text-align: center;}
+.shop-message{padding:10px 14px 0; background: #f3f5f7; overflow: hidden;}
+.shop-message dt{float:left; width:30%;}
+.shop-message dt img{height:80px; width:80px;}
+.shop-message dd{float:left; padding-left:2%; width:68%;}
+.shop-message dd p{height:26px; line-height:26px; font-size:14px;}
+.shop-message dd p:first-child{font-weight: bold; text-overflow: ellipsis; overflow: hidden; white-space:nowrap; }
+.shop-message dd span{color:#fc4044; font-size:19px; font-weight: bold; margin-top:5px; display: inline-block;}
+
+.m-shade-bg{ display:none; width:100%; height:100%;}
+.m-popup-shade{ width: 100%;  height: 100%;  position: fixed; left: 0;  top: 0;  right: 0;  bottom: 0;  text-align: center;  display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex; -webkit-box-pack: center; -ms-flex-pack: center;  -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;  -webkit-align-items: center;  align-items: center;  flex: 1; z-index:111;  background: rgba(0,0,0,.8);}
+.bind-box{width:250px; padding:30px 15px 15px; background: #FFF; border-radius:5px; position: relative;}
+.bind-close{position:absolute; top:-12px; right:-12px;width:25px; height:25px;  no-repeat; background-size:25px;}
+.bind-title{font-size:19px; text-align: center; width:100%;}
+.bind-img{margin:20px 0; width:230px; height:115px;}
+.bind-text{padding:0 15px; line-height:20px; font-size:15px;}
+.bind-btn{display:block; height:44px; line-height:44px; width:100%; text-align: center; border-radius: 5px; background: #fe4310; color:#FFF; font-size:15px; margin-top:20px;}
+.bind-no{display:block; height:44px; line-height:44px; font-size:15px; width:40%; margin:0 30%; }
+.head-portrait{float:left; height:60px; width:60px; border:3px solid #95c6e0; border-radius:50%;}
+.head-portrait img{height:60px; width:60px;display: block;}
+.head-name{float:left; overflow: hidden; margin:10px 0 0 10px;}
+.member-wait li b{position: relative;}
+.member-top{height:160px;}
+.member-top-info{overflow: hidden;}
+.member-wait{background: rgba(0,0,0,.3)}
+.order-number{display: block; position: absolute; top:0; right:0; height:12px; width:12px; font-size: 12px; font-style: normal; line-height:12px; text-align: center; color:#FFF; background: #e74925; border-radius:50%; border:1px solid #FFF;}
+.member-list li a{position: relative; margin-left:20px;}
+.member-list li a span{display: block;  position: absolute; top:50%; left:-22px; margin-top:-9px; width:20px; height:18px; background: url("../images/memver_list_icon.png") no-repeat center center; background-size:20px 150px;}
+.member-list li.li01 a span{background-position: 0 0;}
+.member-list li.li02 a span{background-position: 0 -17px;}
+.member-list li.li03 a span{background-position: 0 -35px;}
+.member-list li.li04 a span{background-position: 0 -53px;}
+.member-list li.li05 a span{background-position: 0 -72px;}
+.member-list li.li06 a span{background-position: 0 -87px;}
+.member-list li.li07 a span{background-position: 0 -104px;}
+.member-list li.li08 a span{background-position: 0 -123px;}

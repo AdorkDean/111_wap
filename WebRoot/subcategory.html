@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<title>商品列表</title>
+<link href="/web/css/??common.css,iconfont.css,search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/web/js/jquery-1.7.2.js"></script>
+<style type="text/css">
+.category_header {background:#fff;height:45px;position:fixed;top:0px;width:100%;z-index:99;}
+.shopping-cart-fixed {left:10px;}
+.back-to-top {bottom:20px;display:none;}
+.shopping-cart-fixed {bottom:20px;}
+#new_list_pro_into_cart {width:30px;height:30px;display:inline-block;background:url("/web/images/new_car_icon.png") no-repeat center center;background-size:18px;position:absolute;right:10px;bottom:0;z-index:9;}
+.search-box {height: 30px;border: 1px solid #dadada;background: #d7d7d7;margin: 6px 44px 6px 44px;border-radius: 20px;-webkit-border-radius: 20px; position: relative;}
+</style>
+</head>
+
+<body>
+<header class="category_header">
+	<a href="javascript:;" class="iconfont top-left-btn">B</a>
+	<h2 class="header-title">
+	    <div class="search-box">
+	        <div class="iconfont search-btn" id="search_btn_new_id">f</div>
+	        <p class="search-input-box"><input autocomplete="off" autocorrect="off" data-sug="1" class="search-input" id="subcategory_search_input" name="keyword" type="search" maxlength="30" placeholder="可以搜药品、品牌或症状"/></p>
+	    </div>
+	</h2>
+	<a href="/" class="iconfont top-right-btn">h</a>
+</header>
+<article class="list-main-box" id="subcategory_article_contents">
+    <ul class="list-tag clearfix">
+        <li class="current" id="rel_category_1"><a onclick="searchByType(1, 1)">综合相关</a></li>
+        <li id="rel_category_2"><a onclick="searchByType(2, 2)">折扣优先</a></li>
+        <li id="rel_category_3"><a onclick="searchByType(3, 3)">价格优先</a></li>
+    </ul>
+    <div class="product-list-all">
+        <ul id="new_goods_list" class="product-list-box clearfix"></ul>
+    </div>
+</article>
+
+<a href="javascript:;" class="back-to-top" id="back-to-top"></a>
+<a onclick="gocart()" class="iconfont shopping-cart-fixed"><i class="end"></i>s<span class="count-msg">0</span></a>
+<script type="text/javascript" src="/web/js/??cookieUtil.js,jquery.fly.min.js,common.new.js,alert.main.js,wap-cart.js,iscroll.js,search.js,subcategory.js"></script>
+<!--#include virtual="/static/inc/wap/search_include.html" -->
+
+</body>
+</html>

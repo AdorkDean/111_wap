@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <!--缩放比例-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--上线时请删除-->
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <!--上线时请删除-->
+    <title>分享红包</title>
+    <link href="/web/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/web/css/new-health.css" rel="stylesheet" type="text/css" />
+</head>
+<body  style="background: #07294f;">
+<div class="share-packet">
+    <div class="open-packet"><a href="javascript:void(0)" onclick="chaiRed()" class="get-coupon"></a></div>
+    <ul class="packet-text">
+        <li>111医药馆健康领秀</li>
+        <li>邀请您<span>为健康加油</span></li>
+        <li>与领秀一齐共享健康时代</li>
+    </ul>
+    <ul class="packet-explain">
+        <li>1.上千款健康产品折扣送您！</li>
+        <li>2.专业健康领秀为您的健康答疑解惑，保驾护航！</li>
+        <li>3.“秀粉”专属，优惠套餐！</li>
+        <li>4.不定期大礼包等待您的领取！</li>
+    </ul>
+</div>
+<div class="shade-bg">
+    <div class="popup-shade">
+        <div class="no-coupon">
+            <p>今天优惠券领完了~</p>
+            <p><a href="/">去首页逛逛>></a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="/web/js/jquery-1.7.2.js"></script>
+
+<script type="text/javascript">
+
+
+function chaiRed(){
+	
+	var code = 1;
+	var leaderid = getParameters().lid;
+	var lcode = getParameters().lcode;
+	jQuery.ajax
+	({
+	    type: "post",
+	    url: "/healthLeader/lxredpack!isHaved.action",	 
+	    data:{'leaderid':leaderid},
+	    async:false, 
+	    success: function(data)
+	    {
+	      // alert("已被领取过"+data+"次");
+	       if(data>=10){
+	       	  $(".shade-bg").show();
+	       }else{
+	       	  $(".shade-bg").hide();
+	       	  var red_coupon = createRed();
+	       	  var arry = red_coupon.split("_");
+	       	  window.location.href="/web/redpacket/chai_red_packet.html?lid="+leaderid+"&lc="+lcode+"&rid="+arry[0]+"&cid="+arry[1]+"&info="+arry[2];
+	       }
+	    }
+	});    
+}
+
+
+
+function createRed(){
+	var red_coupon = "";
+	var leaderid = getParameters().lid;
+	jQuery.ajax
+	({
+	    type: "post",
+	    url: "/healthLeader/lxredpack!sendRedPacket.action",	 
+	    data:{'leaderid':leaderid},
+	    async:false, 
+	    success: function(data)
+	    {
+	       red_coupon = data;
+	    }
+	}); 
+	
+	return red_coupon;
+	
+}
+
+
+$(function(){
+/*
+        $(".get-coupon").click(function(){
+            $(".shade-bg").show();
+        });
+        $(".close-btn").click(function(){
+            $(".shade-bg").hide();
+        })
+        */
+})
+    
+function getParameters(){
+ var pars = window.location.search;
+    if(pars.charAt(0) == '?')
+            pars = pars.substring(1,pars.length);
+    var arr = pars.split("&");
+    var objs = [];
+    var eles;
+    for(var i=0;i<arr.length;i++){
+            eles = arr[i].split("=");
+            objs[eles[0]] = eles[1];
+    }
+    return objs;
+}
+
+</script>
+</html>
+

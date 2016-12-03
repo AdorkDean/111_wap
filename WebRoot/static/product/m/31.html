@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="/web/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/web/css/iconfont.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/web/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/web/js/cookieUtil.js"></script>
+<script type="text/javascript" src="/web/js/common.new.js"></script>
+<script type="text/javascript" src="/web/js/alert.main.js"></script>
+<title>商品详情</title>
+</head>
+
+<body onLoad="loaded()">
+<header class="header">
+    <a href="javascript:;" class="iconfont top-left-btn">B</a>
+    <h2 class="header-title">
+        商品详情
+    </h2>
+    <a href="javascript:;" class="iconfont top-heart-btn" id="collect-btn">H</a>
+    <a href="/index.html" class="iconfont top-right-btn">h</a>
+</header>
+
+<script type="text/javascript" src="/web/js/iscroll.js"></script>
+<script type="text/javascript">
+	var myScroll;
+	function loaded ()
+	{
+		myScroll = new IScroll('#wrapper', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+	}
+</script>
+
+<article class="details-main">
+  <!--效果html开始-->
+  <div class="slider">
+    <div class="slider-page"><span id="cur-num">1</span>/<span>5</span></div>
+	  <ul>
+		    <li><a href="javascript:;"><img src="http://ui1.111yao.com//static/image/upload/image/201507/3628905c-96d8-4b2e-a771-21b27a41db45-source.jpg"></a></li>
+		    <li><a href="javascript:;"><img src="http://ui1.111yao.com//static/image/upload/image/201507/57dd544a-05c4-423e-a922-9d243e2324dc-source.jpg"></a></li>
+		    <li><a href="javascript:;"><img src="http://ui1.111yao.com//static/image/upload/image/201507/82be0e82-b603-475c-8ebe-d57165a67241-source.jpg"></a></li>
+		    <li><a href="javascript:;"><img src="http://ui1.111yao.com//static/image/upload/image/201507/c1d671f1-55a8-4cc6-a786-ab55a9c4239a-source.jpg"></a></li>
+		    <li><a href="javascript:;"><img src="http://ui1.111yao.com//static/image/upload/image/201507/c24fe1a0-e039-48f1-8ae0-31045487b5da-source.jpg"></a></li>
+		    <li><a href="javascript:;"><img src="http://ui1.111yao.com//static/image/upload/image/201507/6394a358-4b6c-463e-8e1e-4ffae57d4312-source.jpg"></a></li>
+		    <li><a href="javascript:;"><img src="http://ui1.111yao.com//static/image/upload/image/201507/807bde0d-a724-41ca-a991-f14b382392c5-source.jpg"></a></li>
+		    <li><a href="javascript:;"><img src="http://ui1.111yao.com//static/image/upload/image/201507/29905195-e264-4513-b221-235b306e9d11-source.jpg"></a></li>
+	  </ul>
+  </div>
+  <script type="text/javascript" src="/web/js/yxMobileSlider.js"></script>
+  <script>
+      $(".slider").yxMobileSlider({width:640,height:640,during:3000})
+  </script>  
+  <!--效果html结束-->
+  <article class="product-box">
+    <header class="product-info">
+      <h1 class="product-title">太极补中益气丸192丸</h1>
+      <input type="hidden" id="goodsid" value="31"/>
+      <p class="product-price">
+        <i style="font-family:'Microsoft Yahei'">￥</i><b id="mprice">6.8</b>
+        <span id="pcount">6折</span>
+      </p>
+      <p class="priduct-spec"><span>原价:<i style="font-family:'Microsoft Yahei'">￥</i><b id="oprice">10</b></span><span style="text-decoration:none;">规格:192丸</span></p>
+    </header>
+  </article>
+  <ul class="explain clearfix">
+  	<li><span class="iconfont">M</span>30天无理由退换货</li>
+    <li><span class="iconfont">M</span>真品假一赔十</li>
+    <li><span class="iconfont">M</span>全程冷藏运输</li>
+    <li><span class="iconfont">M</span>全国规模化采购，药厂直销</li>
+  </ul>
+  <article class="product-info-link">
+    <a href="/goodscomment/gcmt!list.action?id=31" class="product-info-link-title">商品评论<b class="iconfont">J</b></a>
+    <h2 class="product-info-link-title">商品详情</h2>
+    <div class="details-img">
+    	<p><br/></p><p><img title="201502161424070505564040229.jpg" alt="澶瀬琛ヤ腑鐩婃皵涓歌鎯呴〉_01.jpg" src="http://ui1.111yao.com/static/image/upload/images/201502161424070505564040229.jpg"/></p><p><img style="WHITE-SPACE: normal" title="201502161424070473340099992.jpg" src="http://ui1.111yao.com/static/image/upload/images/201502161424070473340099992.jpg"/></p><p><img title="201502161424070473284061914.jpg" src="http://ui1.111yao.com/static/image/upload/images/201502161424070473284061914.jpg"/></p><p><br/></p><p><img title="201502161424070476789067627.jpg" src="http://ui1.111yao.com/static/image/upload/images/201502161424070476789067627.jpg"/></p><p><br/></p>
+    </div>
+  </article>
+  <div class="groom-box">
+    <h2 class="guess-title"><span>猜你在找</span></h2>
+    <div class="guess-box" id="wrapper">
+        <div class="guess-box-list" id="scroller">
+            <ul>
+            </ul>
+        </div>
+    </div>
+  </div>
+</article>
+<div class="details-btn-fixed">
+	<ul class="clearfix">
+    	<li><a href="/carts/cart!page.action" class="iconfont">C</a><span class="cart-count">0</span></li>
+        <li><a href="javascript:;" class="add-cart-btn">加入购物车</a></li>
+    </ul>
+</div>
+<!--loading-->
+<div class="spinner" style="display:none;">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+<script type="text/javascript" src="/web/js/hotsale-goods.js"></script>
+<script type="text/javascript" src="/web/js/wap-cart.js"></script>
+<script>
+var jsCtx = "";
+$(function(){
+	var id = $.trim($("#goodsid").val());
+	if(checklogin())
+	{
+		$.get("/index!isattent.action?id="+id,null,function(data)
+		{
+			if(data == 1)
+			{
+				document.getElementById("collect-btn").className = "iconfont top-heart-btn";
+				$("#collect-btn").html("H");
+			}
+			if(data == 0)
+			{
+				document.getElementById("collect-btn").className = "iconfont top-heart-btn alr";
+				$("#collect-btn").html("I");
+			}
+		});
+	}
+	//Get the number of shopping cart from server
+	getnum();
+	//This is collection button
+	$("#collect-btn").click(function(){
+		if(checklogin()){
+			$.get("/index!attentionpro.action?id="+id+"&type=0",null,function(data)
+			{
+				if(data == 0)
+				{
+					document.getElementById("collect-btn").className = "iconfont top-heart-btn";
+					$("#collect-btn").html("H");
+				}
+				if(data == 1)
+				{
+					document.getElementById("collect-btn").className = "iconfont top-heart-btn alr";
+					$("#collect-btn").html("I");
+				}
+			});
+		}else{
+			window.location.href = "/login/login!index.action?redirectUrl="+location.href;
+		}
+	});
+	//Put goods into shopping cart
+	$(".add-cart-btn").click(function(){
+		var rs = add_cart(id,1);
+		if(rs > 0)
+		{
+			$alert("success","已成功添加至购物车");
+			getnum();
+			return false;
+		} 
+		if(rs == -2)
+		{
+			$alert("warn","库存不足");
+			return false;
+		}
+		if(rs == -3)
+		{
+			$alert("warn","超出购买数量");
+			return false;
+		}
+		if(rs == 0)
+		{
+			$alert("warn","操作失败");
+			return false;
+		}
+	});
+});
+
+//Get the number of shopping cart from server
+function getnum()
+{
+	jQuery.ajax
+	({
+       type: "post",
+       url: "/carts/cart!getCartSum.action",	 
+       async:false, 
+       success: function(data)
+       {
+    	   $(".cart-count").html(data);
+       }
+     }); 	  
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.new-nav-footer{height:49px; background:#f4f4f4; border-top:1px #e1e1e1 solid; position:fixed; left:0; right:0; bottom:0; z-index: 999;}
+.new-nav-footer li{float:left; width:25%;}
+.new-nav-footer li a{display:block; text-align:center; font-size:12px; color:#3e3e3e; padding-top:2px; position:relative;}
+.new-nav-footer li a span{ padding:0 5px; height:16px; line-height:16px; text-align:center; color:#fff; background:#ff3333; border-radius:8px; -webkit-border-radius:8px; position:absolute; right:25%; top:2px;}
+.new-nav-footer li a b{font-size:30px; line-height:30px;}
+.new-nav-footer li a.current{color:#00a0b8;}

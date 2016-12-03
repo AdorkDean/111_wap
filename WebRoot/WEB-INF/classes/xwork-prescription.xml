@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+<!-- 	前台列表页 -->
+	<package name="pre" extends="default" namespace="/pre">
+		<action name="prescription" class="com.rc.portal.webapp.action.PrescriptionAction">
+			<result name="getPrescriptionList" type="freemarker" >/WEB-INF/pages/prescription/prescriptionList.ftl</result>
+			<result name="toAddPerscription" type="freemarker" >/WEB-INF/pages/prescription/prescriptionAdd.ftl</result>
+			<result name="getPrescriptionListNull" type="freemarker" >/WEB-INF/pages/prescription/prescriptionListNull.ftl</result>
+			<result name="toPerscriptionInfo" type="freemarker" >/WEB-INF/pages/prescription/prescriptionInfo.ftl</result>
+			<result name="topreList" type="redirect" >prescription!getPrescriptionList.action</result>
+			<interceptor-ref name="loginStack"/> 
+		</action>
+	</package>
+</xwork>

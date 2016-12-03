@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+<xwork>
+	<!-- Configuration for the user package. -->
+	<package name="healthLeader" extends="default" namespace="/healthLeader">
+		<action name="applyHealthLeaderPage" class="com.rc.portal.webapp.action.HealthLeaderAction" method="applyHealthLeaderPage">			
+			<result name="verify_phone_page" type="freemarker">/WEB-INF/pages/member/health-leader/verify_phone.ftl</result>
+			<result name="health_leader" type="redirect">healthLeader!healthLeader.action</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		<action name="editHealthLeaderPage" class="com.rc.portal.webapp.action.HealthLeaderAction" method="editHealthLeaderPage">			
+			<result name="edit_health_leader_page" type="freemarker">/WEB-INF/pages/member/health-leader/edit_health_leader.ftl</result>
+			<interceptor-ref name="loginStack"/>  
+		</action>
+		<action name="selectLocationByParentId" class="com.rc.portal.webapp.action.HealthLeaderAction" method="selectLocationByParentId">
+			<interceptor-ref name="loginStack"/>
+		</action>
+		
+		<action name="saveHealthLeader" class="com.rc.portal.webapp.action.HealthLeaderAction" method="saveHealthLeader">
+			<result name="apply_health_leader_success" type="redirect">healthLeader!healthLeader.action</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		<action name="updateHealthLeader" class="com.rc.portal.webapp.action.HealthLeaderAction" method="updateHealthLeader">
+			<result name="apply_health_leader_success" type="redirect">healthLeader!healthLeader.action</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		<action name="sendPhoneCode" class="com.rc.portal.webapp.action.HealthLeaderAction" method="sendPhoneCode">
+			<interceptor-ref name="loginStack"/>
+		</action>
+		<action name="verifyPhoneCode" class="com.rc.portal.webapp.action.HealthLeaderAction" method="verifyPhoneCode">
+			<interceptor-ref name="loginStack"/>
+		</action>
+	    
+		<action name="healthLeader" class="com.rc.portal.webapp.action.HealthLeaderAction">
+			<result name="health_leader" type="redirect">/leader/leader!leader.action</result>
+			<result name="apply_health_leader" type="freemarker">/WEB-INF/pages/member/health-leader/apply_leader_page.ftl</result>
+			<result name="wait_health_leader" type="freemarker">/WEB-INF/pages/member/health-leader/wait_leader_page.ftl</result>
+			<result name="qr_code_page" type="freemarker">/WEB-INF/pages/member/health-leader/qr_code_page.ftl</result>
+			<result name="health_leader_page" type="redirect">/healthLeader/healthLeader!healthLeader.action</result>
+			<result name="background_haibao_list" type="freemarker">/WEB-INF/pages/member/health-leader/background_haibao_list.ftl</result>
+			
+			<result name="single_haibao_page" type="freemarker">/WEB-INF/pages/member/health-leader/single_haibao.ftl</result>
+			<result name="goto_secound_page" type="redirect">/healthLeader/healthLeader!gotoHealthLeaderZizhi.action</result>
+			<result name="goto_zizhi_page" type="freemarker">/WEB-INF/pages/member/health-leader/secound_page.ftl</result>
+			
+			
+			<result name="goto_leader_page" type="redirect">/leader/leader!leader.action</result>
+			<result name="goto_apply_page" type="redirect">/healthLeader/healthLeader!healthLeader.action</result>
+			<result name="goto_leader_page_youke" type="redirect">/leader/leader!leader.action</result>
+			
+			<interceptor-ref name="loginStack"/>
+		</action>
+		
+		<action name="addHealthLeaderPage" class="com.rc.portal.webapp.action.HealthLeaderAction">
+			<result name="add_healthleader_page" type="freemarker">/WEB-INF/pages/member/health-leader/add_health_leader.ftl</result>
+			<result name="health_leader" type="redirect">healthLeader!healthLeader.action</result>
+			<result name="add_healthleader_basicPage" type="freemarker">/WEB-INF/pages/member/health-leader/add_health_leader_basic.ftl</result>
+			<interceptor-ref name="loginStack"/>
+		</action>
+		
+		<action name="lxredpackstack" class="com.rc.portal.webapp.action.LXRedPacketAction">
+			<result name="share" type="freemarker">/WEB-INF/pages/lxredpacket/red_packet_share.ftl</result>
+			<interceptor-ref name="loginStack"/> 
+		</action>
+		
+		<action name="lxredpack" class="com.rc.portal.webapp.action.LXRedPacketAction">
+			<result name="share" type="freemarker">/WEB-INF/pages/lxredpacket/red_packet_share.ftl</result>
+		</action>
+		
+		<action name="leaderlogin" class="com.rc.portal.webapp.action.HealthLeaderAction">
+			<result name="leaderLoginIndex" type="freemarker">/WEB-INF/pages/member/health-leader/leaderLoginIndex.ftl</result>
+		</action>
+	</package>
+</xwork>

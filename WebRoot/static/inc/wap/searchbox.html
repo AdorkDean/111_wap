@@ -1,0 +1,26 @@
+<h2 class="header-title">
+    <div class="search-box">
+        <div class="iconfont search-btn" id="search_btn_new_id">f</div>
+        <form data-formposition="i" class="se-form" id="index-form" autocomplete="off" method="GET">
+        <p class="search-input-box"><input autocomplete="off" autocorrect="off" data-sug="1" class="search-input" id="search-value-ui-id" name="keyword" type="search" maxlength="30" placeholder="可以搜药品、品牌或症状"/></p>
+    	</form>
+    </div>
+</h2>
+<script>
+$(function()
+{
+	$("#index-form").submit(function()
+	{
+		var v = $.trim($("#search-value-ui-id").val());
+		if(v != null && v != "" && v != undefined)
+		{
+			var o = document.getElementById("index-form");
+			o.action = "/result.html";
+			putKeyWordsInCookies(v);
+			return true;
+		}
+		return false;
+	});
+});
+</script>
+

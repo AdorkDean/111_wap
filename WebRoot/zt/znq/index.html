@@ -1,0 +1,364 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <!--缩放比例-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>周年庆移动端</title>
+    <style type="text/css">
+        html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,textarea,input,span,figure,aside,time,article{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}
+        article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
+        audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+        audio:not([controls]){display:none}
+        html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+        body{width:100%;font-family:"SimHei",Helvetica,Arial,sans-serif;font-size:14px;color:#000;background:#e0e1e5}
+        input,textarea{font-family:"SimHei",Helvetica,Arial,sans-serif;color:#fff}
+        input:-moz-placeholder,textarea:-moz-placeholder{color:#fff}
+        input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#fff}
+        input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#fff}
+        a{color:#fff;text-decoration:none;/*-webkit-tap-highlight-color:rgba(0,0,0,0.2);*/-webkit-tap-highlight-color:transparent}
+        a:hover{text-decoration:none}
+        a:focus{outline:thin dotted}
+        a:hover,a:active{outline:0}
+        textarea,input{resize:none;outline:0;font-size:100%;-webkit-tap-highlight-color:rgba(255,0,0,0)}
+        textarea{resize:none;-webkit-appearance:none}
+        ul,ol{list-style:none}
+        em{font-style:normal}
+        .clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0;overflow:hidden}
+        .fl{float:left}
+        .fr{float:right}
+
+
+        .national_wap{ background-color: #fa0504;}
+        /*content*/
+        .banner,.banner img{width:100%; display:block;}
+        .banner span{display:none;}
+        /*优惠券*/
+        .discountbox{ padding: 2px 0 0 2px;}
+        .discountbox li{ width:33.3%; float: left;}
+        .discountbox li a{ display: block; padding-right:3px;}
+        .discountbox li a img{ width: 100%; display:block;}
+        /*镇店之宝和1F*/
+        .produnct{ padding:2px 4px 3px 6px;}
+        .productbox li{ width: 50%; float: left;}
+        .productbox li a{ display: block; padding:2px;}
+        .productbox li a img{ width: 100%; display:block;}
+        /*2F-7F*/
+        .titletwo{ padding:5px 3px 3px 3px;}
+        .titletwo h2{ padding: 0 2px;}
+        .titletwo h2 a img{ width: 100%;}
+        .titletwo ul{ padding: 0 0 1px 2px;}
+        .produnctcont{ padding:5px 6px 3px 6px; }
+        .returntop{ height: 44px; padding-top: 9px; text-align: center;}
+        .returntop a img{ width: 230px;}
+    </style>
+</head>
+
+<body>
+<!--#include virtual="/static/inc/wap/header.html" -->
+<article class="national_wap" style="position:relative;top:80px;">
+    <a id="top" name="top"></a>
+    <div class="banner">
+        <span>周年庆移动端</span>
+        <img src="http://ui1.111yao.com/static/image/temp/20151027/4c9bfef8a368431202a45a9140871f70.jpg"/>
+    </div>
+    <div>
+        <ol class="discountbox clearfix">
+            <li onclick="getCoupon(53)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151027/bd3b953d5262970642f18b21c63d6a17.jpg"/></a></li>
+            <li onclick="getCoupon(54)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151027/141e5de892a30ff873581639f79bc71d.jpg"/></a></li>
+            <li onclick="getCoupon(55)"><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151027/9a153d8a6ff9a3cb380dfb0400faf636.jpg"/></a></li>
+        </ol>
+    </div>
+    <div class="produnct"><!--镇店之宝-->
+        <ul class="productbox clearfix">
+            <li><a href="http://www.111yao.com/p/3935.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/4ac14da6f08ec50f0e97de8394465e59.jpg"/></a></li>
+            <li>
+                <a href="http://www.111yao.com/p/640.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/ec9d0abd8450eeff8f794ace15606211.jpg"/></a>
+                <a href="http://www.111yao.com/p/3850.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/dd68b813e2f9632d1de6ed74d19136ce.jpg"/></a>
+            </li>
+        </ul>
+    </div>
+    <div class="produnct"><!--1Fone-->
+        <ul style="background-color: #ee1b46; padding: 2px;" class="productbox clearfix">
+            <li><a href="http://www.111yao.com/p/2048.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/c182af2617b12c9773c36cc96be3881c.jpg"/></a></li>
+            <li>
+                <a href="http://www.111yao.com/p/4176.html" style="padding-top: 4px;"><img src="http://ui1.111yao.com/static/image/temp/20151027/d9b57a1d21292b1ff368a4bd0d322317.jpg"/></a>
+                <a href="http://www.111yao.com/p/3433.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/2d033ec75a38cdcda615d72499997d4d.jpg"/></a>
+            </li>
+        </ul>
+    </div>
+    <div class="produnct"><!--1Ftwo-->
+        <ul style="background-color: #ee1b46; padding: 3px;" class="productbox clearfix">
+            <li><a href="http://www.111yao.com/p/2584.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/53664b9e0af85d86334f3d772842bd69.jpg"/></a></li>
+            <li>
+                <a href="http://www.111yao.com/p/1483.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/923ce4dc3c77b89f9d899875e0ef9cd7.jpg"/></a>
+                <a href="http://www.111yao.com/p/1337.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/1ded47d5d694dcd84ea2b610c0d753ac.jpg"/></a>
+            </li>
+        </ul>
+    </div>
+    <div class="produnct"><!--1Fthree-->
+        <ul style="background-color: #ee1b46; padding: 3px;" class="productbox clearfix">
+            <li>
+                <a href="http://www.111yao.com/p/640.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/4d18cd29c558d756a1c0ff11a8851bce.jpg"/></a>
+            </li>
+            <li>
+                <a href="http://www.111yao.com/p/2790.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/119372dbdff87362d20368a08b84a472.jpg"/></a>
+            </li>
+        </ul>
+    </div>
+    <div style="padding:15px 6px 3px 6px;" class="produnctcont"><!--2楼-->
+        <div style="background-color:#38036d;" class="titletwo clearfix">
+            <h2><a href="http://www.111yao.com/p/3200.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/e827aeb26be8a015c70a9399b6b94b93.jpg"/></a></h2><!--2楼one-->
+            <ul class="productbox clearfix">
+                <li>
+                    <a href="http://www.111yao.com/p/863.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/e458c4c0c9390266888b194f3e00c472.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2516.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/44bae1a1f7ec88ae258e52ccc1b25bdc.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--2楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/3887.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/e0cc74aeb433e64f8d2497b9e90859bb.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2604.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/94a04355b8ab33f05b7aca714c4a9bae.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--2楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/3141.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/8fd5d942e2a97a1c7cd30da66642c4b1.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/3326.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/7350ea33cfa12d9cfe2ee1b8edb75d9b.jpg"/></a>
+                </li>
+            </ul>
+            <h2><a href="http://www.111yao.com/p/793.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/e9519ed5f43c4d1457c8a7b72d02b292.jpg"/></a></h2><!--2楼four-->
+        </div>
+    </div>
+    <div class="produnctcont"><!--3楼-->
+        <div style="background-color:#fd417b;" class="titletwo clearfix">
+            <ul class="productbox clearfix"><!--3楼one-->
+                <li>
+                    <a href="http://www.111yao.com/p/2584.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/45bb285c4bfb7b52a30e64fb06bee25c.jpg"/></a>
+                </li>
+                <li>
+                    <a style="padding-top: 6px;" href="http://www.111yao.com/p/1314.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/1892097162e0a65966167bcebfd016fa.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/190.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/6ea2ce4cff8c862e233f21fc088c3c70.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--3楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/4022.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/713edfc8fb3f8d8b1b8e22b12aa4e5a1.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2347.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/20eb75a24faa053822007df5fdcc36b6.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--3楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/2979.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/46bc0bd30a19e05a20ec48a54f1f0ba7.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/1337.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/6494d73e270ca73370211be332482a7c.jpg"/></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="produnctcont"><!--4楼-->
+        <div style="background-color:#000340;" class="titletwo clearfix">
+            <ul class="productbox clearfix"><!--4楼one-->
+                <li>
+                    <a href="http://www.111yao.com/p/4106.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/e57aa2422b2858a1fe8fe4d054749704.jpg"/></a>
+                </li>
+                <li>
+                    <a style="padding-top: 3px;" href="http://www.111yao.com/p/1483.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/cc89655313a81683fff621576417aa21.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--4楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/3183.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/5aa8f34689fe8a122dc89f67963e1de8.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/3603.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/6592aef1d4f8a4a1355f68b35bc9c314.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--4楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/1021.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/3e9f6e797dbb54317b4c6ab2de8f62fb.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2421.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/e6762dad8a046f44765bcdf1817cea64.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--4楼four-->
+                <li>
+                    <a href="http://www.111yao.com/p/53.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/d3c114105015f6fe67b1d71d01492513.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2543.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/abb29e66a1628debf2a13ad3684bd295.jpg"/></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="produnctcont"><!--5楼-->
+        <div style="background-color:#ffc525;" class="titletwo clearfix">
+            <h2><a href="http://www.111yao.com/p/2808.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/16f4de6e65944026aba66ac8d7d4bf39.jpg"/></a></h2><!--5楼one-->
+            <ul class="productbox clearfix"><!--5楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/2812.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/f4b3fff953dae3f9795dc93c45020dbc.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2335.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/316f29f70d62b85a901bf6b0dd930a7f.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--5楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/3125.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/1081166fb139865ea3628d548803498d.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/1833.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/59e7c15aa1696144ee6163cd34d898fd.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--5楼four-->
+                <li>
+                    <a href="http://www.111yao.com/p/2947.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/f9194646bb35d271933d8d183af5751f.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/4010.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/71a5eacd774eabb1f542117e4f7d1a26.jpg"/></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="produnctcont"><!--6楼-->
+        <div style="background-color:#2dc9a1;" class="titletwo clearfix">
+            <ul class="productbox clearfix"><!--6楼one-->
+                <li>
+                    <a href="http://www.111yao.com/p/3464.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/439ebd32e30eaa986ebce5d21d14ec91.jpg"/></a>
+                </li>
+                <li>
+                    <a style="padding-top: 3px;" href="http://www.111yao.com/p/547.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/3cdaa4d24fb5d1e208fe06c42773e18b.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--6楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/3468.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/5d4a9bb08eed43d207f4a136da5ef776.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/1279.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/1996113e6c18b1da37890449cedf2c49.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--6楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/666.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/9c616c05238f67da43023da9b75b0919.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/2694.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/adf6f390030f24162fbbc7a357c5f00c.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--6楼four-->
+                <li>
+                    <a href="http://www.111yao.com/p/28.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/f9179e42b58c3fadcebfe3015af10dcb.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/3467.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/ad11e6a7988aeff8f0c672f5467898af.jpg"/></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="produnctcont"><!--7楼four-->
+        <div style="background-color:#d10909;" class="titletwo clearfix">
+            <h2><a href="javascript:void(0);"><img src="http://ui1.111yao.com/static/image/temp/20151027/ce7593e9529d6903cfad3d9cf5d4c61f.jpg"/></a></h2>
+            <h2><a href="http://www.111yao.com/p/3671.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/102ff3a9693adce4308bb3198be7f382.jpg"/></a></h2><!--7楼one-->
+            <ul class="productbox clearfix"><!--7楼two-->
+                <li>
+                    <a href="http://www.111yao.com/p/50.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/b58eb52b79800026f7109e0c1a5f130a.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/660.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/0e23a889706963b73dda20777d0fefa7.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--7楼three-->
+                <li>
+                    <a href="http://www.111yao.com/p/1095.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/a08651aeb8a0f04ae34e7992947db709.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/647.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/72fb9152cefccd9a4c3d4c349d52fa86.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="productbox clearfix"><!--7楼four-->
+                <li>
+                    <a href="http://www.111yao.com/p/960.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/cc2bbbc3afb0d50592ff66d549662067.jpg"/></a>
+                </li>
+                <li>
+                    <a href="http://www.111yao.com/p/1273.html"><img src="http://ui1.111yao.com/static/image/temp/20151027/7530c6f5a27219df97d06521c8ecc404.jpg"/></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="returntop">
+        <a class="gotop" href="#top" target="_self"><img src="http://ui1.111yao.com/static/image/temp/20151027/816267753f9e61becde78deab7c3f12c.png"/></a>
+    </div>
+</article>
+<!--#include virtual="/static/inc/wap/footer.html" -->
+<script type="text/javascript">
+	function getCoupon(id)
+	{
+		if(!checklogin())
+		{
+			window.location.href="/login/login!index.action?redirectUrl="+window.location.href;
+		}
+		else
+		{
+			$.ajax(
+			{
+				url: "/coupon/coupon!bindingCoupon.action?couponId="+id,
+				type: "GET",
+				cache: false,
+				async: false,
+				success: function(data) 
+				{
+					if(data == 1)
+					{
+						$alert("success","恭喜您，已成功领取该优惠券！");
+					}
+					if(data == 2)
+					{
+						$alert("warn","抱歉，您已领取过此优惠券！");
+					}
+					if(data == 3)
+					{
+						$alert("warn","抱歉，此优惠券已发完！");
+					}
+					if(data == 4)
+					{
+						$alert("error","服务器错误，请确认您已经联网！");
+					}
+					if(data == 5)
+				    {
+						$alert("error","无效优惠券！");
+				    }
+				}
+			});	
+		}
+	}
+</script>
+</body>
+</html>

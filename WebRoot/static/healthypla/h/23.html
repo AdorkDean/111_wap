@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>上的发丝快点放假撒</title>
+<link href="/web/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/web/css/iconfont.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/web/js/jquery.min.js"></script>
+<script type="text/javascript" src="/web/js/iscroll.js"></script>
+<script type="text/javascript" src="/web/js/wap-cart.js"></script>
+<script type="text/javascript" src="/web/js/alert.main.js"></script>
+<script type="text/javascript">
+var myScroll;
+function loaded() 
+{
+	var sum = $("#csum").val();
+	for(var i=0;i<sum;i++)
+	{
+		myScroll = new IScroll('.wrapper'+i, { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+	}
+}
+</script>
+</head>
+<body onload="loaded()">
+<div class="care-main">
+    <input type="hidden" id="csum" value="0"/>
+    <input type="hidden" id="hid" value="23"/>
+    <input type="hidden" value="1" id="priceLooperNumber"/>
+		<div class="care-part clearfix">
+	    	<div class="care-adv-tit"><img src="http://img.zdfei.com//static/image/healthyplan//201511/709f1d2e68ff45e1bc2544e7543454ae.jpg"></div>
+		
+		<!--滑动菜单-开始-->
+		<nav class="health-nav-box wrapper3">
+	            <div class="health-nav-box-list">
+	                <ul id="newscroller">
+	                </ul>
+	            </div>
+	    </nav>
+		<!--滑动菜单-结束-->
+		
+		
+		<!-- 症状介绍 -->
+	        <div class="symptom clearfix">
+	            <a href="javascript:void(0)" class="out-details" onclick="zhankai(1,0);">
+	            <input type="hidden" id="exp0" value="症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍"/>
+	                <span class="symptom-tag">症状介绍</span>
+	                <div class="symptom-text clearfix">
+	                    <span class="symptom-corner fr"></span>
+			           		<p>症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介绍症状介...</p>
+	                </div>
+	            </a>
+	        </div>
+		</div>
+    
+    
+    <div class="care-part clearfix"  >
+	
+            
+            <div class="recomm-product">
+	            <div class="recomm-one clearfix">
+	                <div class="recomm-one-img"><a href="javascript:;" onclick="product(23,&quot;莎普爱思 苄达赖氨酸滴眼液 5ml&quot;);"><img src="http://img.zdfei.com//static/image/upload/image/201410/04e8c085-e7bc-4164-b17b-5e4ade408a92-medium350x350.jpg"></a></div>
+	                <div class="recomm-one-info">
+	                    <p class="recomm-one-title" onclick="product(23,&quot;莎普爱思 苄达赖氨酸滴眼液 5ml&quot;);">莎普爱思 苄达赖氨酸滴眼液 5ml<span>早期老年性白内障 眼药水</span></p>
+	                    <p class="recomm-one-price bszjg33_23" id="goods_price_one_in_0">¥35.8</p>
+	                    <p class="recomm-into-cart gwc33_23"><a href="javascript:;" onclick="addTao(1,23)">加入购物车</a></p>
+		            	<input type="hidden" value="23" id="goods_id_one_in_0"/>
+	                </div>
+	            </div>
+	        	<div class="c-line"></div>
+        	
+        	
+        </div>
+    </div>
+    
+	    <div class="care-tips clearfix">
+	    	<h2>温馨提示：</h2>
+	        <p>温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示</p>
+	    </div>
+    
+    <!-- 推荐套餐 -->
+    <input type="hidden" id="bigSize" value="0"/>
+    <!--推荐套餐-->
+</div>
+<!---->
+<div class="b-cover">
+	<div class="describ">
+    	<div class="describ-tit">
+        	<a href="javascript:void(0)" class="describ-x"></a>
+                        详细描述
+        </div>
+        <div class="describ-details">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<style type="text/css">
+.care-part{ background:#fff;}
+.care-adv-tit img{width:100%; display:block;}
+.symptom{height:80px;overflow:hidden;position:relative;}
+.symptom a{height:75px; display:block;}
+.symptom-tag{width:48px;overflow:hidden;background:#0fa9a3; display:inline-block; font-size:12px; color:#fff; text-align:center; padding:0 6px; border-radius:5px; -webkit-border-radius:5px; position:absolute; top:50%; margin:-15px 0 0 15px;}
+.symptom-corner{width:9px; height:15px; display:inline-block; background:url(/web/images/symptom_corner.png) no-repeat; background-size:9px 15px; float:right; margin:20px 15px 0 15px;}
+.symptom-text{ height:54px; padding:11px 0 10px 90px;}
+.symptom-text p {font-size: 12px;line-height: 18px;height: 54px;overflow: hidden;position: relative;left: 20px;width: 75%;}
+.recomm-one-img{float:left; width:50%;}
+.recomm-one-img a{ display:block; margin:0 15px;}
+.recomm-one-img a img{width:100%; display:block;}
+.recomm-one-info{ float:left; width:50%; padding-top:15px;}
+.recomm-one-info p{padding:0 15px;}
+.recomm-one-title{color:#222; height:38px; overflow:hidden; line-height:1.4em;}
+.recomm-one-title span{ display:block; font-size:12px;}
+.recomm-one-price{color:#fc4044; font-size:15px;}
+.recomm-one .recomm-into-cart a,.recomm-two .recomm-into-cart a{ font-size:15px; color:#fe4310; display:block; height:30px; line-height:30px; border-radius:5px; -webkit-border-radius:5px; border:1px solid #fe4310; margin:5px 0 0 0; text-align:center;}
+.c-line{margin:0 0 0 15px; height:1px; background:#d7d7d7;}
+.recomm-two{margin-top:1px;}
+.recomm-two li{ float:left; width:50%; padding-bottom:15px;}
+.recomm-two li a{margin:0 15px; display:block;}
+.recomm-two li a img{width:100%; display:block;}
+.recomm-two-info p{ padding:0 15px;}
+.recomm-two-title{color:#222; height:38px; overflow:hidden; line-height:1.4em;}
+.recomm-two-title span{ display:block; font-size:12px;}
+.recomm-two-price{color:#fc4044; font-size:15px;}
+.care-tips{padding:15px 15px 0; color:#3e3e3e; border-top:1px solid #d7d7d7; background:#fff;}
+.care-tips h2{ font-size:15px;}
+.care-tips p{margin:5px 0 15px; font-size:12px; line-height:1.6em;}
+.package-tj{ background:#fff; margin-top:10px;}
+.package-tj-title{height:45px; line-height:45px; font-size:12px; color:#222;}
+.package-tj-title span{background:#0fa9a3; display:inline-block; font-size:12px; line-height:1.4em; color:#fff; text-align:center; padding:0 6px; border-radius:5px; -webkit-border-radius:5px; margin:15px;}
+.sy-comment{border-bottom:none;}
+.sy-comment-tag{display:inline-block; font-size:12px; text-align:center; padding:0 6px;float:left;width:19%;height:80px;background-color:#efefef;border-radius:10px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;}
+.price-box{margin:0 15px; border-top:1px solid #d7d7d7; padding:10px 0;}
+.total-price{ text-align:right; line-height:16px;}
+.total-price span{ margin:0 5px 0 20px; color:#222; font-size:12px;}
+.total-price b{ font-size:15px; color:#fc4044;}
+.total-price p{color:#999; font-size:10px;}
+.total-price p i{ font-style:normal; text-decoration:line-through; margin-left:5px;}
+.sy-buy{ width:108px; height:32px; line-height:32px; color:#fff; display:inline-block; float:right; text-align:center; font-size:15px; border-radius:5px; -webkit-border-radius:5px; background:#fe4310; margin-top:5px;}
+.b-cover{ position:fixed; background:rgba(0,0,0,.8); top:0; left:0; right:0; bottom:0; z-index:100; display:none;}
+.describ{ position:absolute; height:70%; top:100%; left:0; right:0; background:#efeff4;}
+.describ-tit{height:50px; line-height:50px; border-bottom:1px solid #d7d7d7; font-size:15px; padding:0 10px;}
+.describ-tit a{ display:inline-block; float:right; width:16px; height:16px; background:url(/web/images/describ_x.png) no-repeat; background-size:16px; margin:17px 0;}
+.describ-details{padding:10px; color:#222; height:80%; line-height:1.6em; overflow-y:auto;}
+.wrapper{position:relative;z-index:1;height:120px;width:100%;background:#fff;overflow:hidden;-ms-touch-action:none;top:10px;}
+.scroller{position:absolute;z-index:1;-webkit-tap-highlight-color:transparent;width:580px;height:120px;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none}
+.scroller ul{list-style:none;width:100%;padding:0;margin:0; background:#fff;}
+.scroller li{width:95px;height:120px;background:#fff;float:left;overflow:hidden; position:relative;}
+.recomm-pro-plus li a,.recomm-pro-plus li a img{width:80px; height:80px; display:block;}
+.recomm-pro-plus li span{ width:15px; height:80px; line-height:80px; text-align:center; display:inline-block; position:absolute; right:0; top:0; font-size:18px;}
+.recomm-pro-plus li:first-child{ margin-left:10px;}
+.recomm-pro-plus li:last-child span{ display:none;}
+.recomm-pro-tit{ padding:0 5px; font-size:12px; color:#222; line-height:1.4em; height:32px; overflow:hidden;}
+.health-nav-box{position:fixed ;z-index:99;}
+.health-nav-box{position:relative;z-index:99;height:40px;width:100%;background:#f3f5f7;overflow:hidden;-ms-touch-action:none}
+.health-nav-box-list{position:absolute;z-index:1;-webkit-tap-highlight-color:transparent;width:450px;height:40px;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none}
+.health-nav-box-list ul{list-style:none;width:100%;padding:0;margin:0}
+.health-nav-box-list li{width:90px;height:40px;float:left;line-height:40px;background-color:#f3f5f7;font-size:14px;overflow:hidden;text-align:center; color:#fff;}
+.health-nav-box-list li a{color:#999999; pointer-events: none; display: inline-block; height: 38px; line-height: 38px;}
+.health-nav-box-list li.curr a{ color: #0fa9a3; border-bottom:2px solid #0fa9a3;}
+.arrow_right_h {float:left;height:75px;width:11px;height:75px;background:url('http://img.zdfei.com/static/image/temp/20160627/88a739825f1bf1b52c55e64f13f0f65c.jpg') center no-repeat;}
+.ys_head_url {float: left;width: 35px;height: 35px;border-radius: 50%;margin-top: 5px;margin-left: 23%;}
+.ys_real_name {float: left;width: 50px;height: 15px;line-height: 15px;display: block;text-align: center;margin-left: 9px;font-size: 12px;margin-top:2px;}
+.ys_work_year {float: left;width: 50px;height: 15px;line-height: 15px;display: block;text-align: center;margin-left: 9px;font-size: 12px;margin-top:2px;}
+</style>
+
+<script type="text/javascript">
+//var _url = "http://router.111yao.com/sltRouter?method=countpricefrom";
+var _url = "/index!countpricefrompc.action";
+var jsonp_url = "http://wap.portal.com/healthyplan/healthyplan!getPlanCategorysJSONP.action";
+$(function()
+{
+	//收起详细内容
+	$('.describ-x').click(function()
+	{
+		$('.b-cover').hide();	
+	});
+	
+	//获取头部导航分类名称
+	try{getNavication();}catch(e){console.log(e)}
+	
+	//动态获取关联商品的价格
+    try{getPriceInGoods();}catch(e){console.log(e)}
+	
+	//组合套餐动态获取商品价格
+    try{getDynamicPriceWithCombination();}catch(e){console.log(e)}
+	
+});
+
+//动态获取关联商品的价格
+function getPriceInGoods()
+{
+	var pln = $.trim($("#priceLooperNumber").val());
+	var ps = "";
+	for(var i=0;i<pln;i++)
+	{
+		//关联一个商品
+		var oneObj = document.getElementById("goods_price_one_in_"+i);
+		if(oneObj != null)
+		{
+			var hj = "goods_price_one_in_"+i;
+			var goods_id = $.trim($("#goods_id_one_in_"+i).val());
+			var p1 = "{'goodsId':"+goods_id+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj+"'}";
+			ps += p1 + ",";
+		}
+		//关联两个商品
+		var twoObj = document.getElementById("obj_two_"+i);
+		if(twoObj != null)
+		{
+			var twoSize = parseInt($.trim($("#obj_two_size_"+i).val()));
+			for(var j=0; j<twoSize; j++)
+			{
+				var hj = "goods_price_two_in_"+i+"_"+j;
+				var goods_id = $.trim($("#goods_id_two_in_"+i+"_"+j).val());
+				var p2 = "{'goodsId':"+goods_id+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj+"'}";
+				ps += p2 + ",";
+			}
+		}
+		//关联三个商品
+		var threeObj = document.getElementById("obj_three_"+i);
+		if(threeObj != null)
+	    {
+	    	var hj1 = "goods_price_three_in_1_"+i;
+			var goods_id_1 = $.trim($("#goods_id_three_in_1_"+i).val());
+			var p3_1 = "{'goodsId':"+goods_id_1+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj1+"'}";
+			
+	    	var hj2 = "goods_price_three_in_2_"+i;
+			var goods_id_2 = $.trim($("#goods_id_three_in_2_"+i).val());
+			var p3_2 = "{'goodsId':"+goods_id_2+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj2+"'}";
+			
+	    	var hj3 = "goods_price_three_in_3_"+i;
+			var goods_id_3 = $.trim($("#goods_id_three_in_3_"+i).val());
+			var p3_3 = "{'goodsId':"+goods_id_3+",'nowPrice':'0','platform':'3','htmlObjId':'"+hj3+"'}";
+			
+			var $p3 = p3_1 + ","+p3_2+","+p3_3;
+			ps += $p3 + ",";
+	    }
+	}
+	ps = ps.substring(0,ps.length-1);
+	var p_start = "[" ;
+	var p_end = "]" ;
+	var params = p_start + ps + p_end ;
+    $.ajax
+    ({
+        type: "post",
+        url: _url,
+        data: {"params":params},
+        async: false,
+        success: function(datas)
+        {
+        	var data = eval(datas);
+		    if(data != null && data != '' && data != undefined)
+            {
+                for(var i=0; i<data.length; i++)
+                {
+                    var nowPrice = data[i].nowPrice;
+                    var htmlObjId = data[i].htmlObjId;
+                    $("#"+htmlObjId).html("¥"+nowPrice);
+                }
+            }
+            else
+            {
+                console.log("Datas null !");
+            }
+        },
+        error: function()
+        {
+            console.log("Server error !");
+        }
+    });
+}
+
+//组合套餐动态获取商品价格
+function getDynamicPriceWithCombination()
+{
+	var bigSize = $.trim($("#bigSize").val());
+	var ps = "";
+	for(var i=0; i<bigSize; i++)
+	{
+		var smallSize = $.trim($("#smallSize_"+i).val());
+		for(var j=0; j<smallSize; j++)
+		{
+			var goods_id = $.trim($("#goods_id_"+i+"_"+j).val());
+	  		var hj = "app_price_"+i+"_"+j;
+	  		var p1 = "{'goodsId':"+goods_id+",'nowPrice':'00.00','platform':'2','htmlObjId':'"+hj+"'}"; 
+	  		ps += p1 + ",";
+		}
+	}
+	ps = ps.substring(0,ps.length-1);
+  	var p_start = "[" ;
+	var p_end = "]" ;
+	var params = p_start + ps + p_end ;
+    $.ajax
+    ({
+        type: "post",
+        url: _url,
+        data: {"params":params},
+        async: false,
+        success: function(datas)
+        {
+        	var data = eval(datas);
+            if(data != null && data != '' && data != undefined)
+            {
+                for(var i=0; i<data.length; i++)
+                {
+                    var nowPrice = data[i].nowPrice;
+                    var htmlObjId = data[i].htmlObjId;
+                    $("#"+htmlObjId).val(nowPrice);
+                }
+                combinationPrice();
+            }
+            else
+            {
+                console.log("Datas null !");
+                combinationPrice();
+            }
+        },
+        error: function()
+        {
+            console.log("Server error !");
+            combinationPrice();
+        }
+    });
+}
+
+//组合套装计算价格
+function combinationPrice()
+{
+	var bigSize = $.trim($("#bigSize").val());
+	for(var i=0; i<bigSize; i++)
+	{
+		var totalWapPrice = 0;
+		var totalOldPrice = 0;
+		var savePrice = 0;
+		var smallSize = $.trim($("#smallSize_"+i).val());
+		for(var j=0; j<smallSize; j++)
+		{
+			//APP站价格
+			var app_price = parseFloat($.trim($("#app_price_"+i+"_"+j).val()));
+			//原价格
+			var old_price = parseFloat($.trim($("#old_price_"+i+"_"+j).val()));
+			totalWapPrice += app_price;
+			totalOldPrice += old_price;
+		}
+		savePrice = parseFloat(totalOldPrice - totalWapPrice);
+		savePrice = savePrice.toFixed(2);
+		//共节省
+		$("#totalSave_"+i).html("¥"+savePrice);
+		//组合价
+		$("#combinePrce_"+i).html("¥"+totalWapPrice.toFixed(2));
+		//原价
+		$("#oldPrice_"+i).html("¥"+totalOldPrice.toFixed(2));
+	}
+}
+
+
+//产品详情页
+function product(id,name)
+{
+	document.location = "id*"+id+"*"+name;
+}
+
+//展开详细内容
+function zhankai(t,i)
+{
+	var v = "";
+	if(1==t)
+	{
+		v=$("#exp"+i+"").val();
+	}
+	else
+	{
+		v=$("#ccexp"+i+"").val();
+	}
+	$('.describ-details').text(v);
+	$('.b-cover').show();
+	$('.describ').animate({top:"30%"});
+}
+
+//获取头部导航分类名称
+function getNavication()
+{
+	var hid = $.trim($("#hid").val());
+	$.ajax
+	({
+		type: "get",
+		url: jsonp_url,
+		async: false,
+		data: "hid="+hid,
+		dataType: "jsonp",
+		jsonp: "jsoncallback",
+		success: function(data) 
+		{  
+			var liobj = "";
+			for(var i=0; i<data.length; i++)
+			{
+				var cname = data[i].name;
+				var id = data[i].id;
+				var c = "";
+				if(id == hid)
+				{
+					c = "curr";
+				}
+				liobj += "<li class='"+c+"' onclick='toHealty("+id+")'><a>"+cname+"</a></li>";
+			}
+			$(".health-nav-box-list ul").append(liobj);
+			//动态控制滚动条长度
+			var lg = document.getElementById("newscroller").getElementsByTagName("li").length;
+			$(".health-nav-box-list").css("width",lg*90+"px");
+			var isoll = new IScroll('.wrapper3', { eventPassthrough: true, scrollX: true, scrollY: false, preventDefault: false });
+			var clientWidth = $(window).width();
+		    var showLiNum = Math.floor(clientWidth / 90);
+		    var lg = $("#newscroller li").length-1;
+		    var currIndex = $("#newscroller li.curr").index();
+		    if(lg == currIndex)
+		    {
+			    if (currIndex > (showLiNum - 1)) 
+			    {
+			    	var u = navigator.userAgent, app = navigator.appVersion;
+			    	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+			    	if(isiOS)
+			    	{
+			    		isoll.scrollTo((-(currIndex - showLiNum + 1) * 90)+45, 0);
+			    	}
+			    	else
+			    	{
+				        isoll.scrollTo(-(currIndex - showLiNum + 1) * 90, 0);
+			    	}
+			    }
+		    }
+		    else
+		    {
+			    if (currIndex > (showLiNum - 1)) 
+			    {
+			        isoll.scrollTo(-(currIndex - showLiNum + 1) * 90, 0);
+			    }
+		    }
+        },  
+        error: function() 
+        {  
+            console.log("Server error !"); 
+        }  
+	});
+}
+
+//菜单点击事件
+function toHealty(id)
+{
+	window.location.href = "/static/healthypla/h/"+id+".html";
+}
+
+</script>
